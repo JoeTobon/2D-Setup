@@ -16,11 +16,34 @@ typedef struct Entity_S
 
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states
 
-
 }Entity;
 
 /**
- * @brief  initializes the enity manager
+ * @brief  initializes the enity manager/system
  * @param  maximum number of enities the system can handle
  */
 void enity_system_init(Uint32 maxNum);
+
+/**
+ * @brief  initializes a new entity
+ * @param  none
+ */
+Entity *entity_new();
+
+/**
+ * @brief  deletes/removes an entity from the entity system
+ * @param  a pointer to the entityt that is to be deleted
+ */
+void entity_delete(Entity *entity);
+
+/**
+ * @brief  updates the entity
+ * @param  
+ */
+void entity_update();
+
+/**
+ * @brief  draws entity to the screen
+ * @param  the entity to draw
+ */
+void entity_draw(Entity *entity);
