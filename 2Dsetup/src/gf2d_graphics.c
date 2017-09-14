@@ -198,6 +198,7 @@ void gf2d_graphics_frame_delay()
     if (diff < gf2d_graphics.frame_delay)
     {
         SDL_Delay(gf2d_graphics.frame_delay - diff);
+		gf2d_graphics.now = SDL_GetTicks();
     }
     gf2d_graphics.fps = 1000.0/MAX(SDL_GetTicks() - gf2d_graphics.then,0.001);
 }
