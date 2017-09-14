@@ -6,6 +6,8 @@
 
 typedef struct Entity_S
 {
+	int ref_count;							 //used to keep track of how many entites in system
+
 	Vector2D position;						 //where the entity appears on the screen (using x and y coordinates)
 	Vector2D velocity;						 //how fast the enity is moving in a given direction
 	float scale;
@@ -22,7 +24,7 @@ typedef struct Entity_S
  * @brief  initializes the enity manager/system
  * @param  maximum number of enities the system can handle
  */
-void enity_system_init(Uint32 maxNum);
+void entity_system_init(Uint32 maxNum);
 
 /**
  * @brief  initializes a new entity
@@ -32,9 +34,22 @@ Entity *entity_new();
 
 /**
  * @brief  deletes/removes an entity from the entity system
- * @param  a pointer to the entityt that is to be deleted
+ * @param  a pointer to the entity that is to be deleted
  */
 void entity_delete(Entity *entity);
+
+/**
+ * @brief deletes all loaded entities from memory
+ * does not close the entity system
+ */
+void entity_clear_all();
+
+/**
+ * @brief free an entity back to the entity manager
+ * Stays in memory until the space is needed
+ * @param the entity to free
+ */
+void entity_free(Entity *entity);
 
 /**
  * @brief  updates the entity

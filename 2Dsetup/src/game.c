@@ -1,6 +1,7 @@
 #include <SDL.h>
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
+#include "entity.h"
 #include "simple_logger.h"
 
 int main(int argc, char * argv[])
@@ -28,6 +29,10 @@ int main(int argc, char * argv[])
         0);
     gf2d_graphics_set_frame_delay(16);
     gf2d_sprite_init(1024);
+
+	//entity system initialized
+	entity_system_init(1024);
+
     SDL_ShowCursor(SDL_DISABLE);
     
     /*demo setup*/
