@@ -13,7 +13,14 @@ static Entitymanager entity_manager;
 
 void entity_close()
 {
-
+	entity_clear_all;
+	if (entity_manager.entList != NULL)
+    {
+        free(entity_manager.entList);
+    }
+	entity_manager.entList = NULL;
+	entity_manager.maxEnt = 0;
+    slog("entity system closed");
 }
 
 void entity_system_init(Uint32 maxNum)
@@ -39,7 +46,7 @@ void entity_clear_all()
 
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{
-		entity_delete(&entity_manager.entList[i]);// clean up the data
+		entity_delete(&entity_manager.entList[i]);// cleans up the data
 	}
 }
 
