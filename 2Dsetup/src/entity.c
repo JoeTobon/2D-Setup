@@ -40,16 +40,6 @@ void entity_system_init(Uint32 maxNum)
 	atexit(entity_close);
 }
 
-void entity_clear_all()
-{
-	int i;
-
-	for(i = 0; i < entity_manager.maxEnt; i++)
-	{
-		entity_delete(&entity_manager.entList[i]);// cleans up the data
-	}
-}
-
 void entity_delete(Entity *entity)
 {
 	if(!entity)
@@ -68,4 +58,36 @@ void entity_free(Entity *entity)
 	}
 
 	entity->ref_count--;
+}
+
+void entity_clear_all()
+{
+	int i;
+
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		entity_delete(&entity_manager.entList[i]);// cleans up the data
+	}
+}
+
+Entity *entity_new()
+{
+	//Search through the entity manager for an unused address
+	int i;
+
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].ref_count == 0)
+		{
+			entity_delete(&entity_manager.entList[i]); //clean up old data
+			entity_manager.entList[i].ref_count == 1; //Set ref count to 1. Address is now in use
+
+			//Initialize various attributes of entity here
+
+			return &entity_manager.entList[i];		  //Return address of index in array
+		}
+	}
+
+	slog("error: out of entity addresses");
+    return NULL;
 }

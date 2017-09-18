@@ -13,7 +13,7 @@ typedef struct Entity_S
 	float scale;
 	int health;								 //keeps track of entity's health
 	int frame;								 //determines which frame the entity is on
-	Sprite sprite;							 //sprite associated with entity 
+	Sprite *sprite;							 //sprite associated with entity 
 	Bool INUSE;								 //used to check if entity is in use
 
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states
@@ -33,6 +33,13 @@ void entity_system_init(Uint32 maxNum);
 Entity *entity_new();
 
 /**
+ * @brief free an entity back to the entity manager
+ * Stays in memory until the space is needed
+ * @param the entity to free
+ */
+void entity_free(Entity *entity);
+
+/**
  * @brief  deletes/removes an entity from the entity system
  * @param  a pointer to the entity that is to be deleted
  */
@@ -43,13 +50,6 @@ void entity_delete(Entity *entity);
  * does not close the entity system
  */
 void entity_clear_all();
-
-/**
- * @brief free an entity back to the entity manager
- * Stays in memory until the space is needed
- * @param the entity to free
- */
-void entity_free(Entity *entity);
 
 /**
  * @brief  updates the entity
