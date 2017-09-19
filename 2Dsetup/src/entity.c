@@ -91,3 +91,9 @@ Entity *entity_new()
 	slog("error: out of entity addresses");
     return NULL;
 }
+
+void entity_draw(Entity *entity)
+{
+	gf2d_sprite_draw(entity->sprite, entity->position, entity->scale, entity->scaleCenter, 
+					    entity->rotation, entity->flip, entity->colorShift, entity->frame);
+}

@@ -6,15 +6,21 @@
 
 typedef struct Entity_S
 {
-	int ref_count;							 //used to keep track of how many entites in system
+	int ref_count;							 //used to keep track of entity's use in system
 
+	Sprite   *sprite;						 //sprite associated with entity 
 	Vector2D position;						 //where the entity appears on the screen (using x and y coordinates)
+	Vector2D *scale;
+	Vector3D *rotation;
+	Vector2D *scaleCenter;
+	Vector2D *flip;
+	Vector4D *colorShift;
+	Uint32	 frame;
+	
 	Vector2D velocity;						 //how fast the enity is moving in a given direction
-	float scale;
 	int health;								 //keeps track of entity's health
-	int frame;								 //determines which frame the entity is on
-	Sprite *sprite;							 //sprite associated with entity 
-	Bool INUSE;								 //used to check if entity is in use
+	
+	Bool inuse;								 //used to check if entity is in use
 
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states
 
