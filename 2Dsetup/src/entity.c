@@ -9,17 +9,18 @@ typedef struct
 	Entity *entList;
 } Entitymanager; 
 
-static Entitymanager entity_manager;
+static Entitymanager entity_manager = {0};
 
 void entity_close()
 {
-	entity_clear_all;
 	if (entity_manager.entList != NULL)
     {
+		entity_clear_all;
         free(entity_manager.entList);
     }
-	entity_manager.entList = NULL;
-	entity_manager.maxEnt = 0;
+
+	memset(&entity_manager, 0, sizeof(Entitymanager));
+
     slog("entity system closed");
 }
 
@@ -31,13 +32,22 @@ void entity_system_init(Uint32 maxNum)
         return;
 	}
 
-	entity_manager.maxEnt = maxNum;
+	memset(&entity_manager, 0, sizeof(Entitymanager));
 	entity_manager.entList = (Entity *)malloc(sizeof(Entity)*maxNum);
-	memset(entity_manager.entList,0,sizeof(Entity)*maxNum);
 
-	 slog("entity system initialized");
+	if(!entity_manager.entList)
+	{
+		slog("Failed to allocate entity list");
+		entity_close();
+		return;
+	}
+
+	memset(entity_manager.entList,0,sizeof(Entity)*maxNum);
+    entity_manager.maxEnt = maxNum;
 
 	atexit(entity_close);
+
+	slog("entity system initialized");
 }
 
 void entity_delete(Entity *entity)
@@ -57,7 +67,7 @@ void entity_free(Entity *entity)
 		return;	
 	}
 
-	entity->ref_count--;
+	entity->ref_count = 0;
 }
 
 void entity_clear_all()
@@ -80,20 +90,35 @@ Entity *entity_new()
 		if(entity_manager.entList[i].ref_count == 0)
 		{
 			entity_delete(&entity_manager.entList[i]); //clean up old data
-			entity_manager.entList[i].ref_count == 1; //Set ref count to 1. Address is now in use
+			entity_manager.entList[i].ref_count = 1; //Set ref count to 1. Address is now in use
 
-			//Initialize various attributes of entity here
+			//Initialize various default attributes of entity here
 
 			return &entity_manager.entList[i];		  //Return address of index in array
 		}
 	}
-
+	
 	slog("error: out of entity addresses");
-    return NULL;
+	return  NULL;
 }
 
 void entity_draw(Entity *entity)
 {
 	gf2d_sprite_draw(entity->sprite, entity->position, entity->scale, entity->scaleCenter, 
 					    entity->rotation, entity->flip, entity->colorShift, entity->frame);
+}
+
+void entity_draw_all()
+{
+	int i;
+
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].ref_count == 0)
+		{
+			continue;
+		}
+
+		entity_draw(&entity_manager.entList[i]);
+	}
 }

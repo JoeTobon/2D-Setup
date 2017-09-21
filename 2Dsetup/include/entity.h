@@ -33,8 +33,9 @@ typedef struct Entity_S
 void entity_system_init(Uint32 maxNum);
 
 /**
- * @brief  initializes a new entity
- * @param  none
+ * @brief   initialize a new entity
+ * @param   none
+ * @returns pointer to entity or null on error
  */
 Entity *entity_new();
 
@@ -68,3 +69,9 @@ void entity_update();
  * @param  the entity to draw
  */
 void entity_draw(Entity *entity);
+
+/**
+ * @brief  draws all entities in use to the screen
+ */
+void entity_draw_all();
+

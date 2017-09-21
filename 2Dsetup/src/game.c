@@ -10,12 +10,19 @@ int main(int argc, char * argv[])
     int done = 0;
     const Uint8 * keys;
     Sprite *sprite;
-    
+
+    Entity *ent;
+	Sprite *temp;
+	int address;
+	int i;
+
     int mx,my;
     float mf = 0;
     Sprite *mouse;
     Vector4D mouseColor = {255,100,255,200};
     
+
+
     /*program initializtion*/
     init_logger("gf2d.log");
     slog("---==== BEGIN ====---");
@@ -36,8 +43,28 @@ int main(int argc, char * argv[])
     SDL_ShowCursor(SDL_DISABLE);
     
     /*demo setup*/
+	ent = entity_new();
+
+	address = (int)&ent;
+	slog("testing %d", address);
+	
+
+	ent->position = vector2d(0, 0);
+	ent->scale = NULL;
+	ent->scaleCenter = NULL;
+	ent->rotation = NULL;
+	ent->flip = NULL;
+	ent->colorShift = &mouseColor;
+	ent->frame = (int)mf;
+
+
     sprite = gf2d_sprite_load_image("images/backgrounds/bg_flat.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
+	temp  = gf2d_sprite_load_all("images/space_bug.png", 128, 128, 16);
+	//temp  = gf2d_sprite_load_all("images/pointer.png",32,32,16);
+
+	ent->sprite = temp;
+
     /*main game loop*/
     while(!done)
     {
@@ -45,6 +72,8 @@ int main(int argc, char * argv[])
         keys = SDL_GetKeyboardState(NULL); // get the keyboard state for this frame
         /*update things here*/
         SDL_GetMouseState(&mx,&my);
+		
+
         mf+=0.1;
         if (mf >= 16.0)mf = 0;
         
@@ -53,6 +82,8 @@ int main(int argc, char * argv[])
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
             gf2d_sprite_draw_image(sprite,vector2d(0,0));
+
+			
             
             //UI elements last
             gf2d_sprite_draw(
@@ -64,9 +95,21 @@ int main(int argc, char * argv[])
                 NULL,
                 &mouseColor,
                 (int)mf);
+
+			ent->frame = (int)mf;
+			entity_draw_all();
+
+			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
         
-        if (keys[SDL_SCANCODE_ESCAPE])done = 1; // exit condition
+
+		if(keys[SDL_SCANCODE_DELETE])
+		{
+			entity_delete(ent);//delete entity
+
+		}
+
+		if (keys[SDL_SCANCODE_ESCAPE])done = 1; // exit condition
         slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
     }
     slog("---==== END ====---");
