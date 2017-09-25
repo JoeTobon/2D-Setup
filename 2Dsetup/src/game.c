@@ -21,7 +21,7 @@ int main(int argc, char * argv[])
     Sprite *mouse;
     Vector4D mouseColor = {255,100,255,200};
     
-
+	Vector2D incr = {2,2};
 
     /*program initializtion*/
     init_logger("gf2d.log");
@@ -61,7 +61,6 @@ int main(int argc, char * argv[])
     sprite = gf2d_sprite_load_image("images/backgrounds/bg_flat.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 	temp  = gf2d_sprite_load_all("images/space_bug.png", 128, 128, 16);
-	//temp  = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 
 	ent->sprite = temp;
 
@@ -76,7 +75,7 @@ int main(int argc, char * argv[])
 
         mf+=0.1;
         if (mf >= 16.0)mf = 0;
-        
+		entity_update_all();
         
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
@@ -97,6 +96,7 @@ int main(int argc, char * argv[])
                 (int)mf);
 
 			ent->frame = (int)mf;
+			vector2d_add(ent->position, ent->position, incr);
 			entity_draw_all();
 
 			

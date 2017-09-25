@@ -6,7 +6,7 @@
 
 typedef struct Entity_S
 {
-	int ref_count;							 //used to keep track of entity's use in system
+	Bool inuse;							     //used to keep track of entity's use in system
 
 	Sprite   *sprite;						 //sprite associated with entity 
 	Vector2D position;						 //where the entity appears on the screen (using x and y coordinates)
@@ -19,8 +19,6 @@ typedef struct Entity_S
 	
 	Vector2D velocity;						 //how fast the enity is moving in a given direction
 	int health;								 //keeps track of entity's health
-	
-	Bool inuse;								 //used to check if entity is in use
 
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states
 
@@ -63,6 +61,12 @@ void entity_clear_all();
  * @param  
  */
 void entity_update();
+
+/**
+ * @brief  updates all the entity
+ * @param  
+ */
+void entity_update_all();
 
 /**
  * @brief  draws entity to the screen

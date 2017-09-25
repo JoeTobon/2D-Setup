@@ -67,7 +67,7 @@ void entity_free(Entity *entity)
 		return;	
 	}
 
-	entity->ref_count = 0;
+	entity->inuse = 0;
 }
 
 void entity_clear_all()
@@ -87,10 +87,10 @@ Entity *entity_new()
 
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{
-		if(entity_manager.entList[i].ref_count == 0)
+		if(entity_manager.entList[i].inuse == 0)
 		{
 			entity_delete(&entity_manager.entList[i]); //clean up old data
-			entity_manager.entList[i].ref_count = 1; //Set ref count to 1. Address is now in use
+			entity_manager.entList[i].inuse = 1; //Set ref count to 1. Address is now in use
 
 			//Initialize various default attributes of entity here
 
@@ -100,6 +100,35 @@ Entity *entity_new()
 	
 	slog("error: out of entity addresses");
 	return  NULL;
+}
+
+void entity_update(Entity *entity)
+{
+	if(!entity)
+	{
+		return;
+	}
+
+	if(!entity->inuse)
+	{
+		return;
+	}
+}
+
+
+void entity_update_all()
+{
+	int i;
+
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+
+		entity_update(&entity_manager.entList[i]);
+	}
 }
 
 void entity_draw(Entity *entity)
@@ -114,7 +143,7 @@ void entity_draw_all()
 
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{
-		if(entity_manager.entList[i].ref_count == 0)
+		if(entity_manager.entList[i].inuse == 0)
 		{
 			continue;
 		}
