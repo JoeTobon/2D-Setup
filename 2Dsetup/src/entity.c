@@ -99,6 +99,7 @@ Entity *entity_new()
 	}
 	
 	slog("error: out of entity addresses");
+	exit(0);
 	return  NULL;
 }
 
@@ -113,6 +114,9 @@ void entity_update(Entity *entity)
 	{
 		return;
 	}
+
+	//make move randomly
+	vector2d_add(entity->position, entity->position, entity->velocity);
 }
 
 
@@ -133,6 +137,12 @@ void entity_update_all()
 
 void entity_draw(Entity *entity)
 {
+	if(!entity)
+	{
+		return;
+	}
+
+
 	gf2d_sprite_draw(entity->sprite, entity->position, entity->scale, entity->scaleCenter, 
 					    entity->rotation, entity->flip, entity->colorShift, entity->frame);
 }
