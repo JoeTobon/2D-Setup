@@ -4,9 +4,20 @@
 #include "gf2d_vector.h"
 #include "gf2d_text.h"
 
+//Used to identity what type of entity is being used
+typedef enum 
+{
+	player,
+	enemy,				//specify enemies, weapons, and projectiles as game is developed more
+	projectile,
+	weapon
+}EntityType;
+
 typedef struct Entity_S
 {
 	Bool inuse;							     //used to keep track of entity's use in system
+
+	EntityType type;						 //Used to identity what type of entity is being used
 
 	Sprite   *sprite;						 //sprite associated with entity 
 	Vector2D position;						 //where the entity appears on the screen (using x and y coordinates)
