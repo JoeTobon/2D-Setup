@@ -14,19 +14,16 @@ int main(int argc, char * argv[])
 	int i, in;
 
 	//Used for Entity assignment
-	Entity *ent;
-	Sprite *bug1;
-	Sprite *bug2;
-	Sprite *ship1;
-	Sprite *ship2;
+	Entity *entPlayer;
+	Sprite *playerS;
 
     int mx,my;
     float mf = 0;
     Sprite *mouse;
     Vector4D mouseColor = {255,100,255,200};
-    
-	
-	in = 0;
+
+	//Game Controller 1 handler
+	SDL_Joystick *controller = NULL;
 
     /*program initializtion*/
     init_logger("gf2d.log");
@@ -46,7 +43,31 @@ int main(int argc, char * argv[])
 	entity_system_init(1024);
 
     SDL_ShowCursor(SDL_DISABLE);
-    
+
+	//Controller support
+	SDL_Init(SDL_INIT_GAMECONTROLLER);
+
+	//Check for joysticks
+    if( SDL_NumJoysticks() < 1 )
+    {
+		slog( "Warning: No joysticks connected!" );
+    }
+    else
+    {
+		//Load joystick
+        controller = SDL_JoystickOpen( 0 );
+            
+		if(controller == NULL)
+        {
+			slog( "Warning: Unable to open game controller! SDL Error: %s\n", SDL_GetError() );
+        }
+		else
+		{
+			slog("Controller is attached.");
+		}
+	}
+
+
     /*demo setup*/
 	
 
@@ -54,11 +75,14 @@ int main(int argc, char * argv[])
     sprite = gf2d_sprite_load_image("images/backgrounds/bg_flat.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 	
-	//Load sprites
-	bug1 = gf2d_sprite_load_all("images/space_bug.png", 128, 128, 16);
-	bug2 = gf2d_sprite_load_all("images/space_bug_top.png", 128, 128, 16);
-	ship1 = gf2d_sprite_load_all("images/ed210.png", 128, 128, 16);
-	ship2 = gf2d_sprite_load_all("images/ed210_top.png", 128, 128, 16);
+	//Load player sprite and define player entity (temp)
+	playerS = gf2d_sprite_load_image("images/idle/0000.png");
+	
+	entPlayer = entity_new();
+	entPlayer->type = player;
+	entPlayer->sprite = playerS;
+	entPlayer->position = vector2d(100, 100);
+	entPlayer->frame = (int)(mf);
 
     /*main game loop*/
     while(!done)
@@ -68,11 +92,9 @@ int main(int argc, char * argv[])
         /*update things here*/
         SDL_GetMouseState(&mx,&my);
 		
-		in += 1;
         mf+=0.1;
 
         if (mf >= 16.0)mf = 0;
-		if(in == 4) in = 0;
 
 		entity_update_all();
 		        
@@ -92,39 +114,21 @@ int main(int argc, char * argv[])
                 &mouseColor,
                 (int)mf);
 
-			//Create new ent
-	        ent = entity_new();
-
-			//choose sprite for entity
-			if(in == 0) ent->sprite = bug1;
-			else if(in == 1) ent->sprite = bug2;
-			else if(in == 2) ent->sprite = ship1;
-			else if (in == 3)ent->sprite = ship2;
 			
-			//initialize attributes of entity
-			ent->position = vector2d(rand() % 1000, rand() % 1000);
-			ent->velocity = vector2d(rand() % 20, rand() % 2);
-			ent->scale = NULL;
-			ent->scaleCenter = NULL;
-			ent->rotation = NULL;
-			ent->flip = NULL;
-			ent->colorShift = NULL;
-			ent->frame = (int)mf;
-			
-		
+			//entPlayer->frame = (int)mf;
 			entity_draw_all();
-
-			//Deletes all entities 
-			if(mf >= 15.0)
-			{
-				entity_clear_all();
-			}
 			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 
 		if (keys[SDL_SCANCODE_ESCAPE])done = 1; // exit condition
         slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
     }
+
+	//Close game controller
+    SDL_JoystickClose(controller);
+    controller = NULL;
+
+
     slog("---==== END ====---");
     return 0;
 }

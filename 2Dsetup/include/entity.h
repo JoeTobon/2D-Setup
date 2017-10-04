@@ -32,6 +32,7 @@ typedef struct Entity_S
 	int health;								 //keeps track of entity's health
 
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states
+	void (*think)(struct Entity_S *self);
 
 }Entity;
 

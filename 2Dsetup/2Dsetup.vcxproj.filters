@@ -42,6 +42,9 @@
     <ClInclude Include="include\game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game.c">

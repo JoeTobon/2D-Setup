@@ -93,6 +93,7 @@ Entity *entity_new()
 			entity_manager.entList[i].inuse = 1; //Set ref count to 1. Address is now in use
 
 			//Initialize various default attributes of entity here
+			entity_manager.entList[i].type = -1;
 
 			return &entity_manager.entList[i];		  //Return address of index in array
 		}
@@ -105,6 +106,18 @@ Entity *entity_new()
 
 void entity_update(Entity *entity)
 {
+	const Uint8 *keys;
+	
+	//Event handler
+    SDL_Event e;
+
+	//dead zone for controller
+	const int DEAD_ZONE = 8000;
+
+    //Normalized direction
+    int xDir = 0;
+    int yDir = 0;
+
 	if(!entity)
 	{
 		return;
@@ -115,10 +128,70 @@ void entity_update(Entity *entity)
 		return;
 	}
 
-	//make move randomly
-	vector2d_add(entity->position, entity->position, entity->velocity);
-}
+	//used to make player move
+	if(entity->type == player)
+	{
+		//movement with keys
+		keys = SDL_GetKeyboardState(NULL);
 
+		if(keys[SDL_SCANCODE_D])
+		{
+			entity->position.x += 10;
+		}
+		if(keys[SDL_SCANCODE_A])
+		{
+			entity->position.x -= 10;
+		}
+		if(keys[SDL_SCANCODE_W])
+		{
+			entity->position.y -= 10;
+		}
+		if(keys[SDL_SCANCODE_S])
+		{
+			entity->position.y += 10;
+		}
+
+		//Handle events on queue
+        while( SDL_PollEvent( &e ) != 0 )
+        {	
+            if( e.type == SDL_JOYAXISMOTION )
+            {
+				//Motion on controller 0
+                if( e.jaxis.which == 0 )
+                {                        
+                     //X axis motion
+                     if( e.jaxis.axis == 0 )
+                     {
+						//Left of dead zone
+                        if( e.jaxis.value < -DEAD_ZONE )
+                        {
+							entity->position.x -= 10;
+                        }
+                        //Right of dead zone
+                        else if( e.jaxis.value > DEAD_ZONE )
+                        {
+							entity->position.x += 10;
+                        }
+					}
+					//Y axis motion
+					else if( e.jaxis.axis == 1 )
+					{
+						//Below of dead zone
+						if( e.jaxis.value < -DEAD_ZONE )
+						{
+						   entity->position.y -= 10;
+						}
+						//Above of dead zone
+						else if( e.jaxis.value > DEAD_ZONE )
+						{
+							entity->position.y += 10;
+						}
+					 }
+			    }
+		     }
+	     }
+	}
+}
 
 void entity_update_all()
 {
