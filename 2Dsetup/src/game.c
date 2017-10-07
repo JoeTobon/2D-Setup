@@ -4,6 +4,7 @@
 #include "entity.h"
 #include "simple_logger.h"
 #include "game.h"
+#include "player.h"
 
 int main(int argc, char * argv[])
 {
@@ -23,7 +24,7 @@ int main(int argc, char * argv[])
     Vector4D mouseColor = {255,100,255,200};
 
 	//Game Controller 1 handler
-	SDL_Joystick *controller = NULL;
+	SDL_GameController *controller = NULL;
 
     /*program initializtion*/
     init_logger("gf2d.log");
@@ -50,16 +51,16 @@ int main(int argc, char * argv[])
 	//Check for joysticks
     if( SDL_NumJoysticks() < 1 )
     {
-		slog( "Warning: No joysticks connected!" );
+		slog( "No controllers connected!" );
     }
     else
     {
 		//Load joystick
-        controller = SDL_JoystickOpen( 0 );
+		controller = SDL_GameControllerOpen(0);
             
 		if(controller == NULL)
         {
-			slog( "Warning: Unable to open game controller! SDL Error: %s\n", SDL_GetError() );
+			slog( "Unable to open controller! SDL Error: %s\n", SDL_GetError() );
         }
 		else
 		{
@@ -80,6 +81,7 @@ int main(int argc, char * argv[])
 	
 	entPlayer = entity_new();
 	entPlayer->type = player;
+	entPlayer->update = &player_update;
 	entPlayer->sprite = playerS;
 	entPlayer->position = vector2d(100, 100);
 	entPlayer->frame = (int)(mf);
@@ -125,7 +127,7 @@ int main(int argc, char * argv[])
     }
 
 	//Close game controller
-    SDL_JoystickClose(controller);
+	SDL_GameControllerClose(controller);
     controller = NULL;
 
 

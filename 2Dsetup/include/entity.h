@@ -1,3 +1,6 @@
+#ifndef __entity_h__
+#define __entity_h__
+
 #include <SDL.h>
 #include "gf2d_sprite.h"
 #include "gf2d_types.h"
@@ -5,7 +8,7 @@
 #include "gf2d_text.h"
 
 //Used to identity what type of entity is being used
-typedef enum 
+typedef enum
 {
 	player,
 	enemy,				//specify enemies, weapons, and projectiles as game is developed more
@@ -69,12 +72,6 @@ void entity_delete(Entity *entity);
 void entity_clear_all();
 
 /**
- * @brief  updates the entity
- * @param  
- */
-void entity_update();
-
-/**
  * @brief  updates all the entity
  * @param  
  */
@@ -91,3 +88,4 @@ void entity_draw(Entity *entity);
  */
 void entity_draw_all();
 
+#endif
