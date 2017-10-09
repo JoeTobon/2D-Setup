@@ -16,6 +16,8 @@ int main(int argc, char * argv[])
 
 	//Used for Entity assignment
 	Entity *entPlayer;
+	Entity *enemyEnt;
+	Sprite *bug;
 	Sprite *playerS;
 
     int mx,my;
@@ -75,6 +77,7 @@ int main(int argc, char * argv[])
 	//Load all sprites in system
     sprite = gf2d_sprite_load_image("images/backgrounds/bg_flat.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
+	bug = gf2d_sprite_load_all("images/space_bug.png",128,128,16);
 	
 	//Load player sprite and define player entity (temp)
 	playerS = gf2d_sprite_load_image("images/idle/0000.png");
@@ -85,6 +88,13 @@ int main(int argc, char * argv[])
 	entPlayer->sprite = playerS;
 	entPlayer->position = vector2d(100, 100);
 	entPlayer->frame = (int)(mf);
+
+
+	enemyEnt = entity_new();
+	enemyEnt->type = enemy;
+	enemyEnt->sprite = bug;
+	enemyEnt->position = vector2d(0, 0);
+	enemyEnt->frame = (int)(mf);
 
     /*main game loop*/
     while(!done)
@@ -117,7 +127,7 @@ int main(int argc, char * argv[])
                 (int)mf);
 
 			
-			//entPlayer->frame = (int)mf;
+			enemyEnt->frame = (int)mf;
 			entity_draw_all();
 			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame

@@ -11,7 +11,7 @@
 typedef enum
 {
 	player,
-	enemy,				//specify enemies, weapons, and projectiles as game is developed more
+	enemy,									 //specify enemies, weapons, and projectiles as game is developed more
 	projectile,
 	weapon
 }EntityType;

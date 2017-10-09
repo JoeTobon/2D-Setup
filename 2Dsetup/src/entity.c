@@ -93,7 +93,7 @@ Entity *entity_new()
 			entity_manager.entList[i].inuse = 1; //Set ref count to 1. Address is now in use
 
 			//Initialize various default attributes of entity here
-			//entity_manager.entList[i].type = -1;
+			entity_manager.entList[i].type = -1;
 
 
 			return &entity_manager.entList[i];		  //Return address of index in array
