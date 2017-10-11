@@ -5,6 +5,7 @@
 #include "simple_logger.h"
 #include "game.h"
 #include "player.h"
+#include "audio.h"
 
 int main(int argc, char * argv[])
 {
@@ -44,6 +45,9 @@ int main(int argc, char * argv[])
 
 	//entity system initialized
 	entity_system_init(1024);
+
+	//audio system initialized
+	audio_system_init(256,16,4,1,1,1);
 
     SDL_ShowCursor(SDL_DISABLE);
 

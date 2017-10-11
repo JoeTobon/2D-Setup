@@ -7,10 +7,16 @@
 #include "simple_logger.h"
 #include "gf2d_types.h"
 
+/**
+ * @struct Sound
+ * @brief  struct used to define sound effect (Mix_chunk)
+ */
 typedef struct Sound_S
 {
+	Mix_Chunk *chunk;
+
 	Bool inuse;				//Lets the resource manager know if the sound is still needed
-	char filename[100];		//The filename the sound will be taken from
+	char *filename;		//The filename the sound will be taken from
 	int channel;			//The channel this sound is played on
 	int loop;				//Number of times the sound will be played
 	float volume;			//How loud the sound will play
@@ -26,7 +32,34 @@ typedef struct Sound_S
  * @param enableOgg if true, initializes audio system with ogg vorbis support, if available
  */
 
-void gf2d_audio_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, Uint32 maxMusic, Uint8  enableMP3, Uint8  enableOgg);
+void audio_system_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, Uint32 maxMusic, Uint8  enableMP3, Uint8  enableOgg);
+
+/**
+ * @brief Frees a sound from the audio system
+ * @param A pointer to the sound that one wants to free.
+ */
+void sound_free(Sound *sound);
+
+/**
+ * @brief Plays a sound from the audio system
+ * @param A pointer to the sound that one wants to free.
+ */
+void sound_play(Sound *sound);
+
+/**
+ * @brief  intializes a sound and puts it into the sound list
+ * @param  filename- the name of the file for the sound
+ * @param  loop- the number of times the sound will play
+ * @param  channel- the channel the sound will play on
+ * @return
+ */
+Sound *sound_new(char *fileName, int loop, int channel);
+
+/**
+ * @brief deletes all loaded sounds from memory
+ * does not close the entity system
+ */
+void sound_clear_all();
 
 #endif
 

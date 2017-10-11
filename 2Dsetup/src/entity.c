@@ -15,7 +15,7 @@ void entity_close()
 {
 	if (entity_manager.entList != NULL)
     {
-		entity_clear_all;
+		entity_clear_all();
         free(entity_manager.entList);
     }
 
@@ -26,7 +26,7 @@ void entity_close()
 
 void entity_system_init(Uint32 maxNum)
 {
-	if(maxNum == 0)
+	if(maxNum <= 0)
 	{
 		slog("cannot intialize an entity manager for zero entities!");
         return;
@@ -151,4 +151,9 @@ void entity_draw_all()
 
 		entity_draw(&entity_manager.entList[i]);
 	}
+}
+
+void entity_collsion(Entity ent1, Entity ent2)
+{
+	
 }

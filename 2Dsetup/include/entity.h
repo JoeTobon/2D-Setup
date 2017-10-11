@@ -31,6 +31,8 @@ typedef struct Entity_S
 	Vector4D *colorShift;
 	Uint32	 frame;
 	
+	SDL_Rect boundingBox;
+
 	Vector2D velocity;						 //how fast the enity is moving in a given direction
 	int health;								 //keeps track of entity's health
 
@@ -87,5 +89,12 @@ void entity_draw(Entity *entity);
  * @brief  draws all entities in use to the screen
  */
 void entity_draw_all();
+
+/**
+ * @brief detects whether or not collsion occurs between two entities
+ * @param ent1- first entity 
+ * @param ent2- second entity
+ */
+Bool entity_collsion(Entity *ent1, Entity *ent2);
 
 #endif

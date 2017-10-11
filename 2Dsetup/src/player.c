@@ -49,7 +49,7 @@ void player_save(Entity *player, char *filename)
 		return;
 	}
 
-	//Make sure the user can't save an non-player entity to a player file
+	//Make sure the user can't save a non-player entity to a player file
 	if(player->type != player)
 	{
 		slog("Entity is not a player. Can't save to player file.");
