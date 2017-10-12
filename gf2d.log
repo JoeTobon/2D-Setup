@@ -416,3 +416,1320 @@ c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:2
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:34: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:52: failed to initialize some audio support: Failed loading libvorbisfile-3.dll: The specified module could not be found.
+
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:60: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 0.934579 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 45.454544 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:140: Rendering at 30.303030 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:148: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:52: failed to initialize some audio support: Failed loading libvorbisfile-3.dll: The specified module could not be found.
+
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 0.678426 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:52: failed to initialize some audio support: Failed loading libvorbisfile-3.dll: The specified module could not be found.
+
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 0.710732 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 1.102536 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:135: error: out of addresses for sounds
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:135: error: out of addresses for sounds
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 1.068376 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 1.021450 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 25.641026 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 1.014199 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 0.860585 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 55.555557 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:79: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 1.067236 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:27: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:84: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 1.103753 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 38.461540 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:32: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:35: ---==== BEGIN ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:132: graphics initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:44: sprite system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:50: entity system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:85: audio system initialized
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:61: No controllers connected!
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 1.137656 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 55.555557 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:145: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:153: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:32: Audio system is closed.
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:24: entity system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c:163: graphics closed

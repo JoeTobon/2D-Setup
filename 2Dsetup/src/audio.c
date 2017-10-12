@@ -8,21 +8,26 @@
 //Used to manage all the sounds in the game
 typedef struct 
 {
+	//sound list
 	Uint32 maxSounds;
 	Sound *soundList;
-}SoundManager;
 
-static SoundManager sound_manager = {0};
+	//music list
+	Uint32 maxMusic;
+	Music *musicList;
+}AudioManager;
+
+static AudioManager audio_manager = {0};
 
 void audio_system_close()
 {
-	if (sound_manager.soundList != NULL)
+	if (audio_manager.soundList != NULL)
     {
 		sound_clear_all();
-        free(sound_manager.soundList);
+        free(audio_manager.soundList);
     }
 
-	memset(&sound_manager, 0, sizeof(SoundManager));
+	memset(&audio_manager, 0, sizeof(AudioManager));
 	
 	slog("Audio system is closed.");
 }
@@ -47,9 +52,9 @@ void audio_system_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, 
         flags |= MIX_INIT_OGG;
     }
 
-    if (!(Mix_Init(flags) & flags))
+    //if (!(Mix_Init(flags) & flags))
     {
-        slog("failed to initialize some audio support: %s",SDL_GetError());
+     //   slog("failed to initialize some audio support: %s",SDL_GetError());
     }
 
 	//Initializes list for sounds
@@ -59,24 +64,58 @@ void audio_system_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, 
 		return;
 	}
 
-	memset(&sound_manager, 0, sizeof(SoundManager));
-	sound_manager.soundList = (Sound *)malloc(sizeof(Sound)*maxSounds);
+	//initialize soundList
+	memset(&audio_manager, 0, sizeof(AudioManager));
+	audio_manager.soundList = (Sound *)malloc(sizeof(Sound)*maxSounds);
 
-	if(!sound_manager.soundList)
+	if(!audio_manager.soundList)
 	{
 		slog("Failed to allocate sound list");
 		audio_system_close();
 		return;
 	}
 
-	memset(sound_manager.soundList, 0, sizeof(Sound)*maxSounds);
-    sound_manager.maxSounds = maxSounds;
+	memset(audio_manager.soundList, 0, sizeof(Sound)*maxSounds);
+    audio_manager.maxSounds = maxSounds;
 
 	atexit(audio_system_close); 
 	atexit(Mix_CloseAudio);
 	atexit(Mix_Quit); 
 
 	slog("audio system initialized");
+}
+
+Sound *sound_new(char *filename, int loop, int channel)
+{
+	int i;
+
+	if(!filename)
+	{
+		return;
+	}
+
+	//search through the sound list for an unused address
+	for(i = 0; i < audio_manager.maxSounds; i++)
+	{
+		if(audio_manager.soundList[i].inuse == 0)
+		{
+			sound_free(&audio_manager.soundList[i]); //cleans up old data
+			audio_manager.soundList[i].inuse = 1; //Set ref count to 1. Address is now in use
+
+			//Initialize various attributes of audio here
+			audio_manager.soundList[i].filename = filename;
+			audio_manager.soundList[i].loop = loop;
+			audio_manager.soundList[i].channel = channel;
+
+			audio_manager.soundList[i].chunk = Mix_LoadWAV(audio_manager.soundList[i].filename);
+			
+			return &audio_manager.soundList[i];
+		}
+	}
+
+	slog("error: out of addresses for sounds");
+	exit(0);
+	return NULL;
 }
 
 void sound_free(Sound *sound)
@@ -87,16 +126,9 @@ void sound_free(Sound *sound)
 	}
 
 	sound->inuse = 0;
-	memset(sound,0,sizeof(Sound));//clean up all other data
-}
-void sound_clear_all()
-{
-	int i;
 
-	for(i = 0; i < sound_manager.maxSounds; i++)
-	{
-		sound_free(&sound_manager.soundList[i]);
-	}
+	Mix_FreeChunk(sound->chunk);
+	memset(sound,0,sizeof(Sound));//clean up all other data
 }
 
 void sound_play(Sound *sound)
@@ -109,30 +141,12 @@ void sound_play(Sound *sound)
 	Mix_PlayChannel(sound->channel, sound->chunk, sound->loop);
 }
 
-Sound *sound_new(char filename[100], int loop, int channel)
+void sound_clear_all()
 {
 	int i;
 
-	//search through the sound list for an unused address
-	for(i = 0; i < sound_manager.maxSounds; i++)
+	for(i = 0; i < audio_manager.maxSounds; i++)
 	{
-		if(sound_manager.soundList[i].inuse == 0)
-		{
-			sound_free(&sound_manager.soundList[i]); //cleans up old data
-			sound_manager.soundList[i].inuse = 1; //Set ref count to 1. Address is now in use
-
-			//Initialize various attributes of audio here
-			strcpy(sound_manager.soundList[i].filename, filename);
-			sound_manager.soundList[i].loop = loop;
-			sound_manager.soundList[i].channel = channel;
-
-			sound_manager.soundList[i].chunk = Mix_LoadWAV(sound_manager.soundList[i].filename);
-			
-			return &sound_manager.soundList[i];
-		}
+		sound_free(&audio_manager.soundList[i]);
 	}
-
-	slog("error: out of addresses for sounds");
-	exit(0);
-	return NULL;
 }

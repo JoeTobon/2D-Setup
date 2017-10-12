@@ -23,6 +23,19 @@ typedef struct Sound_S
 }Sound;
 
 /**
+ * @struct Sound
+ * @brief  struct used to define sound effect (Mix_chunk)
+ */
+typedef struct Music_S
+{
+
+	Bool inuse;
+	char *filename;
+
+
+}Music;
+
+/**
  * @brief initializes the audio system based on the passed in parameters
  * @param maxSounds the maximum number of sounds that can be loaded into memory at once
  * @param channels the nrumber of allocated audio channels (excluding music channel)
@@ -33,6 +46,15 @@ typedef struct Sound_S
  */
 
 void audio_system_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, Uint32 maxMusic, Uint8  enableMP3, Uint8  enableOgg);
+
+/**
+ * @brief  intializes a sound and puts it into the sound list
+ * @param  filename- the name of the file for the sound
+ * @param  loop- the number of times the sound will play
+ * @param  channel- the channel the sound will play on
+ * @return pointer to a sound of null on error
+ */
+Sound *sound_new(char *fileName, int loop, int channel);
 
 /**
  * @brief Frees a sound from the audio system
@@ -47,19 +69,35 @@ void sound_free(Sound *sound);
 void sound_play(Sound *sound);
 
 /**
- * @brief  intializes a sound and puts it into the sound list
- * @param  filename- the name of the file for the sound
- * @param  loop- the number of times the sound will play
- * @param  channel- the channel the sound will play on
- * @return
- */
-Sound *sound_new(char *fileName, int loop, int channel);
-
-/**
  * @brief deletes all loaded sounds from memory
  * does not close the entity system
  */
 void sound_clear_all();
+
+/**
+ * @brief  intializes a music and puts it into the music list
+ * @param  
+ * @return address to music or null on error
+ */
+Music *music_new();
+
+/**
+ * @brief  deletes music from the music list
+ * @param  the music to be deleted
+ */
+void music_free(Music *music);
+
+/**
+ * @brief  plays music from the music list
+ * @param  the music to be played
+ */
+void music_play(Music *music);
+
+/**
+ * @brief deletes all loaded music from memory
+ * does not close the entity system
+ */
+void music_clear_all();
 
 #endif
 

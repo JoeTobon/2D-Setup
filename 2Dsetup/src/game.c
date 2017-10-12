@@ -14,6 +14,7 @@ int main(int argc, char * argv[])
     const Uint8 * keys;
     Sprite *sprite;
 	int i, in;
+	Sound *test;
 
 	//Used for Entity assignment
 	Entity *entPlayer;
@@ -99,6 +100,10 @@ int main(int argc, char * argv[])
 	enemyEnt->sprite = bug;
 	enemyEnt->position = vector2d(0, 0);
 	enemyEnt->frame = (int)(mf);
+
+	//test sound
+	test = sound_new("audio/swish_2.wav", 1, 1);
+	sound_play(test);
 
     /*main game loop*/
     while(!done)

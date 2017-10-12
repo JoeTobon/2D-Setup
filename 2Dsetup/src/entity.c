@@ -153,7 +153,26 @@ void entity_draw_all()
 	}
 }
 
-void entity_collsion(Entity ent1, Entity ent2)
+Bool entity_collsion(Entity *ent1, Entity *ent2)
 {
-	
+	if((ent1->boundingBox.x + ent1->boundingBox.w) < ent2->boundingBox.x)
+	{
+		return false;
+	}
+	else if((ent2->boundingBox.x + ent2->boundingBox.w) < ent1->boundingBox.x)
+	{
+		return false;
+	}
+	else if((ent1->boundingBox.y + ent1->boundingBox.h) < ent2->boundingBox.y)
+	{
+		return false;
+	}
+	else if((ent2->boundingBox.y + ent2->boundingBox.h) < ent1->boundingBox.y)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
 }
