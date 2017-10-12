@@ -19,16 +19,20 @@ typedef struct
 
 static AudioManager audio_manager = {0};
 
+//MANAGER
 void audio_system_close()
 {
 	if (audio_manager.soundList != NULL)
     {
 		sound_clear_all();
         free(audio_manager.soundList);
+
+		music_clear_all();
+		free(audio_manager.musicList);
     }
 
 	memset(&audio_manager, 0, sizeof(AudioManager));
-	
+
 	slog("Audio system is closed.");
 }
 
@@ -64,19 +68,23 @@ void audio_system_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, 
 		return;
 	}
 
-	//initialize soundList
+	//initialize soundList and musicList
 	memset(&audio_manager, 0, sizeof(AudioManager));
 	audio_manager.soundList = (Sound *)malloc(sizeof(Sound)*maxSounds);
+	audio_manager.musicList = (Music *)malloc(sizeof(Sound) *maxSounds);
 
-	if(!audio_manager.soundList)
+	if(!audio_manager.soundList || !audio_manager.musicList)
 	{
-		slog("Failed to allocate sound list");
+		slog("Failed to allocate sound and or music list");
 		audio_system_close();
 		return;
 	}
 
 	memset(audio_manager.soundList, 0, sizeof(Sound)*maxSounds);
     audio_manager.maxSounds = maxSounds;
+
+	memset(audio_manager.musicList, 0, sizeof(Music) *maxMusic);
+	audio_manager.maxMusic = maxMusic;
 
 	atexit(audio_system_close); 
 	atexit(Mix_CloseAudio);
@@ -85,6 +93,7 @@ void audio_system_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, 
 	slog("audio system initialized");
 }
 
+//SOUND
 Sound *sound_new(char *filename, int loop, int channel)
 {
 	int i;
@@ -148,5 +157,70 @@ void sound_clear_all()
 	for(i = 0; i < audio_manager.maxSounds; i++)
 	{
 		sound_free(&audio_manager.soundList[i]);
+	}
+}
+
+//MUSIC
+Music *music_new(char *filename, int loops)
+{
+	int i;
+
+	if(!filename)
+	{
+		return;
+	}
+
+	for (int i = 0; i < audio_manager.maxMusic; i++)
+	{
+		if(audio_manager.musicList[i].inuse == 0)
+		{
+			music_free(&audio_manager.musicList[i]); //cleans up old data
+
+			//initialize various attributes for music
+			audio_manager.musicList[i].inuse = 1;
+			audio_manager.musicList[i].loop = loops;
+			audio_manager.musicList[i].filename = filename;
+
+			audio_manager.musicList[i].music = Mix_LoadMUS(audio_manager.musicList[i].filename);
+
+			return &audio_manager.musicList[i];
+		}
+	}
+
+	slog("Out of addresses for music");
+	exit(0);
+	return NULL;
+}
+
+void music_free(Music *music)
+{
+	if(! music)
+	{
+		return;
+	}
+
+	music->inuse = 0;
+	Mix_FreeMusic(music->music);
+
+	memset(music,0,sizeof(Music));//clean up all other data
+}
+
+void music_play(Music *music)
+{
+	if(!music)
+	{
+		return;
+	}
+
+	Mix_PlayMusic(music->music, music->loop);
+}
+
+void music_clear_all()
+{
+	int i;
+
+	for(i = 0; i < audio_manager.maxMusic; i++)
+	{
+		music_free(&audio_manager.musicList[i]);
 	}
 }

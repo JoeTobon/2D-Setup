@@ -28,10 +28,11 @@ typedef struct Sound_S
  */
 typedef struct Music_S
 {
+	Mix_Music *music;
 
 	Bool inuse;
 	char *filename;
-
+	int loop;
 
 }Music;
 
@@ -79,7 +80,7 @@ void sound_clear_all();
  * @param  
  * @return address to music or null on error
  */
-Music *music_new();
+Music *music_new(char *fileName, int loops);
 
 /**
  * @brief  deletes music from the music list

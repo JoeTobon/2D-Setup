@@ -100,6 +100,10 @@ int main(int argc, char * argv[])
 	enemyEnt->sprite = bug;
 	enemyEnt->position = vector2d(0, 0);
 	enemyEnt->frame = (int)(mf);
+	enemyEnt->boundingBox.x = 0;
+	enemyEnt->boundingBox.y = 10;
+	enemyEnt->boundingBox.w = 50;
+	enemyEnt->boundingBox.h = 50;
 
 	//test sound
 	test = sound_new("audio/swish_2.wav", 1, 1);
@@ -135,6 +139,15 @@ int main(int argc, char * argv[])
                 &mouseColor,
                 (int)mf);
 
+			entPlayer->boundingBox.x = entPlayer->position.x;
+			entPlayer->boundingBox.y = entPlayer->position.y;
+			entPlayer->boundingBox.w = 24;
+			entPlayer->boundingBox.h = 24;
+
+			if(entity_collsion(entPlayer, enemyEnt) == true)
+			{
+				entity_delete(entPlayer);
+			}
 			
 			enemyEnt->frame = (int)mf;
 			entity_draw_all();
