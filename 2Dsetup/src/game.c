@@ -5,6 +5,7 @@
 #include "simple_logger.h"
 #include "game.h"
 #include "player.h"
+#include "enemy.h"
 #include "audio.h"
 
 int main(int argc, char * argv[])
@@ -14,7 +15,8 @@ int main(int argc, char * argv[])
     const Uint8 * keys;
     Sprite *sprite;
 	int i, in;
-	Sound *test;
+	Sound *testS;
+	Music *testM;
 
 	//Used for Entity assignment
 	Entity *entPlayer;
@@ -85,7 +87,7 @@ int main(int argc, char * argv[])
 	bug = gf2d_sprite_load_all("images/space_bug.png",128,128,16);
 	
 	//Load player sprite and define player entity (temp)
-	playerS = gf2d_sprite_load_image("images/idle/0000.png");
+	playerS = gf2d_sprite_load_all("images/ed210.png", 128, 128, 16);
 	
 	entPlayer = entity_new();
 	entPlayer->type = player;
@@ -97,17 +99,18 @@ int main(int argc, char * argv[])
 
 	enemyEnt = entity_new();
 	enemyEnt->type = enemy;
+	//entPlayer->update = &enemy_update;
 	enemyEnt->sprite = bug;
 	enemyEnt->position = vector2d(0, 0);
 	enemyEnt->frame = (int)(mf);
-	enemyEnt->boundingBox.x = 0;
-	enemyEnt->boundingBox.y = 10;
-	enemyEnt->boundingBox.w = 50;
-	enemyEnt->boundingBox.h = 50;
 
 	//test sound
-	test = sound_new("audio/swish_2.wav", 1, 1);
-	sound_play(test);
+	testS = sound_new("audio/swish_2.wav", 1, 1);
+	
+
+	//test music
+	testM = music_new("audio/little town.mid", 1);
+	music_play(testM);
 
     /*main game loop*/
     while(!done)
@@ -121,6 +124,8 @@ int main(int argc, char * argv[])
 
         if (mf >= 16.0)mf = 0;
 
+		enemy_approach(entPlayer, enemyEnt);
+		enemy_attack(entPlayer, enemyEnt);
 		entity_update_all();
 		        
         gf2d_graphics_clear_screen();// clears drawing buffers
@@ -139,20 +144,17 @@ int main(int argc, char * argv[])
                 &mouseColor,
                 (int)mf);
 
-			entPlayer->boundingBox.x = entPlayer->position.x;
-			entPlayer->boundingBox.y = entPlayer->position.y;
-			entPlayer->boundingBox.w = 24;
-			entPlayer->boundingBox.h = 24;
-
-			if(entity_collsion(entPlayer, enemyEnt) == true)
-			{
-				entity_delete(entPlayer);
-			}
 			
+
 			enemyEnt->frame = (int)mf;
 			entity_draw_all();
 			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		if(keys[SDL_SCANCODE_SPACE])
+		{
+			sound_play(testS);
+		}
 
 		if (keys[SDL_SCANCODE_ESCAPE])done = 1; // exit condition
         slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());

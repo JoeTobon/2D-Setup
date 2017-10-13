@@ -176,3 +176,4 @@ Bool entity_collsion(Entity *ent1, Entity *ent2)
 		return true;
 	}
 }
+

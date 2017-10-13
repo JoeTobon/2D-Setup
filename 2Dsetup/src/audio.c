@@ -170,7 +170,7 @@ Music *music_new(char *filename, int loops)
 		return;
 	}
 
-	for (int i = 0; i < audio_manager.maxMusic; i++)
+	for(i = 0; i < audio_manager.maxMusic; i++)
 	{
 		if(audio_manager.musicList[i].inuse == 0)
 		{
