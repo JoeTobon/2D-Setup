@@ -136,7 +136,70 @@ void player_update(Entity *entity)
 	//updates bounding box
 	entity->boundingBox.x = entity->position.x;
 	entity->boundingBox.y = entity->position.y;
-	entity->boundingBox.w = 60;
-	entity->boundingBox.h = 60;
+	entity->boundingBox.w = 48;
+	entity->boundingBox.h = 80;
 
+}
+
+void player_attack(Entity *playerEnt, float mf)
+{
+	Sprite *weaponS;
+	const Uint8 *keys;
+	Entity *weapon;
+	
+	//dead zone for controller
+	const int DEAD_ZONE = 8000;
+
+	//Game Controller 1 handler
+	SDL_GameController *controller;
+	weaponS = gf2d_sprite_load_image("images/Weapons/sword2.png");
+
+	if(playerEnt->type == player)
+	{
+		//attacking with mouse
+
+
+		//attacking with controller
+		controller = SDL_GameControllerOpen(0);
+
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) < -DEAD_ZONE)
+		{
+			weapon = entity_new();
+			weapon->sprite = weaponS;
+
+			weapon->position.x = playerEnt->position.x - 10;
+			weapon->position.y = playerEnt->position.y;
+			
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE)
+		{
+			weapon = entity_new();
+			weapon->sprite = weaponS;
+
+			weapon->position.x = playerEnt->position.x + 80;
+			weapon->position.y = playerEnt->position.y;
+
+			//Delete after certain amount of time
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE)
+		{
+			weapon = entity_new();
+			weapon->sprite = weaponS;
+
+			weapon->position.x = playerEnt->position.x + 30;
+			weapon->position.y = playerEnt->position.y + 100;
+
+			//Delete after certain amount of time
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE)
+		{
+			weapon = entity_new();
+			weapon->sprite = weaponS;
+
+			weapon->position.x = playerEnt->position.x + 30;
+			weapon->position.y = playerEnt->position.y - 100;
+
+			//Delete after certain amount of time
+		}
+	}
 }

@@ -27,10 +27,15 @@ int main(int argc, char * argv[])
     int mx,my;
     float mf = 0;
     Sprite *mouse;
+	Vector4D *color;
     Vector4D mouseColor = {255,100,255,200};
+	Vector4D skeletonC = {255, 0, 0,200};
 
 	//Game Controller 1 handler
 	SDL_GameController *controller = NULL;
+
+
+	color = &skeletonC;
 
     /*program initializtion*/
     init_logger("gf2d.log");
@@ -38,9 +43,9 @@ int main(int argc, char * argv[])
     gf2d_graphics_initialize(
         "gf2d",
         1200,
-        720,
+        700,
         1200,
-        720,
+        700,
         vector4d(0,0,0,255),
         0);
     gf2d_graphics_set_frame_delay(16);
@@ -82,18 +87,18 @@ int main(int argc, char * argv[])
 	
 
 	//Load all sprites in system
-    sprite = gf2d_sprite_load_image("images/backgrounds/bg_flat.png");
+    sprite = gf2d_sprite_load_image("images/backgrounds/newBackground.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
-	bug = gf2d_sprite_load_all("images/space_bug.png",128,128,16);
+	bug = gf2d_sprite_load_image("images/Enemies/skeleton.png");
 	
 	//Load player sprite and define player entity (temp)
-	playerS = gf2d_sprite_load_all("images/ed210.png", 128, 128, 16);
+	playerS = gf2d_sprite_load_all("images/Soldier/player.png", 128, 128, 16);
 	
 	entPlayer = entity_new();
 	entPlayer->type = player;
 	entPlayer->update = &player_update;
 	entPlayer->sprite = playerS;
-	entPlayer->position = vector2d(100, 100);
+	entPlayer->position = vector2d(200, 200);
 	entPlayer->frame = (int)(mf);
 
 
@@ -103,6 +108,7 @@ int main(int argc, char * argv[])
 	enemyEnt->sprite = bug;
 	enemyEnt->position = vector2d(0, 0);
 	enemyEnt->frame = (int)(mf);
+	enemyEnt->colorShift = color;
 
 	//test sound
 	testS = sound_new("audio/swish_2.wav", 1, 1);
@@ -125,7 +131,8 @@ int main(int argc, char * argv[])
         if (mf >= 16.0)mf = 0;
 
 		enemy_approach(entPlayer, enemyEnt);
-		enemy_attack(entPlayer, enemyEnt);
+		//enemy_attack(entPlayer, enemyEnt);
+		player_attack(entPlayer, mf);
 		entity_update_all();
 		        
         gf2d_graphics_clear_screen();// clears drawing buffers
@@ -144,9 +151,6 @@ int main(int argc, char * argv[])
                 &mouseColor,
                 (int)mf);
 
-			
-
-			enemyEnt->frame = (int)mf;
 			entity_draw_all();
 			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame

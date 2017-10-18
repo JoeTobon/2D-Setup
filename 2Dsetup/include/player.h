@@ -23,4 +23,6 @@ void player_save(Entity *player, char *filename);
  */
 void player_update(Entity *entity);
 
+void player_attack(Entity *player, float mf);
+
 #endif
