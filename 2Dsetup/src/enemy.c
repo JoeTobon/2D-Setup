@@ -5,7 +5,7 @@
 #include "entity.h"
 
 
-
+//For skeleton
 void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 {
 	float deltaX;
@@ -62,9 +62,10 @@ void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 	enemyEnt->boundingBox.x = enemyEnt->position.x;
 	enemyEnt->boundingBox.y = enemyEnt->position.y;
 	enemyEnt->boundingBox.w = 60;
-	enemyEnt->boundingBox.h = 134;
+	enemyEnt->boundingBox.h = 100;
 }
 
+//For skeleton
 void enemy_attack(Entity *playerEnt, Entity *enemyEnt)
 {
 	 Vector4D attackColor = {255, 255, 100, 200};
@@ -73,9 +74,15 @@ void enemy_attack(Entity *playerEnt, Entity *enemyEnt)
 	 Vector4D *pointer = &attackColor;
 	 sprite = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 
+	if(!playerEnt || !enemyEnt || enemyEnt->spawned == 0)
+	{
+		return;
+	}
+
 	if(entity_collsion(enemyEnt, playerEnt) == true)
 	{
-		//enemyEnt->sprite = sprite;
-		entity_delete(playerEnt);
+			//enemyEnt->sprite = sprite;
+			entity_delete(playerEnt);
 	}
+	
 }

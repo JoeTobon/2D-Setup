@@ -36,6 +36,9 @@ typedef struct Entity_S
 	Vector2D velocity;						 //how fast the enity is moving in a given direction
 	int health;								 //keeps track of entity's health
 
+	float spawnTime;
+	Bool spawned;
+
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states
 	void (*think)(struct Entity_S *self);
 

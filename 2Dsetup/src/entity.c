@@ -94,6 +94,7 @@ Entity *entity_new()
 
 			//Initialize various default attributes of entity here
 			entity_manager.entList[i].type = -1;
+			entity_manager.entList[i].spawnTime = -1;
 
 
 			return &entity_manager.entList[i];		  //Return address of index in array

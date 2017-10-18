@@ -136,16 +136,15 @@ void player_update(Entity *entity)
 	//updates bounding box
 	entity->boundingBox.x = entity->position.x;
 	entity->boundingBox.y = entity->position.y;
-	entity->boundingBox.w = 48;
-	entity->boundingBox.h = 80;
+	entity->boundingBox.w = 50;
+	entity->boundingBox.h = 100;
 
 }
 
-void player_attack(Entity *playerEnt, float mf)
+void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 {
 	Sprite *weaponS;
 	const Uint8 *keys;
-	Entity *weapon;
 	
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -154,52 +153,86 @@ void player_attack(Entity *playerEnt, float mf)
 	SDL_GameController *controller;
 	weaponS = gf2d_sprite_load_image("images/Weapons/sword2.png");
 
+	if(!playerEnt || !enemyEnt || !weaponEnt)
+	{
+		return;
+	}
+
+	//Delay between attacks
+	if(weaponEnt->spawnTime >= 0)
+	{
+		weaponEnt->spawnTime += .1;
+	}
+
+	if(weaponEnt->spawnTime >= 6)
+	{
+		weaponEnt->sprite = NULL;
+		weaponEnt->spawned = 0;
+		weaponEnt->spawnTime = -1;
+	}
+
+	//Attacking
 	if(playerEnt->type == player)
 	{
-		//attacking with mouse
-
-
 		//attacking with controller
 		controller = SDL_GameControllerOpen(0);
 
-		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) < -DEAD_ZONE)
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) < -DEAD_ZONE && weaponEnt->spawned != 1)
 		{
-			weapon = entity_new();
-			weapon->sprite = weaponS;
+			weaponEnt->sprite = weaponS;
 
-			weapon->position.x = playerEnt->position.x - 10;
-			weapon->position.y = playerEnt->position.y;
-			
+			weaponEnt->position.x = playerEnt->position.x - 10;
+			weaponEnt->position.y = playerEnt->position.y;
+
+			weaponEnt->spawned = 1;
+			weaponEnt->spawnTime = 0;
+
 		}
-		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE)
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE && weaponEnt->spawned != 1)
 		{
-			weapon = entity_new();
-			weapon->sprite = weaponS;
+			weaponEnt->sprite = weaponS;
 
-			weapon->position.x = playerEnt->position.x + 80;
-			weapon->position.y = playerEnt->position.y;
+			weaponEnt->position.x = playerEnt->position.x + 80;
+			weaponEnt->position.y = playerEnt->position.y;
 
-			//Delete after certain amount of time
+			weaponEnt->spawned = 1;
+			weaponEnt->spawnTime = 0;
 		}
-		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE)
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE && weaponEnt->spawned != 1)
 		{
-			weapon = entity_new();
-			weapon->sprite = weaponS;
+			weaponEnt->sprite = weaponS;
 
-			weapon->position.x = playerEnt->position.x + 30;
-			weapon->position.y = playerEnt->position.y + 100;
+			weaponEnt->position.x = playerEnt->position.x + 30;
+			weaponEnt->position.y = playerEnt->position.y + 100;
 
-			//Delete after certain amount of time
+			weaponEnt->spawned = 1;
+			weaponEnt->spawnTime = 0;
 		}
-		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE)
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE && weaponEnt->spawned != 1)
 		{
-			weapon = entity_new();
-			weapon->sprite = weaponS;
+			weaponEnt->sprite = weaponS;
 
-			weapon->position.x = playerEnt->position.x + 30;
-			weapon->position.y = playerEnt->position.y - 100;
+			weaponEnt->position.x = playerEnt->position.x + 30;
+			weaponEnt->position.y = playerEnt->position.y - 100;
 
-			//Delete after certain amount of time
+			weaponEnt->spawned = 1;
+			weaponEnt->spawnTime = 0;
+		}
+	}
+
+	//Detect collision if weapon is spawned
+	if(weaponEnt->spawned == 1)
+	{
+		//update bounding box
+		weaponEnt->boundingBox.x = weaponEnt->position.x;
+		weaponEnt->boundingBox.y = weaponEnt->position.y;
+		weaponEnt->boundingBox.w = 30;
+		weaponEnt->boundingBox.h = 110;
+
+		//detect collision
+		if(entity_collsion(weaponEnt, enemyEnt) == true)
+		{
+			entity_delete(enemyEnt);
 		}
 	}
 }

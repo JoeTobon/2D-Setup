@@ -17,10 +17,13 @@ int main(int argc, char * argv[])
 	int i, in;
 	Sound *testS;
 	Music *testM;
+	float *counter;
+	Bool *spawned;
 
 	//Used for Entity assignment
 	Entity *entPlayer;
 	Entity *enemyEnt;
+	Entity *weaponEnt;
 	Sprite *bug;
 	Sprite *playerS;
 
@@ -36,6 +39,8 @@ int main(int argc, char * argv[])
 
 
 	color = &skeletonC;
+	counter = 0;
+	spawned = false;
 
     /*program initializtion*/
     init_logger("gf2d.log");
@@ -106,9 +111,14 @@ int main(int argc, char * argv[])
 	enemyEnt->type = enemy;
 	//entPlayer->update = &enemy_update;
 	enemyEnt->sprite = bug;
+	enemyEnt->spawned = 1;
 	enemyEnt->position = vector2d(0, 0);
 	enemyEnt->frame = (int)(mf);
 	enemyEnt->colorShift = color;
+
+	weaponEnt = entity_new();
+	weaponEnt->type = weapon;
+	weaponEnt->spawned = 0;
 
 	//test sound
 	testS = sound_new("audio/swish_2.wav", 1, 1);
@@ -131,8 +141,8 @@ int main(int argc, char * argv[])
         if (mf >= 16.0)mf = 0;
 
 		enemy_approach(entPlayer, enemyEnt);
-		//enemy_attack(entPlayer, enemyEnt);
-		player_attack(entPlayer, mf);
+		enemy_attack(entPlayer, enemyEnt);
+		player_attack(entPlayer, enemyEnt, weaponEnt);
 		entity_update_all();
 		        
         gf2d_graphics_clear_screen();// clears drawing buffers
