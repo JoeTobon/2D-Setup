@@ -1,16 +1,11 @@
-﻿Build started 10/18/2017 12:18:50 PM.
+﻿Build started 10/19/2017 3:09:50 PM.
      1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\enemy.c
-         enemy.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(22): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(37): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(38): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(42): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(50): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(51): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(62): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(63): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\game.c
+         game.c
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(166): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(17): warning C4101: 'i' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(17): warning C4101: 'in' : unreferenced local variable
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
          Debug\enemy.obj
@@ -27,4 +22,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.48
+Time Elapsed 00:00:00.51

@@ -13,12 +13,13 @@ int main(int argc, char * argv[])
     /*variable declarations*/
     int done = 0;
     const Uint8 * keys;
-    Sprite *sprite;
+    Sprite *sprite, *titleScreen;
 	int i, in;
 	Sound *testS;
 	Music *testM;
 	float *counter;
 	Bool *spawned;
+	int titleBool = 0;
 
 	//Used for Entity assignment
 	Entity *entPlayer;
@@ -48,9 +49,9 @@ int main(int argc, char * argv[])
     gf2d_graphics_initialize(
         "gf2d",
         1200,
-        700,
+        720,
         1200,
-        700,
+        720,
         vector4d(0,0,0,255),
         0);
     gf2d_graphics_set_frame_delay(16);
@@ -95,6 +96,7 @@ int main(int argc, char * argv[])
     sprite = gf2d_sprite_load_image("images/backgrounds/newBackground.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 	bug = gf2d_sprite_load_image("images/Enemies/skeleton.png");
+	titleScreen = gf2d_sprite_load_image("images/UI/titleMenu.png");
 	
 	//Load player sprite and define player entity (temp)
 	playerS = gf2d_sprite_load_all("images/Soldier/player.png", 128, 128, 16);
@@ -128,6 +130,31 @@ int main(int argc, char * argv[])
 	testM = music_new("audio/little town.mid", 1);
 	music_play(testM);
 
+	//titleScreen
+
+
+	//title screen
+	while(!titleBool)
+	{
+		SDL_PumpEvents();   // update SDL's internal event structures
+
+		gf2d_graphics_clear_screen();// clears drawing buffers
+
+			gf2d_sprite_draw_image(titleScreen,vector2d(0, 0));
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		//slog( "controller input: %i\n", SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_A));
+
+		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_A))
+		{
+			
+			titleBool = 1;
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+
     /*main game loop*/
     while(!done)
     {
@@ -148,6 +175,7 @@ int main(int argc, char * argv[])
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
+
             gf2d_sprite_draw_image(sprite,vector2d(0,0));
 
             //UI elements last
