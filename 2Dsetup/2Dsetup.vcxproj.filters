@@ -51,6 +51,9 @@
     <ClInclude Include="include\enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game.c">
@@ -81,6 +84,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\enemy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\level.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,0 +1,3 @@
+void titleScreen();
+
+void loaderScreen();

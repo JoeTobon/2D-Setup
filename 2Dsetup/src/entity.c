@@ -2,6 +2,7 @@
 #include "entity.h"
 #include "gf2d_types.h"
 #include "gf2d_sprite.h"
+#include "player.h"
 
 typedef struct
 {
@@ -175,5 +176,138 @@ Bool entity_collsion(Entity *ent1, Entity *ent2)
 	{
 		return true;
 	}
+}
+
+void entity_load(Entity *ent, char *filename)
+{
+	FILE *file;
+	char buffer[512];
+	int tempx, tempy;
+
+	tempx = 0;
+	tempy = 0;
+
+	if(!ent)
+	{
+		slog("player does not exist");
+		return;
+	}
+
+	if(!filename)
+	{
+		slog("file does not exist");
+		return;
+	}
+
+	file = fopen(filename, "r");
+
+	if (!file)
+	{
+		slog("Failed to open file (%s) for reading", filename);
+		return;
+	}
+
+	rewind(file);
+
+	//scan 
+	while(fscanf(file, "%s", buffer) != EOF)
+	{
+		if(strcmp(buffer, "type:") == 0)
+		{
+			fscanf(file, "%i", &ent->type);
+			slog("Entity type: %i", ent->type);
+			continue;
+		}
+		if(strcmp(buffer, "sprite:") == 0)
+		{
+			fscanf(file, "%s", buffer);
+
+			if(ent->type == 0)
+			{
+				ent->sprite = gf2d_sprite_load_all(buffer, 128, 128, 16);
+			}
+			else
+			{
+				ent->sprite = gf2d_sprite_load_image(buffer);
+			}
+			
+			slog("Entity sprite: %s", buffer);
+			continue;
+		}
+		if(strcmp(buffer, "update:") == 0)
+		{
+			fscanf(file, "%s", buffer);
+
+			//assign update
+			if(strcmp(buffer, "player_update") == 0)
+			{
+				ent->update = &player_update;
+				slog("Entity update is: %s", buffer);
+				continue;
+			}
+			continue;
+		}
+		if(strcmp(buffer, "spawned:") == 0)
+		{
+			fscanf(file, "%i", &ent->spawned);
+			slog("Entity spawned: %i", ent->spawned);
+			continue;
+		}
+		if(strcmp(buffer, "position:") == 0)
+		{
+			fscanf(file, "%i", &tempx);
+			fscanf(file, "%i", &tempy);
+
+			ent->position = vector2d(tempx, tempy);
+
+			slog("Entity position.x: %i", tempx);
+			slog("Entity position.y: %i", tempy);
+			continue;
+		}
+		if(strcmp(buffer, "frame:") == 0)
+		{
+			fscanf(file, "%i", &ent->frame);
+			slog("Entity frame: %i", ent->frame);
+			continue;
+		}
+
+	}
+
+	fclose(file);
+}
+
+void entity_load_all(char *filename)
+{
+	FILE *file;
+	char buffer[512];
+	char *entFile;
+	Entity *temp;			//used to initialize entity
+
+	if(!filename)
+	{
+		slog("file does not exist");
+		return;
+	}
+
+	file = fopen(filename, "r");
+	
+	if (!file)
+	{
+		slog("Failed to open file (%s) for reading", filename);
+		return;
+	}
+
+	rewind(file);
+
+	//Call file that has list of all entities
+	while(fscanf(file, "%s", buffer) != EOF)
+	{
+		entFile = buffer;
+		temp = entity_new();
+
+		entity_load(temp, entFile);
+	}
+
+	fclose(file);
 }
 

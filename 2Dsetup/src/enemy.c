@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include "simple_logger.h"
 #include "entity.h"
+#include "enemy.h"
+#include "gf2d_sprite.h"
 
 
 //For skeleton
@@ -68,12 +70,6 @@ void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 //For skeleton
 void enemy_attack(Entity *playerEnt, Entity *enemyEnt)
 {
-	 Vector4D attackColor = {255, 255, 100, 200};
-	 Sprite *sprite;
-
-	 Vector4D *pointer = &attackColor;
-	 sprite = gf2d_sprite_load_all("images/pointer.png",32,32,16);
-
 	if(!playerEnt || !enemyEnt || enemyEnt->spawned == 0)
 	{
 		return;
@@ -81,8 +77,8 @@ void enemy_attack(Entity *playerEnt, Entity *enemyEnt)
 
 	if(entity_collsion(enemyEnt, playerEnt) == true)
 	{
-			//enemyEnt->sprite = sprite;
 			entity_delete(playerEnt);
 	}
-	
 }
+
+

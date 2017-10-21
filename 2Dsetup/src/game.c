@@ -13,35 +13,24 @@ int main(int argc, char * argv[])
     /*variable declarations*/
     int done = 0;
     const Uint8 * keys;
-    Sprite *sprite, *titleScreen;
+    Sprite *sprite;
 	int i, in;
 	Sound *testS;
 	Music *testM;
-	float *counter;
-	Bool *spawned;
-	int titleBool = 0;
-
+	
 	//Used for Entity assignment
 	Entity *entPlayer;
 	Entity *enemyEnt;
 	Entity *weaponEnt;
-	Sprite *bug;
-	Sprite *playerS;
 
     int mx,my;
     float mf = 0;
     Sprite *mouse;
-	Vector4D *color;
+	
     Vector4D mouseColor = {255,100,255,200};
-	Vector4D skeletonC = {255, 0, 0,200};
 
 	//Game Controller 1 handler
 	SDL_GameController *controller = NULL;
-
-
-	color = &skeletonC;
-	counter = 0;
-	spawned = false;
 
     /*program initializtion*/
     init_logger("gf2d.log");
@@ -95,65 +84,31 @@ int main(int argc, char * argv[])
 	//Load all sprites in system
     sprite = gf2d_sprite_load_image("images/backgrounds/newBackground.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
-	bug = gf2d_sprite_load_image("images/Enemies/skeleton.png");
-	titleScreen = gf2d_sprite_load_image("images/UI/titleMenu.png");
 	
-	//Load player sprite and define player entity (temp)
-	playerS = gf2d_sprite_load_all("images/Soldier/player.png", 128, 128, 16);
-	
+	//player
 	entPlayer = entity_new();
-	entPlayer->type = player;
-	entPlayer->update = &player_update;
-	entPlayer->sprite = playerS;
-	entPlayer->position = vector2d(200, 200);
-	entPlayer->frame = (int)(mf);
+	entity_load(entPlayer, "def/entity/player1.player");
 
-
+	//enemy
 	enemyEnt = entity_new();
-	enemyEnt->type = enemy;
-	//entPlayer->update = &enemy_update;
-	enemyEnt->sprite = bug;
-	enemyEnt->spawned = 1;
-	enemyEnt->position = vector2d(0, 0);
-	enemyEnt->frame = (int)(mf);
-	enemyEnt->colorShift = color;
+	entity_load(enemyEnt, "def/entity/skeleton.enemy");
 
+	//Weapon
 	weaponEnt = entity_new();
 	weaponEnt->type = weapon;
 	weaponEnt->spawned = 0;
 
 	//test sound
 	testS = sound_new("audio/swish_2.wav", 1, 1);
-	
+
+	weaponEnt->entSound = testS; 
 
 	//test music
 	testM = music_new("audio/little town.mid", 1);
 	music_play(testM);
 
 	//titleScreen
-
-
-	//title screen
-	while(!titleBool)
-	{
-		SDL_PumpEvents();   // update SDL's internal event structures
-
-		gf2d_graphics_clear_screen();// clears drawing buffers
-
-			gf2d_sprite_draw_image(titleScreen,vector2d(0, 0));
-
-		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
-
-		//slog( "controller input: %i\n", SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_A));
-
-		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_A))
-		{
-			
-			titleBool = 1;
-		}
-
-		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
-	}
+	titleScreen();
 
     /*main game loop*/
     while(!done)
@@ -193,11 +148,6 @@ int main(int argc, char * argv[])
 			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 
-		if(keys[SDL_SCANCODE_SPACE])
-		{
-			sound_play(testS);
-		}
-
 		if (keys[SDL_SCANCODE_ESCAPE])done = 1; // exit condition
         slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
     }
@@ -211,3 +161,33 @@ int main(int argc, char * argv[])
     return 0;
 }
 /*eol@eof*/
+
+void titleScreen()
+{
+	Sprite *titleScreen;
+	int titleBool = 0;
+	SDL_GameController *controller;
+
+	titleScreen = gf2d_sprite_load_image("images/UI/titleMenu.png");
+	controller = SDL_GameControllerOpen(0);
+
+
+	//title screen
+	while(!titleBool)
+	{
+		SDL_PumpEvents();   // update SDL's internal event structures
+
+		gf2d_graphics_clear_screen();// clears drawing buffers
+
+			gf2d_sprite_draw_image(titleScreen,vector2d(0, 0));
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_A))
+		{
+			titleBool = 1;
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+}

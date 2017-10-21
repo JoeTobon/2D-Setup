@@ -6,6 +6,7 @@
 #include "gf2d_types.h"
 #include "gf2d_vector.h"
 #include "gf2d_text.h"
+#include "audio.h"
 
 //Used to identity what type of entity is being used
 typedef enum
@@ -38,6 +39,8 @@ typedef struct Entity_S
 
 	float spawnTime;
 	Bool spawned;
+
+	Sound *entSound;
 
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states
 	void (*think)(struct Entity_S *self);
@@ -99,5 +102,17 @@ void entity_draw_all();
  * @param ent2- second entity
  */
 Bool entity_collsion(Entity *ent1, Entity *ent2);
+
+/**
+ * @brief  will load an entity and its various attributes from a file
+ * @param  entity to load to, name of file to load from
+ */
+void entity_load(Entity *ent, char *filename);
+
+/**
+ * @brief  will load all entities specified in a file
+ * @param  name of file to load from
+ */
+void entity_load_all(char *filename);
 
 #endif

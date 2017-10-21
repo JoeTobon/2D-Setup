@@ -3,71 +3,7 @@
 #include "entity.h"
 #include "player.h"
 #include "simple_logger.h"
-
-void player_load(Entity *player, char *filename)
-{
-	FILE *file;
-
-	if(!player)
-	{
-		slog("player does not exist");
-		return;
-	}
-
-	if(!filename)
-	{
-		slog("file does not exist");
-		return;
-	}
-
-	file = fopen(filename, "r");
-
-	if (!file)
-	{
-		slog("Failed to open file (%s) for reading", filename);
-		return;
-	}
-
-	fread(player, sizeof(Entity), 1,file);  //what to read, how big, how many, where to save
-
-	fclose(file);
-}
-
-void player_save(Entity *player, char *filename)
-{
-	FILE *file;
-
-	if(!player)
-	{
-		slog("player does not exist");
-		return;
-	}
-
-	if(!filename)
-	{
-		slog("file does not exist");
-		return;
-	}
-
-	//Make sure the user can't save a non-player entity to a player file
-	if(player->type != player)
-	{
-		slog("Entity is not a player. Can't save to player file.");
-		return;
-	}
-
-	file = fopen(filename, "w");
-
-	if (!file)
-	{
-		slog("Failed to open file (%s) for reading", filename);
-		return;
-	}
-
-	fwrite(player, sizeof(Entity), 1, file);  //what to write, how big, how many, where to save
-
-	fclose(file);
-}
+#include "audio.h"
 
 void player_update(Entity *entity)
 {
@@ -184,6 +120,9 @@ void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 			weaponEnt->position.x = playerEnt->position.x - 10;
 			weaponEnt->position.y = playerEnt->position.y;
 
+			
+		
+			sound_play(weaponEnt->entSound);
 			weaponEnt->spawned = 1;
 			weaponEnt->spawnTime = 0;
 
@@ -195,6 +134,7 @@ void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 			weaponEnt->position.x = playerEnt->position.x + 80;
 			weaponEnt->position.y = playerEnt->position.y;
 
+			sound_play(weaponEnt->entSound);
 			weaponEnt->spawned = 1;
 			weaponEnt->spawnTime = 0;
 		}
@@ -205,6 +145,7 @@ void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 			weaponEnt->position.x = playerEnt->position.x + 30;
 			weaponEnt->position.y = playerEnt->position.y + 100;
 
+			sound_play(weaponEnt->entSound);
 			weaponEnt->spawned = 1;
 			weaponEnt->spawnTime = 0;
 		}
@@ -215,6 +156,7 @@ void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 			weaponEnt->position.x = playerEnt->position.x + 30;
 			weaponEnt->position.y = playerEnt->position.y - 100;
 
+			sound_play(weaponEnt->entSound);
 			weaponEnt->spawned = 1;
 			weaponEnt->spawnTime = 0;
 		}
