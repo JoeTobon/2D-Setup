@@ -7,8 +7,9 @@ typedef struct level_S
 {
 	Sprite *background;
 	Music  *levelMusic;
-	
 }Level;
 
 //Dynamically load level from file
 void level_load(Level *level, char *filename);
+
+Level *level_new();

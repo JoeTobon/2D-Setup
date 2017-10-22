@@ -22,7 +22,7 @@ void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 	int yMove;
 
 	timeDelta = .01;
-	speed = 3;
+	speed = 2;
 
 	if(!playerEnt || !enemyEnt)
 	{
@@ -65,20 +65,6 @@ void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 	enemyEnt->boundingBox.y = enemyEnt->position.y;
 	enemyEnt->boundingBox.w = 60;
 	enemyEnt->boundingBox.h = 100;
-}
-
-//For skeleton
-void enemy_attack(Entity *playerEnt, Entity *enemyEnt)
-{
-	if(!playerEnt || !enemyEnt || enemyEnt->spawned == 0)
-	{
-		return;
-	}
-
-	if(entity_collsion(enemyEnt, playerEnt) == true)
-	{
-			entity_delete(playerEnt);
-	}
 }
 
 

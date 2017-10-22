@@ -14,7 +14,8 @@ typedef enum
 	player,
 	enemy,									 //specify enemies, weapons, and projectiles as game is developed more
 	projectile,
-	weapon
+	weapon,
+	none
 }EntityType;
 
 typedef struct Entity_S
@@ -102,6 +103,8 @@ void entity_draw_all();
  * @param ent2- second entity
  */
 Bool entity_collsion(Entity *ent1, Entity *ent2);
+
+void entity_collide_approach_all();
 
 /**
  * @brief  will load an entity and its various attributes from a file

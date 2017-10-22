@@ -7,25 +7,19 @@
 #include "player.h"
 #include "enemy.h"
 #include "audio.h"
+#include "level.h"
 
 int main(int argc, char * argv[])
 {
     /*variable declarations*/
     int done = 0;
     const Uint8 * keys;
-    Sprite *sprite;
 	int i, in;
-	Sound *testS;
-	Music *testM;
-	
-	//Used for Entity assignment
-	Entity *entPlayer;
-	Entity *enemyEnt;
-	Entity *weaponEnt;
 
     int mx,my;
     float mf = 0;
     Sprite *mouse;
+	Level *level1;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -82,30 +76,14 @@ int main(int argc, char * argv[])
 	
 
 	//Load all sprites in system
-    sprite = gf2d_sprite_load_image("images/backgrounds/newBackground.png");
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 	
-	//player
-	entPlayer = entity_new();
-	entity_load(entPlayer, "def/entity/player1.player");
+	//Load level 1
+	level1 = level_new();
+	level_load(level1, "def/level/level1.level");
 
-	//enemy
-	enemyEnt = entity_new();
-	entity_load(enemyEnt, "def/entity/skeleton.enemy");
-
-	//Weapon
-	weaponEnt = entity_new();
-	weaponEnt->type = weapon;
-	weaponEnt->spawned = 0;
-
-	//test sound
-	testS = sound_new("audio/swish_2.wav", 1, 1);
-
-	weaponEnt->entSound = testS; 
-
-	//test music
-	testM = music_new("audio/little town.mid", 1);
-	music_play(testM);
+	//play level music
+	music_play(level1->levelMusic);
 
 	//titleScreen
 	titleScreen();
@@ -122,16 +100,14 @@ int main(int argc, char * argv[])
 
         if (mf >= 16.0)mf = 0;
 
-		enemy_approach(entPlayer, enemyEnt);
-		enemy_attack(entPlayer, enemyEnt);
-		player_attack(entPlayer, enemyEnt, weaponEnt);
 		entity_update_all();
-		        
+		entity_collide_approach_all();
+		
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
 
-            gf2d_sprite_draw_image(sprite,vector2d(0,0));
+			gf2d_sprite_draw_image(level1->background,vector2d(0,0));
 
             //UI elements last
             gf2d_sprite_draw(

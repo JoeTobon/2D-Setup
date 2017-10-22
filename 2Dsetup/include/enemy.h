@@ -11,12 +11,4 @@
  */
 void enemy_approach(Entity *player, Entity *enemy);
 
-/**
- * @brief  will cause the enemy to attack the player once it reaches their position
- * @param  the player entity to attack, the enemy entity to do the attack
- */
-void enemy_attack(Entity *playerEnt, Entity *enemyEnt);
-
-void enemy_attack_all();
-
 #endif

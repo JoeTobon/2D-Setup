@@ -3,6 +3,7 @@
 #include "gf2d_types.h"
 #include "gf2d_sprite.h"
 #include "player.h"
+#include "enemy.h"
 
 typedef struct
 {
@@ -94,7 +95,7 @@ Entity *entity_new()
 			entity_manager.entList[i].inuse = 1; //Set ref count to 1. Address is now in use
 
 			//Initialize various default attributes of entity here
-			entity_manager.entList[i].type = -1;
+			entity_manager.entList[i].type = none;
 			entity_manager.entList[i].spawnTime = -1;
 
 
@@ -156,6 +157,11 @@ void entity_draw_all()
 
 Bool entity_collsion(Entity *ent1, Entity *ent2)
 {
+	if(!ent1 || !ent2)
+	{
+		return;
+	}
+
 	if((ent1->boundingBox.x + ent1->boundingBox.w) < ent2->boundingBox.x)
 	{
 		return false;
@@ -178,9 +184,76 @@ Bool entity_collsion(Entity *ent1, Entity *ent2)
 	}
 }
 
+void entity_collide_approach_all()
+{
+	int i, j;
+	Entity *playerEnt = NULL;
+
+	//Finds player entity
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == player)
+		{
+			playerEnt = &entity_manager.entList[i];
+			break;
+		}
+	}
+	
+	//checks collisions between player and enemies
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0 || entity_manager.entList[i].type == player)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == enemy)
+		{
+			//approach handled here for now
+			enemy_approach(playerEnt, &entity_manager.entList[i]);
+
+			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true)
+			{
+				entity_delete(playerEnt);
+			}
+		}
+	}
+
+	//checks collision between weapon and enemy
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == weapon)
+		{
+			player_attack(playerEnt, &entity_manager.entList[i]);
+
+			for(j = 0; j < entity_manager.maxEnt; j++)
+			{
+				if(entity_manager.entList[j].type == enemy && entity_manager.entList[i].spawned == 1)
+				{
+					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
+					{
+						entity_delete(&entity_manager.entList[j]);
+					}
+				}
+			}
+		}
+	}
+}
+
 void entity_load(Entity *ent, char *filename)
 {
 	FILE *file;
+	Sound *entSound;
 	char buffer[512];
 	int tempx, tempy;
 
@@ -189,7 +262,7 @@ void entity_load(Entity *ent, char *filename)
 
 	if(!ent)
 	{
-		slog("player does not exist");
+		slog("entity does not exist");
 		return;
 	}
 
@@ -260,8 +333,17 @@ void entity_load(Entity *ent, char *filename)
 
 			ent->position = vector2d(tempx, tempy);
 
-			slog("Entity position.x: %i", tempx);
-			slog("Entity position.y: %i", tempy);
+			slog("Entity position.x: %f", ent->position.x);
+			slog("Entity position.y: %f", ent->position.y);
+
+			continue;
+		}
+		if(strcmp(buffer, "sound:") == 0)
+		{
+			fscanf(file, "%s", buffer);
+			ent->entSound = sound_new(buffer, 1, 1);
+			slog("Sound:", buffer);
+
 			continue;
 		}
 		if(strcmp(buffer, "frame:") == 0)

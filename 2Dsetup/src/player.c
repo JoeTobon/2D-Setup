@@ -77,7 +77,7 @@ void player_update(Entity *entity)
 
 }
 
-void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
+void player_attack(Entity *playerEnt, Entity *weaponEnt)
 {
 	Sprite *weaponS;
 	const Uint8 *keys;
@@ -89,7 +89,7 @@ void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 	SDL_GameController *controller;
 	weaponS = gf2d_sprite_load_image("images/Weapons/sword2.png");
 
-	if(!playerEnt || !enemyEnt || !weaponEnt)
+	if(!playerEnt || !weaponEnt)
 	{
 		return;
 	}
@@ -100,7 +100,7 @@ void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 		weaponEnt->spawnTime += .1;
 	}
 
-	if(weaponEnt->spawnTime >= 6)
+	if(weaponEnt->spawnTime >= 2)
 	{
 		weaponEnt->sprite = NULL;
 		weaponEnt->spawned = 0;
@@ -170,11 +170,5 @@ void player_attack(Entity *playerEnt, Entity *enemyEnt, Entity *weaponEnt)
 		weaponEnt->boundingBox.y = weaponEnt->position.y;
 		weaponEnt->boundingBox.w = 30;
 		weaponEnt->boundingBox.h = 110;
-
-		//detect collision
-		if(entity_collsion(weaponEnt, enemyEnt) == true)
-		{
-			entity_delete(enemyEnt);
-		}
 	}
 }

@@ -17,6 +17,6 @@ void player_update(Entity *entity);
  * @brief  will handle the player attacking
  * @param  the player entity attacking, the enemy entity to attack, and the weapon to do the attacking with
  */
-void player_attack(Entity *player, Entity *enemy, Entity *weapon);
+void player_attack(Entity *player, Entity *weapon);
 
 #endif
