@@ -56,9 +56,9 @@ void audio_system_init(Uint32 maxSounds, Uint32 channels, Uint32 channelGroups, 
         flags |= MIX_INIT_OGG;
     }
 
-    //if (!(Mix_Init(flags) & flags))
+    if (!(Mix_Init(flags) & flags))
     {
-     //   slog("failed to initialize some audio support: %s",SDL_GetError());
+       slog("failed to initialize some audio support: %s",SDL_GetError());
     }
 
 	//Initializes list for sounds

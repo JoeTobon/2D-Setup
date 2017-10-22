@@ -10,9 +10,10 @@ Level *level_new()
 
 	if(!defaultL)
 	{
-		slog("Failed to allocate entity list");
+		slog("Failed to allocate level");
 		return;
 	}
+
 	memset(defaultL,0,sizeof(Level));
 
 	return defaultL;

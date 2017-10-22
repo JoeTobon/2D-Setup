@@ -19,7 +19,7 @@ int main(int argc, char * argv[])
     int mx,my;
     float mf = 0;
     Sprite *mouse;
-	Level *level1;
+	Level *level;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -77,16 +77,16 @@ int main(int argc, char * argv[])
 
 	//Load all sprites in system
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
-	
-	//Load level 1
-	level1 = level_new();
-	level_load(level1, "def/level/level1.level");
-
-	//play level music
-	music_play(level1->levelMusic);
 
 	//titleScreen
 	titleScreen();
+
+	//Load level
+	level = level_new();
+	level_Screen(level);	
+
+	//play level music
+	music_play(level->levelMusic);
 
     /*main game loop*/
     while(!done)
@@ -107,7 +107,7 @@ int main(int argc, char * argv[])
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
 
-			gf2d_sprite_draw_image(level1->background,vector2d(0,0));
+			gf2d_sprite_draw_image(level->background,vector2d(0,0));
 
             //UI elements last
             gf2d_sprite_draw(
@@ -147,7 +147,6 @@ void titleScreen()
 	titleScreen = gf2d_sprite_load_image("images/UI/titleMenu.png");
 	controller = SDL_GameControllerOpen(0);
 
-
 	//title screen
 	while(!titleBool)
 	{
@@ -162,6 +161,51 @@ void titleScreen()
 		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_A))
 		{
 			titleBool = 1;
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+}
+
+void level_Screen(Level *level)
+{
+	Sprite *screen;
+	int levelBool = 0;
+	SDL_GameController *controller;
+
+	screen = gf2d_sprite_load_image("images/UI/levelSelect.png");
+	controller = SDL_GameControllerOpen(0);
+
+	if(!level)
+	{
+		slog("level is null");
+		return;
+	}
+
+	SDL_FlushEvent(SDL_CONTROLLERBUTTONDOWN);
+
+	//title screen
+	while(!levelBool)
+	{
+		SDL_PumpEvents();   // update SDL's internal event structures
+
+		gf2d_graphics_clear_screen();// clears drawing buffers
+
+			gf2d_sprite_draw_image(screen,vector2d(0, 0));
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_X))
+		{
+			level_load(level, "def/level/level1.level");
+			slog("level 1 loaded");
+			levelBool = 1;
+		}
+		else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_B))
+		{
+			level_load(level, "def/level/level2.level");
+			slog("level 1 loaded");
+			levelBool = 1;
 		}
 
 		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());

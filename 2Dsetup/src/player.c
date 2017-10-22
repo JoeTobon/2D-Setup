@@ -100,7 +100,7 @@ void player_attack(Entity *playerEnt, Entity *weaponEnt)
 		weaponEnt->spawnTime += .1;
 	}
 
-	if(weaponEnt->spawnTime >= 2)
+	if(weaponEnt->spawnTime >= 3)
 	{
 		weaponEnt->sprite = NULL;
 		weaponEnt->spawned = 0;
