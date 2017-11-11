@@ -1,4 +1,5 @@
 #include <SDL.h>
+#include <physfs.h>
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
 #include "entity.h"
@@ -8,6 +9,7 @@
 #include "enemy.h"
 #include "audio.h"
 #include "level.h"
+
 
 int main(int argc, char * argv[])
 {
@@ -30,7 +32,7 @@ int main(int argc, char * argv[])
     init_logger("gf2d.log");
     slog("---==== BEGIN ====---");
     gf2d_graphics_initialize(
-        "gf2d",
+        "MTS",
         1200,
         720,
         1200,
@@ -39,6 +41,10 @@ int main(int argc, char * argv[])
         0);
     gf2d_graphics_set_frame_delay(16);
     gf2d_sprite_init(1024);
+
+	//initialize physfs
+	PHYSFS_init(argv[0]);
+	PHYSFS_addToSearchPath("assets.zip", 0);
 
 	//entity system initialized
 	entity_system_init(1024);

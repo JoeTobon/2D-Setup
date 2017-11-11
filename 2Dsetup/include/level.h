@@ -12,9 +12,17 @@ typedef struct level_S
 	Music  *levelMusic;
 }Level;
 
-//Dynamically load level from file
+/**
+ * @brief will load a level based on the level's filename
+ * @param level the level to load
+ * @param filename the name of the level file to load
+ */
 void level_load(Level *level, char *filename);
 
+/**
+ * @brief will initialize and allocate address for a new level
+ * @return a pointer to the memory address of the new level
+ */
 Level *level_new();
 
 #endif

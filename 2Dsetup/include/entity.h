@@ -50,7 +50,7 @@ typedef struct Entity_S
 
 /**
  * @brief  initializes the enity manager/system
- * @param  maximum number of enities the system can handle
+ * @param  maxNum the maximum number of enities the system can handle
  */
 void entity_system_init(Uint32 maxNum);
 
@@ -62,59 +62,60 @@ void entity_system_init(Uint32 maxNum);
 Entity *entity_new();
 
 /**
- * @brief free an entity back to the entity manager
- * Stays in memory until the space is needed
- * @param the entity to free
+ * @brief free an entity back to the entity manager. Stays in memory until the space is needed
+ * @param entity the entity to free
  */
 void entity_free(Entity *entity);
 
 /**
  * @brief  deletes/removes an entity from the entity system
- * @param  a pointer to the entity that is to be deleted
+ * @param  entity a pointer to the entity that is to be deleted
  */
 void entity_delete(Entity *entity);
 
 /**
- * @brief deletes all loaded entities from memory
- * does not close the entity system
+ * @brief deletes all loaded entities from memory does not close the entity system
  */
 void entity_clear_all();
 
 /**
- * @brief  updates all the entity
- * @param  
+ * @brief updates all the entities
  */
 void entity_update_all();
 
 /**
- * @brief  draws entity to the screen
- * @param  the entity to draw
+ * @brief draws entity to the screen
+ * @param entity the entity to draw
  */
 void entity_draw(Entity *entity);
 
 /**
- * @brief  draws all entities in use to the screen
+ * @brief draws all entities in use to the screen
  */
 void entity_draw_all();
 
 /**
  * @brief detects whether or not collsion occurs between two entities
- * @param ent1- first entity 
- * @param ent2- second entity
+ * @param ent1 first entity 
+ * @param ent2 second entity
  */
 Bool entity_collsion(Entity *ent1, Entity *ent2);
 
+/**
+ * @brief makes all entities specified approach the player
+ */
 void entity_collide_approach_all();
 
 /**
- * @brief  will load an entity and its various attributes from a file
- * @param  entity to load to, name of file to load from
+ * @brief will load an entity and its various attributes from a file
+ * @param ent entity to load from a file 
+ * @param filname name of file to load from
  */
 void entity_load(Entity *ent, char *filename);
 
 /**
- * @brief  will load all entities specified in a file
- * @param  name of file to load from
+ * @brief will load all entities specified in a file
+ * @param filename name of file to load from
  */
 void entity_load_all(char *filename);
 
