@@ -1,6 +1,7 @@
 #include "level.h"
 #include "simple_logger.h"
 #include "entity.h"
+#include <physfs.h>
 
 Level *level_new()
 {
@@ -21,9 +22,11 @@ Level *level_new()
 
 void level_load(Level *level, char *filename)
 {
-	FILE *file;
+	PHYSFS_File *file;
+	char *pBuf;
 	char buffer[512];
 	char hold[512];
+	int incr = 0;
 	int loop = 0;
 
 	if(!level)
@@ -38,50 +41,69 @@ void level_load(Level *level, char *filename)
 		return;
 	}
 
-	file = fopen(filename, "r");
-
-	if(!file)
+	if(!PHYSFS_exists(filename))
 	{
 		slog("Failed to load file: %s", filename);
 		return;
 	}
 
-	rewind(file);
+	file = PHYSFS_openRead(filename);
 
-	while(fscanf(file,"%s", buffer) != EOF)
+	pBuf = (char *)malloc(PHYSFS_fileLength(file));
+
+	if(!pBuf)
 	{
+		slog("Failed to allocate pBuf");
+		return;
+	}
+
+	memset(pBuf, 0, PHYSFS_fileLength(file));
+
+	PHYSFS_readBytes(file, pBuf, PHYSFS_fileLength(file));
+	PHYSFS_close(file);
+
+	slog("pBUF: %s", pBuf);
+	
+	
+
+	while(sscanf(pBuf, " %s\n%n", buffer, &incr) == 1)
+	{
+		pBuf += incr;
+
 		if(strcmp(buffer, "background:") == 0)
 		{
-			fscanf(file, "%s", buffer);
-			level->background = gf2d_sprite_load_image(buffer);
+			sscanf(pBuf, " %s\n%n", buffer, &incr);
+			pBuf += incr;
+			//level->background = gf2d_sprite_load_image(buffer);
 
 			slog("Level background: %s", buffer);
-			continue;
+			//continue;
 		}
 		if(strcmp(buffer, "levelMusic:") == 0)
 		{
-			fscanf(file, "%s", hold);
+			sscanf(pBuf, " %s\n%n", buffer, &incr);
+			pBuf += incr;
 			slog("Level music: %s", hold);
-			continue;
+			//continue;
 		}
 		if(strcmp(buffer, "loop:") == 0)
 		{
-			fscanf(file, "%i", &loop);
+			sscanf(pBuf, " %s\n%n", buffer, &incr);
+			pBuf += incr;
 			slog("Music loop: %i", loop);
 
 			//initialize music
-			level->levelMusic = music_new(hold, loop);
+			//level->levelMusic = music_new(hold, loop);
 
-			continue;
+			//continue;
 		}
 		if(strcmp(buffer, "entFile:") == 0)
 		{
-			fscanf(file, "%s", buffer);
-			entity_load_all(buffer);
+			sscanf(pBuf, " %s\n%n", buffer, &incr);
+			pBuf += incr;
+			//entity_load_all(buffer);
 			slog("Entity File: %s", buffer);
-			continue;
+			//continue;
 		}
 	}
-
-	fclose(file);
 }

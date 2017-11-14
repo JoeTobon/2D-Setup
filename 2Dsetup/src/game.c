@@ -43,9 +43,9 @@ int main(int argc, char * argv[])
     gf2d_sprite_init(1024);
 
 	//initialize physfs
-	PHYSFS_init(argv[0]);
-	PHYSFS_addToSearchPath("assets.zip", 0);
-
+	PHYSFS_init(NULL);
+	PHYSFS_mount("assets.zip", "", 1);
+	
 	//entity system initialized
 	entity_system_init(1024);
 
@@ -85,11 +85,14 @@ int main(int argc, char * argv[])
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 
 	//titleScreen
-	titleScreen();
+	//titleScreen();
 
 	//Load level
 	level = level_new();
-	level_Screen(level);	
+	//level_Screen(level);	
+	level_load(level, "assets/def/level/level1.level");
+	//slog("level 1 loaded");
+
 
 	//play level music
 	music_play(level->levelMusic);
@@ -137,6 +140,7 @@ int main(int argc, char * argv[])
 	//Close game controller
 	SDL_GameControllerClose(controller);
     controller = NULL;
+	PHYSFS_deinit();
 
 
     slog("---==== END ====---");
@@ -203,13 +207,13 @@ void level_Screen(Level *level)
 
 		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_X))
 		{
-			level_load(level, "def/level/level1.level");
+			level_load(level, "assets/def/level/level1.level");
 			slog("level 1 loaded");
 			levelBool = 1;
 		}
 		else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_B))
 		{
-			level_load(level, "def/level/level2.level");
+			level_load(level, "assets/def/level/level2.level");
 			slog("level 1 loaded");
 			levelBool = 1;
 		}

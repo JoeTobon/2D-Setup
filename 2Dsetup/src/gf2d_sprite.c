@@ -136,6 +136,7 @@ Sprite *gf2d_sprite_load_all(
     sprite = gf2d_sprite_new();
     if (!sprite)
     {
+		slog("failed to load sprite image %s", filename);
         return NULL;
     }
     
