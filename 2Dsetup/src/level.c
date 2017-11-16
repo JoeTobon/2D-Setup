@@ -70,11 +70,16 @@ void level_load(Level *level, char *filename)
 	{
 		pBuf += incr;
 
+		if(pBuf[0] == '~')
+		{
+			return;
+		}
+
 		if(strcmp(buffer, "background:") == 0)
 		{
 			sscanf(pBuf, " %s\n%n", buffer, &incr);
 			pBuf += incr;
-			//level->background = gf2d_sprite_load_image(buffer);
+			level->background = gf2d_sprite_load_image(buffer);
 
 			slog("Level background: %s", buffer);
 			//continue;
@@ -93,7 +98,7 @@ void level_load(Level *level, char *filename)
 			slog("Music loop: %i", loop);
 
 			//initialize music
-			//level->levelMusic = music_new(hold, loop);
+			level->levelMusic = music_new(hold, loop);
 
 			//continue;
 		}
@@ -101,7 +106,7 @@ void level_load(Level *level, char *filename)
 		{
 			sscanf(pBuf, " %s\n%n", buffer, &incr);
 			pBuf += incr;
-			//entity_load_all(buffer);
+			entity_load_all(buffer);
 			slog("Entity File: %s", buffer);
 			//continue;
 		}

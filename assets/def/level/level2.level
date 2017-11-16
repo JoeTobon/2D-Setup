@@ -1,0 +1,5 @@
+background:	assets/images/bg/bg_flat.png
+levelMusic:	assets/audio/prepare_your_swords.mid
+loop:		1
+entFile:	assets/def/level/level2List.entities
+~

@@ -1,0 +1,6 @@
+type:		1
+sprite:		assets/images/Enemies/skeleton.png
+spawned:	1
+position:	0 0
+frame:		0
+~

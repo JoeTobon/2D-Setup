@@ -1,0 +1,5 @@
+background: 	assets/images/bg/l1b.png
+levelMusic: 	assets/audio/littletown.mid
+loop: 		1
+entFile:	def/level/level1List.entities
+~

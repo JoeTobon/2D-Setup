@@ -44,7 +44,7 @@ int main(int argc, char * argv[])
 
 	//initialize physfs
 	PHYSFS_init(NULL);
-	PHYSFS_mount("assets.zip", "", 1);
+	PHYSFS_mount("assets", "", 1);
 	
 	//entity system initialized
 	entity_system_init(1024);
@@ -82,7 +82,7 @@ int main(int argc, char * argv[])
 	
 
 	//Load all sprites in system
-    mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
+    mouse = gf2d_sprite_load_all("assets/images/pointer.png",32,32,16);
 
 	//titleScreen
 	//titleScreen();
@@ -90,7 +90,7 @@ int main(int argc, char * argv[])
 	//Load level
 	level = level_new();
 	//level_Screen(level);	
-	level_load(level, "assets/def/level/level1.level");
+	level_load(level, "def/level/level1.level");
 	//slog("level 1 loaded");
 
 
