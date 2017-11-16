@@ -14,7 +14,8 @@ typedef enum
 	player,
 	enemy,									 //specify enemies, weapons, and projectiles as game is developed more
 	projectile,
-	weapon,
+	sword,
+	bow,
 	none
 }EntityType;
 
@@ -40,6 +41,7 @@ typedef struct Entity_S
 
 	float spawnTime;
 	Bool spawned;
+	char direct;							//Used for projectiles
 
 	Sound *entSound;
 

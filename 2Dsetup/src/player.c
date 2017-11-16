@@ -28,44 +28,26 @@ void player_update(Entity *entity)
 	//used to make player move
 	if(entity->type == player)
 	{
-		//movement with keys
+		//movement with keys and controller
 		keys = SDL_GetKeyboardState(NULL);
 
-		if(keys[SDL_SCANCODE_D])
-		{
-			entity->position.x += 10;
-		}
-		if(keys[SDL_SCANCODE_A])
-		{
-			entity->position.x -= 10;
-		}
-		if(keys[SDL_SCANCODE_W])
-		{
-			entity->position.y -= 10;
-		}
-		if(keys[SDL_SCANCODE_S])
-		{
-			entity->position.y += 10;
-		}
-
-		//movement for controller
 		controller = SDL_GameControllerOpen(0);
 
-		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) < -DEAD_ZONE)
-		{
-			entity->position.x -= 10;
-		}
-		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) > DEAD_ZONE)
+		if(keys[SDL_SCANCODE_D] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) > DEAD_ZONE)
 		{
 			entity->position.x += 10;
 		}
-		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE)
+		if(keys[SDL_SCANCODE_A] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) < -DEAD_ZONE)
 		{
-			entity->position.y += 10;
+			entity->position.x -= 10;
 		}
-		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE)
+		if(keys[SDL_SCANCODE_W] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE)
 		{
 			entity->position.y -= 10;
+		}
+		if(keys[SDL_SCANCODE_S] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE)
+		{
+			entity->position.y += 10;
 		}
 	}
 
@@ -170,5 +152,114 @@ void player_attack(Entity *playerEnt, Entity *weaponEnt)
 		weaponEnt->boundingBox.y = weaponEnt->position.y;
 		weaponEnt->boundingBox.w = 30;
 		weaponEnt->boundingBox.h = 110;
+	}
+}
+
+void bow_Attack(Entity *bow, Entity *arrow)
+{
+	const Uint8 *keys;
+	Sprite *arrowS;
+	
+	//dead zone for controller
+	const int DEAD_ZONE = 8000;
+
+	//Game Controller 1 handler
+	SDL_GameController *controller;
+
+	arrowS = gf2d_sprite_load_image("images/Weapons/Arrow.png");
+
+	if(!bow || !arrow)
+	{
+		slog("Bow or arrow does not exist");
+		return;
+	}
+
+	//Delay between arrow spawn
+	if(arrow->spawnTime >= 0)
+	{
+		arrow->spawnTime += .1;
+	}
+
+	if(arrow->spawnTime >= 4.5)
+	{
+		arrow->sprite = NULL;
+		arrow->spawned = 0;
+		arrow->spawnTime = -1;
+	}
+
+
+	//Spawn arrow in direction of right stick
+	//if(playEnt->type == player)
+	{
+		//attacking with controller
+		controller = SDL_GameControllerOpen(0);
+
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) < -DEAD_ZONE && arrow->spawned != 1)
+		{
+			arrow->sprite = arrowS;
+
+			arrow->position.x = bow->position.x - 60;
+			arrow->position.y = bow->position.y;
+
+			arrow->spawned = 1;
+			arrow->spawnTime = 0;
+
+			arrow->direct = 'l';
+
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE && arrow->spawned != 1)
+		{
+			arrow->sprite = arrowS;
+
+			arrow->position.x = bow->position.x + 80;
+			arrow->position.y = bow->position.y;
+
+			arrow->spawned = 1;
+			arrow->spawnTime = 0;
+
+			arrow->direct = 'r';
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE && arrow->spawned != 1)
+		{
+			arrow->sprite = arrowS;
+
+			arrow->position.x = bow->position.x + 20;
+			arrow->position.y = bow->position.y + 110;
+
+			arrow->spawned = 1;
+			arrow->spawnTime = 0;
+
+			arrow->direct = 'u';
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE && arrow->spawned != 1)
+		{
+			arrow->sprite = arrowS;
+
+			arrow->position.x = bow->position.x + 20;
+			arrow->position.y = bow->position.y - 110;
+
+			arrow->spawned = 1;
+			arrow->spawnTime = 0;
+
+			arrow->direct = 'd';
+		}
+	}
+
+	//Make arrow move depending on right stick press
+	if(arrow->direct == 'l')
+	{
+		arrow->position.x -= 10;
+	}
+	else if(arrow->direct == 'r')
+	{
+		arrow->position.x += 10;
+	}
+	else if(arrow->direct == 'd')
+	{
+		arrow->position.y -= 10;
+	}
+	else if(arrow->direct == 'u')
+	{
+		arrow->position.y += 10;
 	}
 }

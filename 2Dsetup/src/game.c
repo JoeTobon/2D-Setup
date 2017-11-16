@@ -20,8 +20,12 @@ int main(int argc, char * argv[])
 
     int mx,my;
     float mf = 0;
-    Sprite *mouse;
+    Sprite *mouse, *temp;
 	Level *level;
+	Vector2D scale = vector2d(.5, .5);
+
+	//Bow Stuff
+	Entity *bow, *arrow;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -42,10 +46,6 @@ int main(int argc, char * argv[])
     gf2d_graphics_set_frame_delay(16);
     gf2d_sprite_init(1024);
 
-	//initialize physfs
-	PHYSFS_init(argv[0]);
-	PHYSFS_addToSearchPath("assets.zip", 0);
-
 	//entity system initialized
 	entity_system_init(1024);
 
@@ -57,6 +57,9 @@ int main(int argc, char * argv[])
 	//Controller support
 	SDL_Init(SDL_INIT_GAMECONTROLLER);
 
+	temp  = gf2d_sprite_load_image("images/Weapons/Bow.png");
+
+	
 	//Check for joysticks
     if( SDL_NumJoysticks() < 1 )
     {
@@ -85,11 +88,21 @@ int main(int argc, char * argv[])
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 
 	//titleScreen
-	titleScreen();
+	//titleScreen();
 
 	//Load level
 	level = level_new();
 	level_Screen(level);	
+
+	//Bow Stuff
+	bow = entity_new();
+	bow->position = vector2d(600, 350);
+	bow->type = 4;
+	bow->sprite = temp;
+	bow->scale = &scale;
+
+	arrow = entity_new();
+	arrow->scale = &scale;
 
 	//play level music
 	music_play(level->levelMusic);
@@ -108,6 +121,7 @@ int main(int argc, char * argv[])
 
 		entity_update_all();
 		entity_collide_approach_all();
+		bow_Attack(bow, arrow);
 		
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
@@ -178,6 +192,7 @@ void level_Screen(Level *level)
 	Sprite *screen;
 	int levelBool = 0;
 	SDL_GameController *controller;
+	const Uint8 * keys;
 
 	screen = gf2d_sprite_load_image("images/UI/levelSelect.png");
 	controller = SDL_GameControllerOpen(0);
@@ -194,6 +209,7 @@ void level_Screen(Level *level)
 	while(!levelBool)
 	{
 		SDL_PumpEvents();   // update SDL's internal event structures
+		keys = SDL_GetKeyboardState(NULL); // get the keyboard state for this frame
 
 		gf2d_graphics_clear_screen();// clears drawing buffers
 
@@ -201,7 +217,7 @@ void level_Screen(Level *level)
 
 		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 
-		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_X))
+		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_X) || keys[SDL_SCANCODE_SPACE])
 		{
 			level_load(level, "def/level/level1.level");
 			slog("level 1 loaded");

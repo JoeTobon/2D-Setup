@@ -232,7 +232,7 @@ void entity_collide_approach_all()
 			continue;
 		}
 		
-		if(entity_manager.entList[i].type == weapon)
+		if(entity_manager.entList[i].type == sword)
 		{
 			player_attack(playerEnt, &entity_manager.entList[i]);
 

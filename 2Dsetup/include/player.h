@@ -18,4 +18,10 @@ void player_update(Entity *entity);
  */
 void player_attack(Entity *player, Entity *weapon);
 
+/**
+ * @brief will handle the player attacking with a bow
+ * @param weapon the weapon entity to do the attacking with (bow in this case)
+ */
+void bow_Attack(Entity *bow, Entity *arrow);
+
 #endif
