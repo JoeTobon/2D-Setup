@@ -217,9 +217,19 @@ void entity_collide_approach_all()
 			//approach handled here for now
 			enemy_approach(playerEnt, &entity_manager.entList[i]);
 
-			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true)
+			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
 			{
-				entity_delete(playerEnt);
+				if(playerEnt->health == 1)
+				{
+					entity_delete(playerEnt);
+				}
+				else
+				{
+					playerEnt->health--;
+				}
+
+				//Enemy dies on impact for now
+				entity_delete(&entity_manager.entList[i]);
 			}
 		}
 	}
@@ -242,6 +252,92 @@ void entity_collide_approach_all()
 				{
 					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
 					{
+						entity_delete(&entity_manager.entList[j]);
+					}
+				}
+			}
+		}
+	}
+
+	//checks collsion between player and health potion
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+
+		if(entity_manager.entList[i].type == hp)
+		{
+			if(entity_collsion(&entity_manager.entList[i], playerEnt) == true)
+			{
+				if(playerEnt->health < 3)
+				{
+					playerEnt->health++;
+					entity_delete(&entity_manager.entList[i]);
+				}
+			}
+		}
+	}
+
+	//checks collsion between player and invicibility potion
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+
+		if(entity_manager.entList[i].type == ip)
+		{
+			if(entity_collsion(&entity_manager.entList[i], playerEnt) == true && &entity_manager.entList[i].spawned != 0)
+			{
+				//set to false after certain amount of time
+				//call seperate function
+				playerEnt->invincible = true;
+				entity_manager.entList[i].spawned = 0;
+				entity_manager.entList[i].sprite = NULL;
+			}
+		}
+	}
+
+	//checks collsion between player and bomb
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].type == bomb)
+		{
+			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true)
+			{
+				//expand bounding box	
+				entity_manager.entList[i].boundingBox.x = 100;
+				entity_manager.entList[i].boundingBox.y = 100;
+				entity_manager.entList[i].boundingBox.w = entity_manager.entList[i].position.x + 700;
+				entity_manager.entList[i].boundingBox.h = entity_manager.entList[i].position.y + 700;
+
+				//set spawned to true
+				entity_manager.entList[i].spawned = 1;
+				entity_manager.entList[i].sprite = NULL;
+			}
+		}
+	}
+
+	//checks collision between bomb and enemy
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == bomb)
+		{
+			for(j = 0; j < entity_manager.maxEnt; j++)
+			{
+				if(entity_manager.entList[j].type == enemy && entity_manager.entList[i].spawned == 1)
+				{
+					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
+					{
+						entity_delete(&entity_manager.entList[i]);
 						entity_delete(&entity_manager.entList[j]);
 					}
 				}
@@ -352,7 +448,12 @@ void entity_load(Entity *ent, char *filename)
 			slog("Entity frame: %i", ent->frame);
 			continue;
 		}
-
+		if(strcmp(buffer, "health:") == 0)
+		{
+			fscanf(file, "%i", &ent->health);
+			slog("Entity health: %i", ent->health);
+			continue;
+		}
 	}
 
 	fclose(file);

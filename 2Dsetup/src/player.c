@@ -263,3 +263,17 @@ void bow_Attack(Entity *bow, Entity *arrow)
 		arrow->position.y += 10;
 	}
 }
+
+void player_invinc(Entity *playerE, Entity *invinceE)
+{
+	if(playerE->invincible == true)
+	{
+		invinceE->spawnTime += .1;
+	}
+
+	if(invinceE->spawnTime >= 3)
+	{
+		playerE->invincible = false;
+		entity_delete(invinceE);
+	}
+}

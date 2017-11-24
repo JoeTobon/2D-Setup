@@ -20,12 +20,12 @@ int main(int argc, char * argv[])
 
     int mx,my;
     float mf = 0;
-    Sprite *mouse, *temp;
+    Sprite *mouse;
 	Level *level;
 	Vector2D scale = vector2d(.5, .5);
 
 	//Bow Stuff
-	Entity *bow, *arrow;
+	Entity *bow, *arrow, *hPotion, *iPotion, *bombE;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -56,9 +56,6 @@ int main(int argc, char * argv[])
 
 	//Controller support
 	SDL_Init(SDL_INIT_GAMECONTROLLER);
-
-	temp  = gf2d_sprite_load_image("images/Weapons/Bow.png");
-
 	
 	//Check for joysticks
     if( SDL_NumJoysticks() < 1 )
@@ -98,11 +95,49 @@ int main(int argc, char * argv[])
 	bow = entity_new();
 	bow->position = vector2d(600, 350);
 	bow->type = 4;
-	bow->sprite = temp;
+	bow->sprite = gf2d_sprite_load_image("images/Weapons/Bow.png");
 	bow->scale = &scale;
 
 	arrow = entity_new();
 	arrow->scale = &scale;
+	//bounding box
+
+	/*Health Potion
+	hPotion = entity_new();
+	hPotion->type = hp;
+	hPotion->sprite = gf2d_sprite_load_image("images/Items/Health.png");
+	hPotion->position = vector2d(100, 350);
+	hPotion->scale = &scale;
+	hPotion->boundingBox.x = hPotion->position.x;
+	hPotion->boundingBox.y = hPotion->position.y;
+	hPotion->boundingBox.w = hPotion->position.x + 30;
+	hPotion->boundingBox.h = hPotion->position.y + 30;
+	*/
+	
+	/*Invincibility potion
+	iPotion = entity_new();
+	iPotion->type = ip;
+	iPotion->sprite = gf2d_sprite_load_image("images/Items/Invincibility.png");
+	iPotion->position = vector2d(350, 100);
+	iPotion->scale = &scale;
+	iPotion->spawned = 1;
+	iPotion->boundingBox.x = iPotion->position.x;
+	iPotion->boundingBox.y = iPotion->position.y;
+	iPotion->boundingBox.w = iPotion->position.x + 30;
+	iPotion->boundingBox.h = iPotion->position.y + 30;
+	//Set timer now*/
+
+	/*Bomb works but improve
+	bombE = entity_new();
+	bombE->type = bomb;
+	bombE->sprite = gf2d_sprite_load_image("images/Items/Bomb.png");
+	bombE->position= vector2d(500,500);
+	bombE->scale = &scale;
+	bombE->boundingBox.x = bombE->position.x;
+	bombE->boundingBox.y = bombE->position.y;
+	bombE->boundingBox.w = bombE->position.x + 30;
+	bombE->boundingBox.h = bombE->position.y + 30;
+	//bounding box*/
 
 	//play level music
 	music_play(level->levelMusic);
