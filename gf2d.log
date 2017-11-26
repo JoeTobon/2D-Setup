@@ -6,316 +6,515 @@ c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:6
 
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:93: audio system initialized
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:63: No controllers connected!
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 0.638570 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 1.349528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c:58: Level background: images/bg/l1b.png
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c:64: Level music: audio/littletown.mid
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c:70: Music loop: 1
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:387: Entity type: 0
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:403: Entity sprite: images/Soldier/player.png
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:414: Entity update is: player_update
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:432: Entity position.x: 600.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:433: Entity position.y: 350.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:448: Entity frame: 0
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:454: Entity health: 3
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:387: Entity type: 1
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:403: Entity sprite: images/Enemies/skeleton.png
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:422: Entity spawned: 1
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:432: Entity position.x: 0.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:433: Entity position.y: 0.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:448: Entity frame: 0
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:387: Entity type: 1
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:403: Entity sprite: images/Enemies/skeleton.png
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:422: Entity spawned: 1
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:432: Entity position.x: 1200.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:433: Entity position.y: 0.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:448: Entity frame: 0
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:387: Entity type: 1
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:403: Entity sprite: images/Enemies/skeleton.png
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:422: Entity spawned: 1
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:432: Entity position.x: 0.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:433: Entity position.y: 700.000000
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:448: Entity frame: 0
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:387: Entity type: 3
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:422: Entity spawned: 0
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:441: Sound:
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:379: Entity type: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:395: Entity sprite: images/Soldier/player.png
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:406: Entity update is: player_update
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:424: Entity position.x: 600.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:425: Entity position.y: 350.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:440: Entity frame: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:446: Entity health: 3
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:379: Entity type: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:395: Entity sprite: images/Enemies/skeleton.png
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:414: Entity spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:424: Entity position.x: 0.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:425: Entity position.y: 0.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:440: Entity frame: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:379: Entity type: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:395: Entity sprite: images/Enemies/skeleton.png
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:414: Entity spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:424: Entity position.x: 1200.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:425: Entity position.y: 0.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:440: Entity frame: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:379: Entity type: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:395: Entity sprite: images/Enemies/skeleton.png
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:414: Entity spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:424: Entity position.x: 0.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:425: Entity position.y: 700.000000
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:440: Entity frame: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:379: Entity type: 3
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:414: Entity spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:433: Sound:
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c:81: Entity File: def/level/level1List.entities
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:258: level 1 loaded
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:268: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 1.937984 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 62.500000 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:183: Rendering at 58.823528 FPS
-c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:191: ---==== END ====---
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:261: level 1 loaded
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:271: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 2.688172 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 47.619049 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 50.000000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 0
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 58.823528 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:162: Bomb spawned: 1
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:186: Rendering at 62.500000 FPS
+c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c:194: ---==== END ====---
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c:36: Audio system is closed.
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c:26: entity system closed
 c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c:27: sprite system closed

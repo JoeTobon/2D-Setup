@@ -46,6 +46,7 @@ typedef struct Entity_S
 	Bool spawned;
 	char direct;							//Used for projectiles
 	Bool invincible;
+	float invinceT;
 
 	Sound *entSound;
 
@@ -124,5 +125,7 @@ void entity_load(Entity *ent, char *filename);
  * @param filename name of file to load from
  */
 void entity_load_all(char *filename);
+
+void bomb_update(Entity *bomb);
 
 #endif

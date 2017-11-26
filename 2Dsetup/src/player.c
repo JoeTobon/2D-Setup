@@ -8,6 +8,7 @@
 void player_update(Entity *entity)
 {
 	const Uint8 *keys;
+	Vector4D invinColor = vector4d(0, 255, 0, 0);
 	
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -23,6 +24,19 @@ void player_update(Entity *entity)
 	if(!entity->inuse)
 	{
 		return;
+	}
+	
+	//checks invincibility status
+	if(entity->invincible == true)
+	{
+		entity->invinceT += .1;
+		//entity->colorShift = &invinColor;
+	}
+
+	if(entity->invinceT >= 18)
+	{
+		entity->invincible = false;
+		entity->invinceT = 0;
 	}
 
 	//used to make player move
@@ -261,19 +275,5 @@ void bow_Attack(Entity *bow, Entity *arrow)
 	else if(arrow->direct == 'u')
 	{
 		arrow->position.y += 10;
-	}
-}
-
-void player_invinc(Entity *playerE, Entity *invinceE)
-{
-	if(playerE->invincible == true)
-	{
-		invinceE->spawnTime += .1;
-	}
-
-	if(invinceE->spawnTime >= 3)
-	{
-		playerE->invincible = false;
-		entity_delete(invinceE);
 	}
 }

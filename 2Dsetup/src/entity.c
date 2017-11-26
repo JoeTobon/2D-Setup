@@ -295,8 +295,7 @@ void entity_collide_approach_all()
 				//set to false after certain amount of time
 				//call seperate function
 				playerEnt->invincible = true;
-				entity_manager.entList[i].spawned = 0;
-				entity_manager.entList[i].sprite = NULL;
+				entity_delete(&entity_manager.entList[i]);
 			}
 		}
 	}
@@ -304,17 +303,11 @@ void entity_collide_approach_all()
 	//checks collsion between player and bomb
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{
-		if(entity_manager.entList[i].type == bomb)
+		if(entity_manager.entList[i].type == bomb && entity_manager.entList[i].spawned == 0)
 		{
 			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true)
 			{
-				//expand bounding box	
-				entity_manager.entList[i].boundingBox.x = 100;
-				entity_manager.entList[i].boundingBox.y = 100;
-				entity_manager.entList[i].boundingBox.w = entity_manager.entList[i].position.x + 700;
-				entity_manager.entList[i].boundingBox.h = entity_manager.entList[i].position.y + 700;
-
-				//set spawned to true
+				//set spawned to true and unassign sprite
 				entity_manager.entList[i].spawned = 1;
 				entity_manager.entList[i].sprite = NULL;
 			}
@@ -337,7 +330,6 @@ void entity_collide_approach_all()
 				{
 					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
 					{
-						entity_delete(&entity_manager.entList[i]);
 						entity_delete(&entity_manager.entList[j]);
 					}
 				}
@@ -492,5 +484,27 @@ void entity_load_all(char *filename)
 	}
 
 	fclose(file);
+}
+
+void bomb_update(Entity *bomb)
+{
+	//start timer if bomb is picked up
+	if(bomb->spawned == 1)
+	{
+		//expand bounding box	
+		bomb->boundingBox.x = bomb->position.x - 200;
+		bomb->boundingBox.y = bomb->position.y - 200;
+		bomb->boundingBox.w = bomb->position.x + 400;
+		bomb->boundingBox.h = bomb->position.y + 400;
+		
+		bomb->spawnTime += .1;
+	}
+
+	//Delete bomb entity when effect timer wears off
+	if(bomb->spawnTime >= 8)
+	{
+		entity_delete(bomb);
+	}
+
 }
 

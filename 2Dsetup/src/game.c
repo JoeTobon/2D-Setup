@@ -110,8 +110,8 @@ int main(int argc, char * argv[])
 	hPotion->scale = &scale;
 	hPotion->boundingBox.x = hPotion->position.x;
 	hPotion->boundingBox.y = hPotion->position.y;
-	hPotion->boundingBox.w = hPotion->position.x + 30;
-	hPotion->boundingBox.h = hPotion->position.y + 30;
+	hPotion->boundingBox.w = 30;
+	hPotion->boundingBox.h = 30;
 	*/
 	
 	/*Invincibility potion
@@ -123,21 +123,23 @@ int main(int argc, char * argv[])
 	iPotion->spawned = 1;
 	iPotion->boundingBox.x = iPotion->position.x;
 	iPotion->boundingBox.y = iPotion->position.y;
-	iPotion->boundingBox.w = iPotion->position.x + 30;
-	iPotion->boundingBox.h = iPotion->position.y + 30;
+	iPotion->boundingBox.w = 30;
+	iPotion->boundingBox.h = 30;
 	//Set timer now*/
 
-	/*Bomb works but improve
+	/*Bomb
 	bombE = entity_new();
 	bombE->type = bomb;
 	bombE->sprite = gf2d_sprite_load_image("images/Items/Bomb.png");
-	bombE->position= vector2d(500,500);
+	bombE->position= vector2d(250,500);
 	bombE->scale = &scale;
 	bombE->boundingBox.x = bombE->position.x;
 	bombE->boundingBox.y = bombE->position.y;
-	bombE->boundingBox.w = bombE->position.x + 30;
-	bombE->boundingBox.h = bombE->position.y + 30;
-	//bounding box*/
+	bombE->boundingBox.w = 100;
+	bombE->boundingBox.h = 100;
+	bombE->update = &bomb_update;
+
+	//*/
 
 	//play level music
 	music_play(level->levelMusic);
@@ -157,6 +159,7 @@ int main(int argc, char * argv[])
 		entity_update_all();
 		entity_collide_approach_all();
 		bow_Attack(bow, arrow);
+			slog("Bomb spawned: %i", bombE->spawned);
 		
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
