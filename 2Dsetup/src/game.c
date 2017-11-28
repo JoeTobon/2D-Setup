@@ -23,9 +23,10 @@ int main(int argc, char * argv[])
     Sprite *mouse;
 	Level *level;
 	Vector2D scale = vector2d(.5, .5);
+	Vector2D scale2 = vector2d(3, 3);	
 
 	//Bow Stuff
-	Entity *bow, *arrow, *hPotion, *iPotion, *bombE;
+	Entity *bow, *arrow, *hPotion, *iPotion, *bombE, *bandit;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -100,7 +101,7 @@ int main(int argc, char * argv[])
 
 	arrow = entity_new();
 	arrow->scale = &scale;
-	//bounding box
+	//bounding box*/
 
 	/*Health Potion
 	hPotion = entity_new();
@@ -141,6 +142,17 @@ int main(int argc, char * argv[])
 
 	//*/
 
+	//Bandit Enemy
+	bandit = entity_new();
+	bandit->type = banditE;
+	bandit->sprite = gf2d_sprite_load_all("images/Enemies/StreetThief.png", 32, 32, 10);
+	bandit->position = vector2d(200, 400);
+	bandit->scale = &scale2;
+	bandit->boundingBox.x = bandit->position.x;
+	bandit->boundingBox.y = bandit->position.y;
+	bandit->boundingBox.w = 100;
+	bandit->boundingBox.h = 100;
+
 	//play level music
 	music_play(level->levelMusic);
 
@@ -159,7 +171,6 @@ int main(int argc, char * argv[])
 		entity_update_all();
 		entity_collide_approach_all();
 		bow_Attack(bow, arrow);
-			slog("Bomb spawned: %i", bombE->spawned);
 		
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame

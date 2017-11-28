@@ -12,4 +12,8 @@
  */
 void enemy_approach(Entity *player, Entity *enemy);
 
+void bandit_movement(Entity *player, Entity *bandit);
+
+void bandit_attack(Entity *bandit, Entity *knife, Entity *player);
+
 #endif

@@ -31,7 +31,7 @@ void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 
 	if(playerEnt->type != player && enemyEnt->type != enemy)
 	{
-		slog("Enities not of tyope player or enemy");
+		slog("Enities not of type player or enemy");
 		return;
 	}
 
@@ -67,4 +67,169 @@ void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 	enemyEnt->boundingBox.h = 100;
 }
 
+//Handles movement for the bandit AI
+void bandit_movement(Entity *player, Entity *bandit)
+{
+	float deltaX;
+	float deltaY;
+	float xStep;
+	float yStep;
+	float pathResult;
 
+	int speed;
+	float timeDelta;
+	int xMove;
+	int yMove;
+
+	timeDelta = .01;
+	speed = 3;
+
+	if(!player || !bandit)
+	{
+		slog("Player or Bandit entity is null");
+		return;
+	}
+
+	//calculate deltas
+	deltaX = player->position.x - bandit->position.x;
+	deltaY = player->position.y - bandit->position.y;
+
+	//find unit vector
+	pathResult = (deltaX * deltaX) + (deltaY * deltaY);
+	pathResult = sqrt(pathResult);
+
+	//normalize deltas
+	xStep = deltaX/pathResult;
+	yStep = deltaY/pathResult;
+
+	//calculate move
+	xMove = ((int)deltaX) * (speed) * (timeDelta);
+	yMove = ((int)deltaY) * (speed) * (timeDelta);
+
+	if(bandit->moveCount >= 3)
+	{
+		bandit->moveCount = 0;
+	}
+
+	if(bandit->moveCount >= 1)
+	{
+		
+		goto move;
+	}
+
+	//move
+
+	if(((bandit->boundingBox.x - 150) + (bandit->boundingBox.w + 300)) < player->boundingBox.x)
+	{
+		slog("not moving");
+		return;
+	}
+	else if((player->boundingBox.x + player->boundingBox.w) < (bandit->boundingBox.x - 150))
+	{
+		return;
+	}
+	else if(((bandit->boundingBox.y - 150) + (bandit->boundingBox.h + 300)) < player->boundingBox.y)
+	{
+		return;
+	}
+	else if((player->boundingBox.y + player->boundingBox.h) < (bandit->boundingBox.y - 150))
+	{
+		return;
+	}
+	else
+	{
+		move: 
+
+		bandit->moveCount++;
+		slog("moving");
+		bandit->position.x -= xMove;
+		bandit->position.y -= yMove;
+
+		//update bounding box
+		bandit->boundingBox.x = bandit->position.x;
+		bandit->boundingBox.y = bandit->position.y;
+		bandit->boundingBox.w = 100;
+		bandit->boundingBox.h = 100;
+	}	
+}
+
+void bandit_attack(Entity *bandit, Entity *knife, Entity *player)
+{
+	float deltaX;
+	float deltaY;
+	float xStep;
+	float yStep;
+	float pathResult;
+
+	int speed;
+	float timeDelta;
+	int xMove;
+	int yMove;
+
+	timeDelta = .01;
+	speed = 3;
+
+	if(!player || !bandit || !knife)
+	{
+		slog("Player or Bandit entity is null");
+		return;
+	}
+
+	//Set knife starting point to bandit
+	knife->position.x = bandit->position.x;
+	knife->position.y = bandit->position.y;
+
+	//calculate deltas
+	deltaX = player->position.x - knife->position.x;
+	deltaY = player->position.y - knife->position.y;
+
+	//find unit vector
+	pathResult = (deltaX * deltaX) + (deltaY * deltaY);
+	pathResult = sqrt(pathResult);
+
+	//normalize deltas
+	xStep = deltaX/pathResult;
+	yStep = deltaY/pathResult;
+
+	//calculate move
+	xMove = ((int)deltaX) * (speed) * (timeDelta);
+	yMove = ((int)deltaY) * (speed) * (timeDelta);
+
+	//Time between each throw 
+	if(knife->spawnTime == -1)
+	{
+		knife->spawnTime = 0;
+	}
+
+	if(knife->spawnTime >= 0)
+	{
+		knife->spawnTime += .1;
+	}
+	
+	//Move knife
+	if(knife->spawnTime >= 3)
+	{
+		knife->spawned = true;
+		knife->sprite = gf2d_sprite_load_image("images/Weapons/knife.png");
+
+		//Throw knife towards player
+		knife->position.x += xMove;
+		knife->position.y += yMove;
+	}
+
+	//reset timer, delete knife
+	if(knife->spawnTime >= 9)
+	{
+		knife->spawnTime = -1;
+		knife->spawned = false;
+		knife->sprite = NULL;
+	}
+
+	//update bounding box
+	knife->boundingBox.x = knife->position.x;
+	knife->boundingBox.y = knife->position.y;
+	knife->boundingBox.w = 10;
+	knife->boundingBox.h = 10;
+
+	
+}

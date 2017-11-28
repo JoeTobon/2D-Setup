@@ -26,7 +26,9 @@ void player_update(Entity *entity)
 		return;
 	}
 	
-	//checks invincibility status
+	entity->invincible = true;
+	
+	/*checks invincibility status
 	if(entity->invincible == true)
 	{
 		entity->invinceT += .1;
@@ -37,7 +39,7 @@ void player_update(Entity *entity)
 	{
 		entity->invincible = false;
 		entity->invinceT = 0;
-	}
+	}*/
 
 	//used to make player move
 	if(entity->type == player)

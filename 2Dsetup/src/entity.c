@@ -234,6 +234,36 @@ void entity_collide_approach_all()
 		}
 	}
 
+	//checks collisions between player and bandit
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0 || entity_manager.entList[i].type == player)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == banditE)
+		{
+			//approach handled here for now
+			bandit_movement(playerEnt, &entity_manager.entList[i]);
+
+			/*if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
+			{
+				if(playerEnt->health == 1)
+				{
+					entity_delete(playerEnt);
+				}
+				else
+				{
+					playerEnt->health--;
+				}
+
+				//Enemy dies on impact for now
+				entity_delete(&entity_manager.entList[i]);
+			}*/
+		}
+	}
+
 	//checks collision between weapon and enemy
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{

@@ -19,7 +19,9 @@ typedef enum
 	none,
 	hp,
 	ip, 
-	bomb
+	bomb, 
+	banditE,
+	banditK
 }EntityType;
 
 typedef struct Entity_S
@@ -44,9 +46,14 @@ typedef struct Entity_S
 
 	float spawnTime;
 	Bool spawned;
+
 	char direct;							//Used for projectiles
+
 	Bool invincible;
 	float invinceT;
+
+	Bool move;
+	int moveCount;
 
 	Sound *entSound;
 
