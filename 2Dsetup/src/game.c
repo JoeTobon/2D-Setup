@@ -24,9 +24,10 @@ int main(int argc, char * argv[])
 	Level *level;
 	Vector2D scale = vector2d(.5, .5);
 	Vector2D scale2 = vector2d(3, 3);	
+	Vector2D scale3 = vector2d(.1, .1);	
 
 	//Bow Stuff
-	Entity *bow, *arrow, *hPotion, *iPotion, *bombE, *bandit;
+	Entity *bow, *arrow, *hPotion, *iPotion, *bombE, *bandit, *knife;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -92,7 +93,7 @@ int main(int argc, char * argv[])
 	level = level_new();
 	level_Screen(level);	
 
-	//Bow Stuff
+	/*Bow Stuff
 	bow = entity_new();
 	bow->position = vector2d(600, 350);
 	bow->type = 4;
@@ -153,6 +154,11 @@ int main(int argc, char * argv[])
 	bandit->boundingBox.w = 100;
 	bandit->boundingBox.h = 100;
 
+	//Bandit Knife
+	knife = entity_new();
+	knife->type = banditK;
+	knife->scale = &scale3;
+
 	//play level music
 	music_play(level->levelMusic);
 
@@ -170,7 +176,8 @@ int main(int argc, char * argv[])
 
 		entity_update_all();
 		entity_collide_approach_all();
-		bow_Attack(bow, arrow);
+		//bow_Attack(bow, arrow);
+		bandit_A();
 		
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame

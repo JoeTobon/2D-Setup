@@ -538,3 +538,53 @@ void bomb_update(Entity *bomb)
 
 }
 
+void bandit_A()
+{
+	int i;
+	Entity *playerEnt = NULL, *bandit = NULL, *knife = NULL;
+
+	//find player
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == player)
+		{
+			playerEnt = &entity_manager.entList[i];
+		}
+	}
+
+	//find bandit
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0 || entity_manager.entList[i].type == player)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == banditE)
+		{
+			bandit = &entity_manager.entList[i];
+		}
+	}
+
+	//find knife
+
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0 || entity_manager.entList[i].type == player || entity_manager.entList[i].type == banditE)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == banditK)
+		{
+			knife = &entity_manager.entList[i];
+		}
+	}
+
+	bandit_attack(bandit, knife, playerEnt);
+}

@@ -52,8 +52,9 @@ typedef struct Entity_S
 	Bool invincible;
 	float invinceT;
 
-	Bool move;
 	int moveCount;
+	int movex;
+	int movey;
 
 	Sound *entSound;
 
@@ -134,5 +135,7 @@ void entity_load(Entity *ent, char *filename);
 void entity_load_all(char *filename);
 
 void bomb_update(Entity *bomb);
+
+void bandit_A();
 
 #endif
