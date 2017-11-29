@@ -1,26 +1,16 @@
-﻿Build started 11/14/2017 8:05:28 PM.
-     1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Build target(s)).
+﻿Build started 11/28/2017 7:32:12 PM.
+     1>Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\entity.c
-         entity.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(51): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(80): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(91): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(116): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(148): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(163): warning C4033: 'entity_collsion' must return a value
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(194): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(209): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(229): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(240): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(286): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(287): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(258): warning C4101: 'entSound' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(407): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(408): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(186): warning C4715: 'entity_collsion' : not all control paths return a value
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\game.c
+         game.c
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(131): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(27): warning C4101: 'file_size' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(20): warning C4101: 'i' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(20): warning C4101: 'in' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(28): warning C4101: 'myBuf' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(28): warning C4101: 'pBuf' : unreferenced local variable
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib physfs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib physfs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
          Debug\enemy.obj
          Debug\entity.obj
          Debug\game.obj
@@ -29,11 +19,13 @@
          Debug\gf2d_sprite.obj
          Debug\gf2d_vector.obj
          Debug\level.obj
+         Debug\physfsrwops.obj
          Debug\player.obj
          Debug\simple_logger.obj
-         2Dsetup.vcxproj -> C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe
-     1>Done Building Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" (Build target(s)).
+            Creating library C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.lib and object C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.exp
+         2Dsetup.vcxproj -> C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.exe
+     1>Done Building Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.62
+Time Elapsed 00:00:01.94

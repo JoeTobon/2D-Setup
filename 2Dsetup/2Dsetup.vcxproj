@@ -108,6 +108,7 @@
     <ClCompile Include="src\gf2d_sprite.c" />
     <ClCompile Include="src\gf2d_vector.c" />
     <ClCompile Include="src\level.c" />
+    <ClCompile Include="src\physfsrwops.c" />
     <ClCompile Include="src\player.c" />
     <ClCompile Include="src\simple_logger.c" />
   </ItemGroup>

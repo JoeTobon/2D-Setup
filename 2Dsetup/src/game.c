@@ -1,5 +1,6 @@
 #include <SDL.h>
 #include <physfs.h>
+#include "physfsrwops.h"
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
 #include "entity.h"
@@ -20,9 +21,14 @@ int main(int argc, char * argv[])
 
     int mx,my;
     float mf = 0;
-    Sprite *mouse;
+    Sprite *mouse = NULL;
 	Level *level;
-	
+	PHYSFS_File *cb = NULL;
+	PHYSFS_sint64 file_size;
+	char *pBuf, *myBuf;
+	SDL_RWops *rwops;
+	SDL_Surface *surface;
+
     Vector4D mouseColor = {255,100,255,200};
 
 	//Game Controller 1 handler
@@ -44,7 +50,7 @@ int main(int argc, char * argv[])
 
 	//initialize physfs
 	PHYSFS_init(NULL);
-	PHYSFS_mount("assets", "", 1);
+	PHYSFS_mount("assets.zip", "", 1);
 	
 	//entity system initialized
 	entity_system_init(1024);
@@ -82,15 +88,32 @@ int main(int argc, char * argv[])
 	
 
 	//Load all sprites in system
-    mouse = gf2d_sprite_load_all("assets/images/pointer.png",32,32,16);
+    //mouse = gf2d_sprite_load_all("assets/images/pointer.png",32,32,16);
 
 	//titleScreen
 	//titleScreen();
 
+	//Physfs testing
+	rwops = PHYSFSRWOPS_openRead("assets/images/pointer.png");
+
+	if(rwops == NULL)
+	{
+		slog("File not loaded");
+	}
+	else
+	{
+		slog("File loaded");
+	}
+
+	surface = SDL_LoadBMP_RW(rwops, 1);
+	mouse->texture = SDL_CreateTextureFromSurface(gf2d_graphics_get_renderer(), surface);
+	gf2d_sprite_draw(mouse, vector2d(0,0), NULL, NULL, NULL, NULL, NULL, 0);
+
+
 	//Load level
 	level = level_new();
 	//level_Screen(level);	
-	level_load(level, "def/level/level1.level");
+	//level_load(level, "def/level/level1.level");
 	//slog("level 1 loaded");
 
 

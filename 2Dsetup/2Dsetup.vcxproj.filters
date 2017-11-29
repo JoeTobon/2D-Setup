@@ -89,5 +89,8 @@
     <ClCompile Include="src\level.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\physfsrwops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

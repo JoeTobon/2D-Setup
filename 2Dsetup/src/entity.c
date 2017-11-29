@@ -253,8 +253,8 @@ void entity_collide_approach_all()
 
 void entity_load(Entity *ent, char *filename)
 {
-	PHYSFS_File *file;
-	char *pBuf;
+	PHYSFS_File *file, *cb;
+	char *pBuf, *myBuf;
 	Sound *entSound;
 	char buffer[512];
 	int tempx, tempy;
