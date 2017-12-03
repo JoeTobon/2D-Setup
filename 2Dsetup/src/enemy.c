@@ -7,8 +7,35 @@
 #include "gf2d_sprite.h"
 
 
+void enemy_update(Entity *player, Entity *enemy)
+{
+	if(!player || !enemy)
+	{
+		slog("No player or enemy exist");
+		return;
+	}
+
+	if(enemy->stunned == false && enemy->type == skeleton)
+	{
+		skeleton_approach(player, enemy);
+	}
+
+	//Skeleton stunned by shield
+	if(enemy->stunned == true && enemy->type == skeleton)
+	{
+		enemy->stunTime += .1;
+		//Visual indicator entity->colorShift = &invinColor;
+	}
+
+	if(enemy->stunTime >= 18)
+	{
+		enemy->stunned = false;
+		enemy->stunTime = 0;
+	}
+}
+
 //For skeleton
-void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
+void skeleton_approach(Entity *playerEnt, Entity *enemyEnt)
 {
 	float deltaX;
 	float deltaY;
@@ -29,7 +56,7 @@ void enemy_approach(Entity *playerEnt, Entity *enemyEnt)
 		return;
 	}
 
-	if(playerEnt->type != player && enemyEnt->type != enemy)
+	if(playerEnt->type != player && enemyEnt->type != skeleton)
 	{
 		slog("Enities not of type player or enemy");
 		return;

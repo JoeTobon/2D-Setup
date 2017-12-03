@@ -16,12 +16,24 @@ void player_update(Entity *entity);
  * @param player the player entity attacking
  * @param weapon the weapon entity to do the attacking with
  */
-void player_attack(Entity *player, Entity *weapon);
+void player_attack(Entity *player, Entity *weapon); //HANDLES ONLY SWORD ATTACK FOR NOW
+
+/**
+ * @brief will handle the player attacking with a sword
+ */
+void sword_Attack(); //NOT YET IMPLEMENTED
 
 /**
  * @brief will handle the player attacking with a bow
- * @param weapon the weapon entity to do the attacking with (bow in this case)
+ * @param bow the bow entity to attack from
+ * @param arrow the arrow entity to do the attacking with
  */
-void bow_Attack(Entity *bow, Entity *arrow);
+void knife_Attack(Entity *playerEnt, Entity *knife); //WILL PROBABLY SWITCH TO JUST A THROWING KNIFE
+
+/**
+ * @brief will handle the player attacking with a shield
+ * @param shieldEnt the shield entity to do the attacking with
+ */
+void shield_Attack(Entity *playerEnt, Entity *shieldEnt);
 
 #endif

@@ -118,8 +118,6 @@ void player_attack(Entity *playerEnt, Entity *weaponEnt)
 			weaponEnt->position.x = playerEnt->position.x - 10;
 			weaponEnt->position.y = playerEnt->position.y;
 
-			
-		
 			sound_play(weaponEnt->entSound);
 			weaponEnt->spawned = 1;
 			weaponEnt->spawnTime = 0;
@@ -171,10 +169,9 @@ void player_attack(Entity *playerEnt, Entity *weaponEnt)
 	}
 }
 
-void bow_Attack(Entity *bow, Entity *arrow)
+void knife_Attack(Entity * playerEnt, Entity *knife)
 {
-	const Uint8 *keys;
-	Sprite *arrowS;
+	Sprite *knifeS;
 	
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -182,100 +179,205 @@ void bow_Attack(Entity *bow, Entity *arrow)
 	//Game Controller 1 handler
 	SDL_GameController *controller;
 
-	arrowS = gf2d_sprite_load_image("images/Weapons/Arrow.png");
+	knifeS = gf2d_sprite_load_image("images/Weapons/knife.png");
 
-	if(!bow || !arrow)
+	if(!knife)
 	{
-		slog("Bow or arrow does not exist");
+		slog("Knife does not exist");
 		return;
 	}
 
 	//Delay between arrow spawn
-	if(arrow->spawnTime >= 0)
+	if(knife->spawnTime >= 0)
 	{
-		arrow->spawnTime += .1;
+		knife->spawnTime += .1;
 	}
 
-	if(arrow->spawnTime >= 4.5)
+	if(knife->spawnTime >= 4.5)
 	{
-		arrow->sprite = NULL;
-		arrow->spawned = 0;
-		arrow->spawnTime = -1;
+		knife->sprite = NULL;
+		knife->spawned = 0;
+		knife->spawnTime = -1;
 	}
 
 
-	//Spawn arrow in direction of right stick
-	//if(playEnt->type == player)
+	//Spawn arrow in direction of right stick from player position
+	if(playerEnt->type == player)
 	{
 		//attacking with controller
 		controller = SDL_GameControllerOpen(0);
 
-		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) < -DEAD_ZONE && arrow->spawned != 1)
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) < -DEAD_ZONE && knife->spawned != 1)
 		{
-			arrow->sprite = arrowS;
+			knife->sprite = knifeS;
 
-			arrow->position.x = bow->position.x - 60;
-			arrow->position.y = bow->position.y;
+			knife->position.x = playerEnt->position.x + 10;
+			knife->position.y = playerEnt->position.y + 30;
 
-			arrow->spawned = 1;
-			arrow->spawnTime = 0;
+			knife->spawned = 1;
+			knife->spawnTime = 0;
 
-			arrow->direct = 'l';
+			knife->direct = 'l';
 
 		}
-		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE && arrow->spawned != 1)
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE && knife->spawned != 1)
 		{
-			arrow->sprite = arrowS;
+			knife->sprite = knifeS;
 
-			arrow->position.x = bow->position.x + 80;
-			arrow->position.y = bow->position.y;
+			knife->position.x = playerEnt->position.x + 90;
+			knife->position.y = playerEnt->position.y + 30;
 
-			arrow->spawned = 1;
-			arrow->spawnTime = 0;
+			knife->spawned = 1;
+			knife->spawnTime = 0;
 
-			arrow->direct = 'r';
+			knife->direct = 'r';
 		}
-		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE && arrow->spawned != 1)
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE && knife->spawned != 1)
 		{
-			arrow->sprite = arrowS;
+			knife->sprite = knifeS;
 
-			arrow->position.x = bow->position.x + 20;
-			arrow->position.y = bow->position.y + 110;
+			knife->position.x = playerEnt->position.x + 55;
+			knife->position.y = playerEnt->position.y + 100;
 
-			arrow->spawned = 1;
-			arrow->spawnTime = 0;
+			knife->spawned = 1;
+			knife->spawnTime = 0;
 
-			arrow->direct = 'u';
+			knife->direct = 'd';
 		}
-		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE && arrow->spawned != 1)
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE && knife->spawned != 1)
 		{
-			arrow->sprite = arrowS;
+			knife->sprite = knifeS;
 
-			arrow->position.x = bow->position.x + 20;
-			arrow->position.y = bow->position.y - 110;
+			knife->position.x = playerEnt->position.x + 55;
+			knife->position.y = playerEnt->position.y - 10;
 
-			arrow->spawned = 1;
-			arrow->spawnTime = 0;
+			knife->spawned = 1;
+			knife->spawnTime = 0;
 
-			arrow->direct = 'd';
+			knife->direct = 'u';
 		}
 	}
 
-	//Make arrow move depending on right stick press
-	if(arrow->direct == 'l')
+	//Make knife move depending on right stick press
+	if(knife->direct == 'l')
 	{
-		arrow->position.x -= 10;
+		knife->position.x -= 10;
 	}
-	else if(arrow->direct == 'r')
+	else if(knife->direct == 'r')
 	{
-		arrow->position.x += 10;
+		knife->position.x += 10;
 	}
-	else if(arrow->direct == 'd')
+	else if(knife->direct == 'd')
 	{
-		arrow->position.y -= 10;
+		knife->position.y += 10;
 	}
-	else if(arrow->direct == 'u')
+	else if(knife->direct == 'u')
 	{
-		arrow->position.y += 10;
+		knife->position.y -= 10;
+	}
+
+	//Detect collision if knife is spawned
+	if(knife->spawned == 1)
+	{
+		//update bounding box
+		knife->boundingBox.x = knife->position.x;
+		knife->boundingBox.y = knife->position.y;
+		knife->boundingBox.w = 30;
+		knife->boundingBox.h = 110;
+	}
+}
+
+void shield_Attack(Entity *playerEnt, Entity *shieldEnt)
+{
+	Sprite *shieldS;
+	
+	//dead zone for controller
+	const int DEAD_ZONE = 8000;
+
+	//Game Controller 1 handler
+	SDL_GameController *controller;
+	shieldS = gf2d_sprite_load_image("images/Weapons/shield.png");
+
+	if(!playerEnt || !shieldEnt)
+	{
+		return;
+	}
+
+	//Delay between attacks
+	if(shieldEnt->spawnTime >= 0)
+	{
+		shieldEnt->spawnTime += .1;
+	}
+
+	if(shieldEnt->spawnTime >= 3)
+	{
+		shieldEnt->sprite = NULL;
+		shieldEnt->spawned = 0;
+		shieldEnt->spawnTime = -1;
+	}
+
+	//Attacking
+	if(playerEnt->type == player)
+	{
+		//attacking with controller
+		controller = SDL_GameControllerOpen(0);
+
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) < -DEAD_ZONE && shieldEnt->spawned != 1)
+		{
+			shieldEnt->sprite = shieldS;
+
+			shieldEnt->position.x = playerEnt->position.x - 15;
+			shieldEnt->position.y = playerEnt->position.y + 30;
+
+			
+		
+			//sound_play(weaponEnt->entSound);
+			shieldEnt->spawned = 1;
+			shieldEnt->spawnTime = 0;
+
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE && shieldEnt->spawned != 1)
+		{
+			shieldEnt->sprite = shieldS;
+
+			shieldEnt->position.x = playerEnt->position.x + 80;
+			shieldEnt->position.y = playerEnt->position.y + 30;
+
+			//sound_play(weaponEnt->entSound);
+			shieldEnt->spawned = 1;
+			shieldEnt->spawnTime = 0;
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE && shieldEnt->spawned != 1)
+		{
+			shieldEnt->sprite = shieldS;
+
+			shieldEnt->position.x = playerEnt->position.x + 30;
+			shieldEnt->position.y = playerEnt->position.y + 100;
+
+			//sound_play(weaponEnt->entSound);
+			shieldEnt->spawned = 1;
+			shieldEnt->spawnTime = 0;
+		}
+		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE && shieldEnt->spawned != 1)
+		{
+			shieldEnt->sprite = shieldS;
+
+			shieldEnt->position.x = playerEnt->position.x + 30;
+			shieldEnt->position.y = playerEnt->position.y - 30;
+
+			//sound_play(weaponEnt->entSound);
+			shieldEnt->spawned = 1;
+			shieldEnt->spawnTime = 0;
+		}
+	}
+
+	//Detect collision if weapon is spawned
+	if(shieldEnt->spawned == 1)
+	{
+		//update bounding box
+		shieldEnt->boundingBox.x = shieldEnt->position.x;
+		shieldEnt->boundingBox.y = shieldEnt->position.y;
+		shieldEnt->boundingBox.w = 30;
+		shieldEnt->boundingBox.h = 30;
 	}
 }

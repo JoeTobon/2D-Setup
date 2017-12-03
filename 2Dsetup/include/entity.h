@@ -11,17 +11,30 @@
 //Used to identity what type of entity is being used
 typedef enum
 {
+	//Player Type
 	player,
-	enemy,									 //specify enemies, weapons, and projectiles as game is developed more
-	projectile,
+
+	//Weapons
 	sword,
-	bow,
-	none,
+	shield,
+	knife,
+
+	//Items/abilities
 	hp,
 	ip, 
-	bomb, 
+	bomb,
+	
+	//Enemy Types
+	skeleton,
 	banditE,
-	banditK
+	banditK,
+
+	//BanditID
+	banditId,
+
+	//No type
+	none
+	
 }EntityType;
 
 typedef struct Entity_S
@@ -49,8 +62,11 @@ typedef struct Entity_S
 
 	char direct;							//Used for projectiles
 
-	Bool invincible;
+	Bool invincible;					    //Used for invicibility potion
 	float invinceT;
+
+	Bool stunned;							//Used for the shield attack
+	float stunTime;
 
 	int moveCount;
 	int movex;
@@ -119,7 +135,7 @@ Bool entity_collsion(Entity *ent1, Entity *ent2);
 /**
  * @brief makes all entities specified approach the player
  */
-void entity_collide_approach_all();
+void entity_collide_all();
 
 /**
  * @brief will load an entity and its various attributes from a file
@@ -134,8 +150,20 @@ void entity_load(Entity *ent, char *filename);
  */
 void entity_load_all(char *filename);
 
+/**
+ * @brief the update function for the bomb entity. Will handle area of effect, duration, etc
+ * @param bomb pointer to bomb entity
+ */
 void bomb_update(Entity *bomb);
 
-void bandit_A();
+/**
+ * @brief Handles the bandit entities attack
+ */
+void bandit_a();
+
+/**
+ * @brief Handles the enemies update function
+ */
+void enemy_u(Entity *enemyEnt);
 
 #endif

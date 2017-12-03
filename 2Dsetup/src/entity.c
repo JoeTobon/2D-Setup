@@ -159,7 +159,8 @@ Bool entity_collsion(Entity *ent1, Entity *ent2)
 {
 	if(!ent1 || !ent2)
 	{
-		return;
+		slog("Ent1 or Ent2 do not exist");
+		return false;
 	}
 
 	if((ent1->boundingBox.x + ent1->boundingBox.w) < ent2->boundingBox.x)
@@ -184,7 +185,7 @@ Bool entity_collsion(Entity *ent1, Entity *ent2)
 	}
 }
 
-void entity_collide_approach_all()
+void entity_collide_all()
 {
 	int i, j;
 	Entity *playerEnt = NULL;
@@ -204,6 +205,8 @@ void entity_collide_approach_all()
 		}
 	}
 	
+	//////////Player and Enemy Collisons//////////
+
 	//checks collisions between player and enemies
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{
@@ -212,11 +215,8 @@ void entity_collide_approach_all()
 			continue;
 		}
 		
-		if(entity_manager.entList[i].type == enemy)
+		if(entity_manager.entList[i].type == skeleton)
 		{
-			//approach handled here for now
-			enemy_approach(playerEnt, &entity_manager.entList[i]);
-
 			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
 			{
 				if(playerEnt->health == 1)
@@ -264,30 +264,7 @@ void entity_collide_approach_all()
 		}
 	}
 
-	//checks collision between weapon and enemy
-	for(i = 0; i < entity_manager.maxEnt; i++)
-	{
-		if(entity_manager.entList[i].inuse == 0)
-		{
-			continue;
-		}
-		
-		if(entity_manager.entList[i].type == sword)
-		{
-			player_attack(playerEnt, &entity_manager.entList[i]);
-
-			for(j = 0; j < entity_manager.maxEnt; j++)
-			{
-				if(entity_manager.entList[j].type == enemy && entity_manager.entList[i].spawned == 1)
-				{
-					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
-					{
-						entity_delete(&entity_manager.entList[j]);
-					}
-				}
-			}
-		}
-	}
+	//////////Player and Item Collisions//////////
 
 	//checks collsion between player and health potion
 	for(i = 0; i < entity_manager.maxEnt; i++)
@@ -344,6 +321,83 @@ void entity_collide_approach_all()
 		}
 	}
 
+	//////////Weapon/Item and Enemey Collisions//////////
+
+	//checks collision between sword and enemy
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == sword)
+		{
+			//player_attack(playerEnt, &entity_manager.entList[i]);
+
+			for(j = 0; j < entity_manager.maxEnt; j++)
+			{
+				if(entity_manager.entList[j].type == skeleton && entity_manager.entList[i].spawned == 1)
+				{
+					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
+					{
+						entity_delete(&entity_manager.entList[j]);
+					}
+				}
+			}
+		}
+	}
+
+	//checks collision between shield and enemy
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == shield)
+		{
+			shield_Attack(playerEnt, &entity_manager.entList[i]);
+
+			for(j = 0; j < entity_manager.maxEnt; j++)
+			{
+				if(entity_manager.entList[j].type == skeleton && entity_manager.entList[i].spawned == 1)
+				{
+					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
+					{
+						entity_manager.entList[j].stunned = true;
+					}
+				}
+			}
+		}
+	}
+
+	//checks collision between knife and enemy
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == knife)
+		{
+			//knife_Attack(playerEnt, &entity_manager.entList[i]);
+
+			for(j = 0; j < entity_manager.maxEnt; j++)
+			{
+				if((entity_manager.entList[j].type == skeleton ||  entity_manager.entList[j].type == banditE) && entity_manager.entList[i].spawned == 1)
+				{
+					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
+					{
+						entity_delete(&entity_manager.entList[j]);
+					}
+				}
+			}
+		}
+	}
+
 	//checks collision between bomb and enemy
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{
@@ -356,7 +410,7 @@ void entity_collide_approach_all()
 		{
 			for(j = 0; j < entity_manager.maxEnt; j++)
 			{
-				if(entity_manager.entList[j].type == enemy && entity_manager.entList[i].spawned == 1)
+				if(entity_manager.entList[j].type == skeleton && entity_manager.entList[i].spawned == 1)
 				{
 					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
 					{
@@ -429,13 +483,22 @@ void entity_load(Entity *ent, char *filename)
 		{
 			fscanf(file, "%s", buffer);
 
-			//assign update
+			//assign update for player
 			if(strcmp(buffer, "player_update") == 0)
 			{
 				ent->update = &player_update;
 				slog("Entity update is: %s", buffer);
 				continue;
 			}
+
+			//assign update for enemy
+			if(strcmp(buffer, "enemy_u") == 0)
+			{
+				ent->update = &enemy_u;
+				slog("Entity update is: %s", buffer);
+				continue;
+			}
+
 			continue;
 		}
 		if(strcmp(buffer, "spawned:") == 0)
@@ -538,7 +601,7 @@ void bomb_update(Entity *bomb)
 
 }
 
-void bandit_A()
+void bandit_a()
 {
 	int i;
 	Entity *playerEnt = NULL, *bandit = NULL, *knife = NULL;
@@ -554,6 +617,7 @@ void bandit_A()
 		if(entity_manager.entList[i].type == player)
 		{
 			playerEnt = &entity_manager.entList[i];
+			break;
 		}
 	}
 
@@ -587,4 +651,27 @@ void bandit_A()
 	}
 
 	bandit_attack(bandit, knife, playerEnt);
+}
+
+void enemy_u(Entity *enemyEnt)
+{
+	int i;
+	Entity *playerEnt = NULL;
+
+	//Finds player entity
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == player)
+		{
+			playerEnt = &entity_manager.entList[i];
+			break;
+		}
+	}
+
+	enemy_update(playerEnt, enemyEnt);
 }

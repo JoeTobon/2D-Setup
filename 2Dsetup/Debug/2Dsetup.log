@@ -1,33 +1,37 @@
-﻿Build started 11/28/2017 6:12:31 PM.
+﻿Build started 12/3/2017 5:32:02 PM.
      1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\enemy.c
-         enemy.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(24): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(39): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(40): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(44): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(52): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(53): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(64): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(65): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(84): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(94): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(95): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(99): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(106): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(107): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(149): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(150): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(169): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(186): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(187): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(191): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(198): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(199): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(208): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(227): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(228): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\entity.c
+         entity.c
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(50): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(79): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(90): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(115): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(147): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(194): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(211): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(241): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(273): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(294): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(314): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(330): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(341): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(355): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(366): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(380): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(391): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(405): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(414): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(431): warning C4101: 'entSound' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(591): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(592): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(593): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(594): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(596): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(613): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(628): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(643): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(665): warning C4018: '<' : signed/unsigned mismatch
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib physfs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
          Debug\enemy.obj
@@ -45,4 +49,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.11
+Time Elapsed 00:00:00.57
