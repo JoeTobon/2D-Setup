@@ -57,8 +57,8 @@ typedef struct Entity_S
 	Vector2D velocity;						 //how fast the enity is moving in a given direction
 	int health;								 //keeps track of entity's health
 
-	float spawnTime;
 	Bool spawned;
+	float spawnTime;
 
 	char direct;							//Used for projectiles
 
@@ -67,6 +67,10 @@ typedef struct Entity_S
 
 	Bool stunned;							//Used for the shield attack
 	float stunTime;
+
+
+	Bool drop;								//If entity will drop item or not
+	char dropFile[40];							//Name of dropped item file
 
 	int moveCount;
 	int movex;

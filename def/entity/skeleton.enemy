@@ -4,3 +4,5 @@ update:		enemy_u
 spawned:	1
 position:	0 0
 frame:		0
+drop:		1
+dropFile: 	def/entity/healthDrop.drop

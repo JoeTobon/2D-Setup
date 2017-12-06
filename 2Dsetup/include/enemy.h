@@ -12,6 +12,12 @@
 void enemy_update(Entity *player, Entity *enemy);
 
 /**
+ * @brief  will handle the dropping of an item/weapon if an enemy has something to drop
+ * @param  enemy the entity that has the item/weapon to drop
+ */
+void enemy_drop(Entity *enemy);
+
+/**
  * @brief  will cause the entity to approach the player at a consistant rate
  * @param  player the entity to approach (the player in this instance)
  * @param  enemy the entity to move (the enemy in this instance)

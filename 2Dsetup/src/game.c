@@ -9,6 +9,7 @@
 #include "enemy.h"
 #include "audio.h"
 #include "level.h"
+#include "window.h"
 
 
 int main(int argc, char * argv[])
@@ -26,8 +27,11 @@ int main(int argc, char * argv[])
 	Vector2D scale2 = vector2d(3, 3);	
 	Vector2D scale3 = vector2d(.1, .1);	
 
-	//Bow Stuff
-	Entity *bow, *arrow, *hPotion, *iPotion, *bombE, *bandit, *knifeE, *shieldEnt;
+	//Entity Stuff
+	Entity *hPotion, *iPotion, *bombE, *bandit, *knifeE, *shieldEnt;
+
+	//Window
+	Window *win;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -53,6 +57,9 @@ int main(int argc, char * argv[])
 
 	//audio system initialized
 	audio_system_init(256,16,4,1,1,1);
+
+	//window system initialized
+	window_system_init(10);
 
     SDL_ShowCursor(SDL_DISABLE);
 
@@ -160,6 +167,14 @@ int main(int argc, char * argv[])
 //	shieldEnt->position = vector2d(500, 200);
 	//shieldEnt->sprite = gf2d_sprite_load_image("images/Weapons/shield.png");
 
+	//Window
+	win = window_new();
+	win->position = vector2d(0, 0);
+	win->bgcolor = vector4d(0, 200, 0, 0);
+	win->main_window.x = win->position.x;
+	win->main_window.y = win->position.y;
+	win->main_window.w = 1200;
+	win->main_window.h = 720;
 
 	//play level music
 	music_play(level->levelMusic);
@@ -196,6 +211,8 @@ int main(int argc, char * argv[])
                 NULL,
                 &mouseColor,
                 (int)mf);
+
+			window_draw_all();
 
 			entity_draw_all();
 			

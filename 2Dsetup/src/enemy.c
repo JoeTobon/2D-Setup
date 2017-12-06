@@ -34,6 +34,25 @@ void enemy_update(Entity *player, Entity *enemy)
 	}
 }
 
+void enemy_drop(Entity *enemy)
+{
+	Entity *drop = NULL;
+	char *fileName;
+
+	fileName = enemy->dropFile;
+
+	slog("file name %s: ", fileName);
+
+	if(enemy->drop == true)
+	{
+		drop = entity_new();
+
+		entity_load(drop, enemy->dropFile);
+		drop->position.x = enemy->position.x;
+		drop->position.y = enemy->position.y;
+	}
+}
+
 //For skeleton
 void skeleton_approach(Entity *playerEnt, Entity *enemyEnt)
 {

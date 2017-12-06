@@ -333,14 +333,15 @@ void entity_collide_all()
 		
 		if(entity_manager.entList[i].type == sword)
 		{
-			//player_attack(playerEnt, &entity_manager.entList[i]);
+			player_attack(playerEnt, &entity_manager.entList[i]);
 
 			for(j = 0; j < entity_manager.maxEnt; j++)
 			{
-				if(entity_manager.entList[j].type == skeleton && entity_manager.entList[i].spawned == 1)
+				if((entity_manager.entList[j].type == skeleton ||  entity_manager.entList[j].type == banditE) && entity_manager.entList[i].spawned == 1)
 				{
 					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
 					{
+						enemy_drop(&entity_manager.entList[j]);
 						entity_delete(&entity_manager.entList[j]);
 					}
 				}
@@ -358,7 +359,7 @@ void entity_collide_all()
 		
 		if(entity_manager.entList[i].type == shield)
 		{
-			shield_Attack(playerEnt, &entity_manager.entList[i]);
+			//shield_Attack(playerEnt, &entity_manager.entList[i]);
 
 			for(j = 0; j < entity_manager.maxEnt; j++)
 			{
@@ -537,6 +538,19 @@ void entity_load(Entity *ent, char *filename)
 		{
 			fscanf(file, "%i", &ent->health);
 			slog("Entity health: %i", ent->health);
+			continue;
+		}
+		if(strcmp(buffer, "drop:") == 0)
+		{
+			fscanf(file, "%i", &ent->drop);
+			slog("Entity drop: %i", ent->drop);
+			continue;
+		}
+		if(strcmp(buffer, "dropFile:") == 0)
+		{
+			fscanf(file, "%s", buffer);
+			strncpy(ent->dropFile, buffer, 40);
+			slog("Drop file: %s", buffer);
 			continue;
 		}
 	}
