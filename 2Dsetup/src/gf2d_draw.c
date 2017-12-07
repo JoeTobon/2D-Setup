@@ -52,11 +52,11 @@ void gf2d_draw_rect(SDL_Rect rect,Vector4D color, Bool fill)
                            color.z,
                            color.w);
     SDL_RenderDrawRect(gf2d_graphics_get_renderer(),(const struct SDL_Rect *)&rect);
-    SDL_SetRenderDrawColor(gf2d_graphics_get_renderer(),
-                           255,
-                           255,
-                           255,
-                           255);
+    //SDL_SetRenderDrawColor(gf2d_graphics_get_renderer(),
+                        //   255,
+                         //  255,
+                          // 255,
+                           //255);
 	if(fill == true)
 	{
 		SDL_RenderFillRect(gf2d_graphics_get_renderer(), (const struct SDL_Rect *)&rect);

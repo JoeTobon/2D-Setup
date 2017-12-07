@@ -107,8 +107,8 @@ void skeleton_approach(Entity *playerEnt, Entity *enemyEnt)
 	enemyEnt->position.y += yMove;
 
 	//updates bounding box
-	enemyEnt->boundingBox.x = enemyEnt->position.x;
-	enemyEnt->boundingBox.y = enemyEnt->position.y;
+	enemyEnt->boundingBox.x = enemyEnt->position.x + 20;
+	enemyEnt->boundingBox.y = enemyEnt->position.y + 15;
 	enemyEnt->boundingBox.w = 60;
 	enemyEnt->boundingBox.h = 100;
 }

@@ -1,200 +1,7 @@
-﻿Build started 12/6/2017 6:35:27 PM.
-     1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 12/7/2017 12:51:54 PM.
+     1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\audio.c src\enemy.c src\entity.c src\game.c src\gf2d_draw.c src\gf2d_graphics.c src\gf2d_sprite.c src\gf2d_vector.c src\level.c src\player.c src\simple_logger.c src\widgets.c src\window.c
-         window.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\window.c(45): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\window.c(55): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\window.c(101): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\window.c(116): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\window.c(137): warning C4018: '<' : signed/unsigned mismatch
-         widgets.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\widgets.c(45): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\widgets.c(72): warning C4018: '<' : signed/unsigned mismatch
-         simple_logger.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\simple_logger.c(28): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-         player.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(71): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(72): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(11): warning C4101: 'invinColor' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(98): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(165): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(166): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(81): warning C4101: 'keys' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(193): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(283): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(284): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(309): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(378): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(379): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-         level.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(14): warning C4033: 'level_new' must return a value
-         gf2d_vector.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(29): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(34): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(39): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(44): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(49): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(54): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(240): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(244): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(270): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(275): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(280): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(351): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(352): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(353): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(355): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(356): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(357): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(359): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(360): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(361): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(375): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(376): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(377): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(378): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(393): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(409): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(425): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(442): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(443): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(444): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(445): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(446): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(447): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(448): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(449): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(450): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(474): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(487): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(488): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(506): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(516): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(524): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_vector.c(533): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         gf2d_sprite.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(46): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(68): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(78): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(87): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(103): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(232): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(233): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(234): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(245): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(246): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(247): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(250): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_sprite.c(265): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-         gf2d_graphics.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c(126): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c(131): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c(203): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c(220): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c(221): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c(222): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_graphics.c(223): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-         gf2d_draw.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(9): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(10): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(11): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(12): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(13): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(16): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(17): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(18): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(19): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(31): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(32): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(33): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(34): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(36): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(37): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(38): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(39): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(50): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(51): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(52): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(53): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(69): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(70): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(71): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(72): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(79): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(80): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(81): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(82): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(84): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(85): warning C4244: 'function' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(91): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(92): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(93): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(94): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(109): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(110): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(111): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(112): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(117): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(118): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(119): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(120): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(125): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(126): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(127): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(128): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(129): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(130): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(131): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(132): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(157): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(162): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(172): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(173): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(174): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\gf2d_draw.c(175): warning C4244: 'function' : conversion from 'double' to 'Uint8', possible loss of data
-         game.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(174): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(175): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(190): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(27): warning C4101: 'scale2' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(26): warning C4101: 'scale' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(20): warning C4101: 'i' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(20): warning C4101: 'in' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(31): warning C4101: 'bandit' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(31): warning C4101: 'bombE' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(31): warning C4101: 'iPotion' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\game.c(31): warning C4101: 'hPotion' : unreferenced local variable
-         entity.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(50): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(79): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(90): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(115): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(147): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(194): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(211): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(238): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(270): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(291): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(311): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(327): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(338): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(353): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(364): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(378): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(389): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(403): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(412): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(429): warning C4101: 'entSound' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(602): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(603): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(604): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(605): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(607): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(624): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(639): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(654): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(676): warning C4018: '<' : signed/unsigned mismatch
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\enemy.c
          enemy.c
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(26): warning C4305: '+=' : truncation from 'double' to 'float'
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(70): warning C4305: '=' : truncation from 'double' to 'float'
@@ -222,18 +29,6 @@
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(254): warning C4305: '+=' : truncation from 'double' to 'float'
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(273): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\enemy.c(274): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-         audio.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(89): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(103): warning C4033: 'sound_new' must return a value
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(107): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(157): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(170): warning C4033: 'music_new' must return a value
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(173): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(222): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(128): warning C4715: 'sound_new' : not all control paths return a value
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(193): warning C4715: 'music_new' : not all control paths return a value
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(20): warning C4715: 'level_new' : not all control paths return a value
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib physfs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
          Debug\enemy.obj
@@ -249,8 +44,8 @@
          Debug\widgets.obj
          Debug\window.obj
          2Dsetup.vcxproj -> C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe
-     1>Done Building Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.09
+Time Elapsed 00:00:00.65

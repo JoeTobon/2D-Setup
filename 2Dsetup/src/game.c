@@ -212,7 +212,7 @@ int main(int argc, char * argv[])
                 &mouseColor,
                 (int)mf);
 
-			window_draw_all();
+			//window_draw_all();
 
 			entity_draw_all();
 			

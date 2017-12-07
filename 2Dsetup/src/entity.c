@@ -3,6 +3,7 @@
 #include "gf2d_types.h"
 #include "gf2d_sprite.h"
 #include "player.h"
+#include "gf2d_draw.h"
 #include "enemy.h"
 
 typedef struct
@@ -138,6 +139,7 @@ void entity_draw(Entity *entity)
 
 	gf2d_sprite_draw(entity->sprite, entity->position, entity->scale, entity->scaleCenter, 
 					    entity->rotation, entity->flip, entity->colorShift, entity->frame);
+	gf2d_draw_rect(entity->boundingBox, vector4d(100, 200, 300, 100), true);
 }
 
 void entity_draw_all()

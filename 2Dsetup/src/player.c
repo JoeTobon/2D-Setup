@@ -68,10 +68,10 @@ void player_update(Entity *entity)
 	}
 
 	//updates bounding box
-	entity->boundingBox.x = entity->position.x;
+	entity->boundingBox.x = entity->position.x +20;
 	entity->boundingBox.y = entity->position.y;
-	entity->boundingBox.w = 50;
-	entity->boundingBox.h = 100;
+	entity->boundingBox.w = 80;
+	entity->boundingBox.h = 120;
 
 }
 
