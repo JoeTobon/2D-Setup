@@ -95,6 +95,7 @@
     <ClInclude Include="include\gf2d_types.h" />
     <ClInclude Include="include\gf2d_vector.h" />
     <ClInclude Include="include\level.h" />
+    <ClInclude Include="include\menus.h" />
     <ClInclude Include="include\player.h" />
     <ClInclude Include="include\simple_logger.h" />
     <ClInclude Include="include\widgets.h" />
@@ -110,6 +111,7 @@
     <ClCompile Include="src\gf2d_sprite.c" />
     <ClCompile Include="src\gf2d_vector.c" />
     <ClCompile Include="src\level.c" />
+    <ClCompile Include="src\menus.c" />
     <ClCompile Include="src\player.c" />
     <ClCompile Include="src\simple_logger.c" />
     <ClCompile Include="src\widgets.c" />

@@ -17,7 +17,7 @@ void titleScreen();
 /**
  * @brief will handle the main menu and its prompts
  */
-void main_menu();
+void main_menu(Level *level);
 
 
 /**
