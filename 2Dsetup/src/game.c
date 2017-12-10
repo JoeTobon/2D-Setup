@@ -10,6 +10,7 @@
 #include "audio.h"
 #include "level.h"
 #include "window.h"
+#include "widgets.h"
 
 
 int main(int argc, char * argv[])
@@ -61,6 +62,9 @@ int main(int argc, char * argv[])
 	//window system initialized
 	window_system_init(10);
 
+	//Button system initialized
+	button_system_init(100);
+
     SDL_ShowCursor(SDL_DISABLE);
 
 	//Controller support
@@ -95,6 +99,9 @@ int main(int argc, char * argv[])
 
 	//titleScreen
 	//titleScreen();
+
+	//mainMenu
+	main_menu();
 
 	//Load level
 	level = level_new();
@@ -259,6 +266,133 @@ void titleScreen()
 
 		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
 	}
+}
+
+void main_menu()
+{
+	int menuBool = 0;
+	float timer = 0;
+	Bool stall;
+	SDL_GameController *controller;
+	Button *play, *editor, *controls, *settings;
+
+	//dead zone for controller
+	const int DEAD_ZONE = 8000;
+
+	controller = SDL_GameControllerOpen(0);
+
+	stall = false;
+
+	//initialize buttons
+	play	 = button_new();
+	editor	 = button_new();
+	controls = button_new();
+	settings = button_new();
+
+	//Set button attributes
+	play->position.x = 450;
+	play->position.y = 0;
+	play->bounds.x = play->position.x;
+	play->bounds.y = play->position.y + 50;
+	play->hover = true;
+
+	editor->position.x = 450;
+	editor->position.y = 150;
+	editor->bounds.x = editor->position.x;
+	editor->bounds.y = editor->position.y + 50;
+
+	controls->position.x = 450;
+	controls->position.y = 300;
+	controls->bounds.x = controls->position.x;
+	controls->bounds.y = controls->position.y + 50;
+
+	settings->position.x = 450;
+	settings->position.y = 450;
+	settings->bounds.x = settings->position.x;
+	settings->bounds.y = settings->position.y + 50;
+
+	//Menu Screen
+	while(!menuBool)
+	{
+		SDL_PumpEvents();   // update SDL's internal event structures
+
+		if(stall == true)
+		{
+			timer += 0.1;
+			
+		}
+
+        if (timer >= 2.0) 
+		{
+			timer = 0;
+			stall = false;
+		}
+
+		button_hover_all();
+
+		gf2d_graphics_clear_screen();// clears drawing buffers
+
+			button_draw_all();
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		//controller input down
+		if(play->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE) && stall == false)
+		{
+			play->hover = false;
+			editor->hover = true;
+			stall = true;
+
+			//what happens if clicked
+		}
+		if(editor->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE) && stall == false)
+		{
+			editor->hover = false;
+			controls->hover = true;
+			stall = true;
+		}
+		if(controls->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE) && stall == false)
+		{
+			controls->hover = false;
+			settings->hover = true;
+			stall = true;
+		}
+		if(settings->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE) && stall == false)
+		{
+			settings->hover = false;
+			play->hover = true;
+			stall = true;
+		}
+
+		//controller input up
+		if(play->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE) && stall == false)
+		{
+			play->hover = false;
+			settings->hover = true;
+			stall = true;
+		}
+		if(editor->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE) && stall == false)
+		{
+			editor->hover = false;
+			play->hover = true;
+			stall = true;
+		}
+		if(controls->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE) && stall == false)
+		{
+			controls->hover = false;
+			editor->hover = true;
+			stall = true;
+		}
+		if(settings->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE) && stall == false)
+		{
+			settings->hover = false;
+			controls->hover = true;
+			stall = true;
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+
 }
 
 void level_Screen(Level *level)

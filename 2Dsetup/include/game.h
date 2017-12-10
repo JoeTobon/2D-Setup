@@ -15,6 +15,12 @@
 void titleScreen();
 
 /**
+ * @brief will handle the main menu and its prompts
+ */
+void main_menu();
+
+
+/**
  * @brief will handle the level select screen and initiate the level based on selection
  * @param level the level to be initialized based on selection 
  */

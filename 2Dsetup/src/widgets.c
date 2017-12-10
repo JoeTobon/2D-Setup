@@ -60,6 +60,10 @@ Button *button_new()
 			button_manager.buttonList[i].inuse = 1; //Set ref count to 1. Address is now in use
 
 			//Initialize various default attributes of entity here
+			button_manager.buttonList[i].image = gf2d_sprite_load_image("images/UI/button.png");
+			
+			button_manager.buttonList[i].bounds.w = 300;
+			button_manager.buttonList[i].bounds.h = 100;
 
 			return &button_manager.buttonList[i];		  //Return address of index in array
 		}
@@ -76,8 +80,9 @@ void button_draw(Button *button)
 	{
 		return;
 	}
-
+	
 	gf2d_sprite_draw(button->image, button->position, button->scale, button->scaleCenter, button->rotation, button->flip, button->colorShift, button->frame);
+	//gf2d_draw_rect(button->bounds, vector4d(100, 200, 300, 100), true);
 }
 
 void button_delete(Button *button)
@@ -116,7 +121,7 @@ void button_update_all()
 			continue;
 		}
 
-		//if window has no update function go to next entity
+		//if button has no update function go to next entity
 		if(!button_manager.buttonList[i].update)
 		{
 			continue;
@@ -133,5 +138,44 @@ void button_delete_all()
 	for(i = 0; i < button_manager.maxButton; i++)
 	{
 		button_delete(&button_manager.buttonList[i]);
+	}
+}
+
+void button_hover(Button *button)
+{
+	if(button->hover == true)
+	{
+		button->image = gf2d_sprite_load_image("images/UI/buttonHov.png");
+	}
+	else if(button->hover == false )//&& button->clicked == false)
+	{
+		button->image = gf2d_sprite_load_image("images/UI/button.png");
+	}
+}
+
+void button_clicked(Button *button)
+{
+	if(button->clicked == true)
+	{
+		button->image = gf2d_sprite_load_image("images/UI/buttonClicked.png");
+	}
+	else if(button->hover == false && button->clicked == false)
+	{
+		button->image = gf2d_sprite_load_image("images/UI/button.png");
+	}
+}
+
+void button_hover_all()
+{
+	int i;
+
+	for(i = 0; i < button_manager.maxButton; i++)
+	{
+		if(button_manager.buttonList[i].inuse == 0)
+		{
+				return;
+		}
+		
+		button_hover(&button_manager.buttonList[i]);
 	}
 }

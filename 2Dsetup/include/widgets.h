@@ -1,18 +1,20 @@
-#ifndef __window_h__
-#define __window_h__
+#ifndef __widgets_h__
+#define __widgets_h__
 
 #include <SDL.h>
 #include "gf2d_sprite.h"
 #include "gf2d_types.h"
 #include "gf2d_vector.h"
 #include "gf2d_text.h"
+#include "gf2d_draw.h"
 #include "simple_logger.h"
 
 typedef struct Button_S
 {
-	SDL_Rect *bounds;
+	SDL_Rect bounds;
 
 	Bool inuse;
+	Bool hover;
 	Bool clicked;
 
 	Sprite *image;
@@ -27,7 +29,6 @@ typedef struct Button_S
 	Vector2D position;
 
 	void (*update)(struct Button_S *self);
-	void (*click)();
 }Button;
 
 /**
@@ -68,5 +69,21 @@ void button_update_all();
  * @brief deletes all loaded buttons from memory does not close the button system
  */
 void button_delete_all();
+
+/**
+ * @brief   Checks to see if a button is hovered over
+ * @param   button the button that is checked to see if hovered
+ * @return  True if button is hovered false if it is not
+ */
+void button_hover(Button *button);
+
+/**
+ * @brief   Checks to see if a button is clicked
+ * @param   button the button that is checked to see if clicked
+ * @return  True if button is clicked false if it is not
+ */
+void button_clicked(Button *button);
+
+void button_hover_all();
 
 #endif
