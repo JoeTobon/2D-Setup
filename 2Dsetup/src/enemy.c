@@ -50,6 +50,14 @@ void enemy_drop(Entity *enemy)
 		entity_load(drop, enemy->dropFile);
 		drop->position.x = enemy->position.x;
 		drop->position.y = enemy->position.y;
+
+		if(drop->type == hp)
+		{
+			drop->boundingBox.x = drop->position.x;
+			drop->boundingBox.y = drop->position.y;
+			drop->boundingBox.w = 50;
+			drop->boundingBox.h = 50;
+		}
 	}
 }
 

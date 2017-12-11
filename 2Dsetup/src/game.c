@@ -25,7 +25,7 @@ int main(int argc, char * argv[])
     float mf = 0;
     Sprite *mouse;
 	Level *level;
-	Vector2D scale = vector2d(.5, .5);
+	Vector2D scale = vector2d(.1, .1);
 	Vector2D scale2 = vector2d(3, 3);	
 	Vector2D scale3 = vector2d(.1, .1);	
 
@@ -113,18 +113,6 @@ int main(int argc, char * argv[])
 	knifeE->type = knife;
 	knifeE->scale = &scale3;
 	
-
-	/*Health Potion
-	hPotion = entity_new();
-	hPotion->type = hp;
-	hPotion->sprite = gf2d_sprite_load_image("images/Items/Health.png");
-	hPotion->position = vector2d(100, 350);
-	hPotion->scale = &scale;
-	hPotion->boundingBox.x = hPotion->position.x;
-	hPotion->boundingBox.y = hPotion->position.y;
-	hPotion->boundingBox.w = 30;
-	hPotion->boundingBox.h = 30;
-	*/
 	
 	/*Invincibility potion
 	iPotion = entity_new();

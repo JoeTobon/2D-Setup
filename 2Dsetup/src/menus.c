@@ -5,6 +5,7 @@ void titleScreen()
 	Sprite *titleScreen;
 	int titleBool = 0;
 	SDL_GameController *controller;
+	SDL_Event e;
 
 	titleScreen = gf2d_sprite_load_image("images/UI/titleMenu.png");
 	controller = SDL_GameControllerOpen(0);
@@ -12,17 +13,21 @@ void titleScreen()
 	//title screen
 	while(!titleBool)
 	{
-		SDL_PumpEvents();   // update SDL's internal event structures
-
-		gf2d_graphics_clear_screen();// clears drawing buffers
-
-			gf2d_sprite_draw_image(titleScreen,vector2d(0, 0));
-
-		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
-
-		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_A))
+		while(SDL_PollEvent(&e) != 0)
 		{
-			titleBool = 1;
+			gf2d_graphics_clear_screen();// clears drawing buffers
+
+				gf2d_sprite_draw_image(titleScreen,vector2d(0, 0));
+
+			gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+			if(e.cbutton.button == SDL_CONTROLLER_BUTTON_A)
+			{
+				if(e.type == SDL_CONTROLLERBUTTONUP)
+				{
+					titleBool = 1;
+				}
+			}
 		}
 
 		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
@@ -33,9 +38,10 @@ void main_menu(Level *level)
 {
 	int menuBool = 0;
 	float timer = 0;
-	Bool stall;
+	Bool stall, menuSwitch;
 	SDL_GameController *controller;
 	Button *play, *editor, *controls, *settings;
+	SDL_Event e;
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -43,6 +49,7 @@ void main_menu(Level *level)
 	controller = SDL_GameControllerOpen(0);
 
 	stall = false;
+	menuSwitch = false;
 
 	//initialize buttons
 	play	 = button_new();
@@ -161,6 +168,7 @@ void main_menu(Level *level)
 		{
 			exit(0);
 		}
+
 		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
 	}
 
@@ -202,7 +210,7 @@ void level_Screen(Level *level)
 		return;
 	}
 
-	SDL_FlushEvent(SDL_CONTROLLERBUTTONDOWN);
+	
 
 	//title screen
 	while(!levelBool)

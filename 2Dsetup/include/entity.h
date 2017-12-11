@@ -76,6 +76,10 @@ typedef struct Entity_S
 	int movex;
 	int movey;
 
+	Bool sword;								//Checks players equipped weapon
+	Bool shield;
+	Bool knife;
+
 	Sound *entSound;
 
 	void (*update)(struct Entity_S *self);  //used to update the enity's current states

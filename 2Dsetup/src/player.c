@@ -25,10 +25,14 @@ void player_update(Entity *entity)
 	{
 		return;
 	}
-	
-	entity->invincible = true;
-	
-	/*checks invincibility status
+
+	//Equips sword to start
+	if(entity->sword == false && entity->shield == false && entity->knife == false)
+	{
+		entity->sword = true;
+	}
+
+	//checks invincibility status
 	if(entity->invincible == true)
 	{
 		entity->invinceT += .1;
@@ -39,7 +43,7 @@ void player_update(Entity *entity)
 	{
 		entity->invincible = false;
 		entity->invinceT = 0;
-	}*/
+	}
 
 	//used to make player move
 	if(entity->type == player)
@@ -65,6 +69,23 @@ void player_update(Entity *entity)
 		{
 			entity->position.y += 10;
 		}
+
+		//Switch weapons
+		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->sword == true)
+		{
+			entity->sword  = false;
+			entity->shield = true;
+		}
+		else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->shield == true)
+		{
+			entity->shield = false;
+			entity->knife = true;
+		}
+		else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->knife == true)
+		{
+			entity->knife  = false;
+			entity->sword = true;
+		}
 	}
 
 	//updates bounding box
@@ -72,7 +93,6 @@ void player_update(Entity *entity)
 	entity->boundingBox.y = entity->position.y;
 	entity->boundingBox.w = 80;
 	entity->boundingBox.h = 120;
-
 }
 
 void player_attack(Entity *playerEnt, Entity *weaponEnt)
@@ -283,7 +303,7 @@ void knife_Attack(Entity * playerEnt, Entity *knife)
 		knife->boundingBox.x = knife->position.x;
 		knife->boundingBox.y = knife->position.y;
 		knife->boundingBox.w = 30;
-		knife->boundingBox.h = 110;
+		knife->boundingBox.h = 30;
 	}
 }
 

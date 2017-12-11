@@ -139,7 +139,7 @@ void entity_draw(Entity *entity)
 
 	gf2d_sprite_draw(entity->sprite, entity->position, entity->scale, entity->scaleCenter, 
 					    entity->rotation, entity->flip, entity->colorShift, entity->frame);
-	gf2d_draw_rect(entity->boundingBox, vector4d(100, 200, 300, 100), true);
+	//gf2d_draw_rect(entity->boundingBox, vector4d(100, 200, 300, 100), true);
 }
 
 void entity_draw_all()
@@ -231,6 +231,7 @@ void entity_collide_all()
 				}
 
 				//Enemy dies on impact for now
+				enemy_drop(&entity_manager.entList[i]);
 				entity_delete(&entity_manager.entList[i]);
 			}
 		}
@@ -335,7 +336,10 @@ void entity_collide_all()
 		
 		if(entity_manager.entList[i].type == sword)
 		{
-			player_attack(playerEnt, &entity_manager.entList[i]);
+			if(playerEnt->sword == true)
+			{
+				player_attack(playerEnt, &entity_manager.entList[i]);
+			}
 
 			for(j = 0; j < entity_manager.maxEnt; j++)
 			{
@@ -361,7 +365,10 @@ void entity_collide_all()
 		
 		if(entity_manager.entList[i].type == shield)
 		{
-			//shield_Attack(playerEnt, &entity_manager.entList[i]);
+			if(playerEnt->shield == true)
+			{
+				shield_Attack(playerEnt, &entity_manager.entList[i]);
+			}
 
 			for(j = 0; j < entity_manager.maxEnt; j++)
 			{
@@ -386,7 +393,10 @@ void entity_collide_all()
 		
 		if(entity_manager.entList[i].type == knife)
 		{
-			//knife_Attack(playerEnt, &entity_manager.entList[i]);
+			if(playerEnt->knife == true)
+			{
+				knife_Attack(playerEnt, &entity_manager.entList[i]);
+			}
 
 			for(j = 0; j < entity_manager.maxEnt; j++)
 			{
@@ -394,6 +404,7 @@ void entity_collide_all()
 				{
 					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
 					{
+						enemy_drop(&entity_manager.entList[j]);
 						entity_delete(&entity_manager.entList[j]);
 					}
 				}
@@ -432,8 +443,8 @@ void entity_load(Entity *ent, char *filename)
 	char buffer[512];
 	int tempx, tempy;
 
-	tempx = 0;
-	tempy = 0;
+	tempx  = 0;
+	tempy  = 0;
 
 	if(!ent)
 	{
@@ -464,6 +475,7 @@ void entity_load(Entity *ent, char *filename)
 		{
 			fscanf(file, "%i", &ent->type);
 			slog("Entity type: %i", ent->type);
+
 			continue;
 		}
 		if(strcmp(buffer, "sprite:") == 0)
