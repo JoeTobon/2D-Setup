@@ -221,14 +221,8 @@ void entity_collide_all()
 		{
 			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
 			{
-				if(playerEnt->health == 1)
-				{
-					entity_delete(playerEnt);
-				}
-				else
-				{
-					playerEnt->health--;
-				}
+			
+				playerEnt->health--;
 
 				//Enemy dies on impact for now
 				enemy_drop(&entity_manager.entList[i]);

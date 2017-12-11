@@ -26,6 +26,14 @@ void player_update(Entity *entity)
 		return;
 	}
 
+	if(entity->health <= 0)
+	{
+		//call game over
+		entity->sword = false; 
+		entity->shield = false;
+		entity->knife = false;
+	}
+
 	//Equips sword to start
 	if(entity->sword == false && entity->shield == false && entity->knife == false)
 	{
@@ -46,45 +54,47 @@ void player_update(Entity *entity)
 	}
 
 	//used to make player move
-	if(entity->type == player)
+	if(entity->type == player && entity->health > 0)
 	{
-		//movement with keys and controller
-		keys = SDL_GetKeyboardState(NULL);
-
+		//movement with controller
 		controller = SDL_GameControllerOpen(0);
 
-		if(keys[SDL_SCANCODE_D] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) > DEAD_ZONE)
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) > DEAD_ZONE && entity->position.x != 1100)
 		{
+
 			entity->position.x += 10;
 		}
-		if(keys[SDL_SCANCODE_A] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) < -DEAD_ZONE)
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) < -DEAD_ZONE && entity->position.x != -10)
 		{
 			entity->position.x -= 10;
 		}
-		if(keys[SDL_SCANCODE_W] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE)
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE && entity->position.y != -10)
 		{
 			entity->position.y -= 10;
 		}
-		if(keys[SDL_SCANCODE_S] || SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE)
+		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE && entity->position.y != 600)
 		{
 			entity->position.y += 10;
 		}
 
 		//Switch weapons
-		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->sword == true)
+		if(entity->health > 0)
 		{
-			entity->sword  = false;
-			entity->shield = true;
-		}
-		else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->shield == true)
-		{
-			entity->shield = false;
-			entity->knife = true;
-		}
-		else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->knife == true)
-		{
-			entity->knife  = false;
-			entity->sword = true;
+			if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->sword == true)
+			{
+				entity->sword  = false;
+				entity->shield = true;
+			}
+			else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->shield == true)
+			{
+				entity->shield = false;
+				entity->knife = true;
+			}
+			else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->knife == true)
+			{
+				entity->knife  = false;
+				entity->sword = true;
+			}
 		}
 	}
 
