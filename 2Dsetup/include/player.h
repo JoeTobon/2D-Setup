@@ -12,16 +12,17 @@
 void player_update(Entity *entity);
 
 /**
+ * @brief will define the player HUD
+ * @param entity the player HUD
+ */
+void player_hud(Entity *entity);
+
+/**
  * @brief will handle the player attacking
  * @param player the player entity attacking
  * @param weapon the weapon entity to do the attacking with
  */
-void player_attack(Entity *player, Entity *weapon); //HANDLES ONLY SWORD ATTACK FOR NOW
-
-/**
- * @brief will handle the player attacking with a sword
- */
-void sword_Attack(); //NOT YET IMPLEMENTED
+void sword_Attack(Entity *player, Entity *weapon); 
 
 /**
  * @brief will handle the player attacking with a bow

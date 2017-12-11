@@ -194,11 +194,12 @@ int main(int argc, char * argv[])
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
+		    //UI elements last
 
 			gf2d_sprite_draw_image(level->background,vector2d(0,0));
 
-            //UI elements last
-            gf2d_sprite_draw(
+           
+            /*gf2d_sprite_draw(
                 mouse,
                 vector2d(mx,my),
                 NULL,
@@ -206,7 +207,7 @@ int main(int argc, char * argv[])
                 NULL,
                 NULL,
                 &mouseColor,
-                (int)mf);
+                (int)mf);*/
 
 			//window_draw_all();
 

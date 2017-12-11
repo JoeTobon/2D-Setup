@@ -153,6 +153,12 @@ void entity_draw_all()
 			continue;
 		}
 
+
+		if(entity_manager.entList[i].type == player)
+		{
+			player_hud(&entity_manager.entList[i]);
+		}
+
 		entity_draw(&entity_manager.entList[i]);
 	}
 }
@@ -332,7 +338,7 @@ void entity_collide_all()
 		{
 			if(playerEnt->sword == true)
 			{
-				player_attack(playerEnt, &entity_manager.entList[i]);
+				sword_Attack(playerEnt, &entity_manager.entList[i]);
 			}
 
 			for(j = 0; j < entity_manager.maxEnt; j++)

@@ -9,6 +9,7 @@ void player_update(Entity *entity)
 {
 	const Uint8 *keys;
 	Vector4D invinColor = vector4d(0, 255, 0, 0);
+	SDL_Event e;
 	
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -25,6 +26,9 @@ void player_update(Entity *entity)
 	{
 		return;
 	}
+
+	//Update HUD
+	player_hud(entity);
 
 	if(entity->health <= 0)
 	{
@@ -80,20 +84,26 @@ void player_update(Entity *entity)
 		//Switch weapons
 		if(entity->health > 0)
 		{
-			if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->sword == true)
+			while(SDL_PollEvent(&e))
 			{
-				entity->sword  = false;
-				entity->shield = true;
-			}
-			else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->shield == true)
-			{
-				entity->shield = false;
-				entity->knife = true;
-			}
-			else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER) && entity->knife == true)
-			{
-				entity->knife  = false;
-				entity->sword = true;
+				if(e.cbutton.button == SDL_CONTROLLER_BUTTON_LEFTSHOULDER)
+				{
+					if(e.type == SDL_CONTROLLERBUTTONUP && entity->sword == true)
+					{
+						entity->sword  = false;
+						entity->shield = true;
+					}
+					else if(e.type == SDL_CONTROLLERBUTTONUP && entity->shield == true)
+					{
+						entity->shield = false;
+						entity->knife = true;
+					}
+					else if(e.type == SDL_CONTROLLERBUTTONUP && entity->knife == true)
+					{
+						entity->knife  = false;
+						entity->sword = true;
+					}
+				}
 			}
 		}
 	}
@@ -105,7 +115,60 @@ void player_update(Entity *entity)
 	entity->boundingBox.h = 120;
 }
 
-void player_attack(Entity *playerEnt, Entity *weaponEnt)
+void player_hud(Entity *entity)
+{
+	Sprite *threeH, *twoH, *oneH, *noH;
+	Sprite *weaHolder;
+	Sprite *weapon;
+
+	Vector2D scale = vector2d(.1, .1);
+
+	threeH = gf2d_sprite_load_image("images/UI/3HP.png");
+	twoH   = gf2d_sprite_load_image("images/UI/2HP.png");
+	oneH   = gf2d_sprite_load_image("images/UI/1HP.png");
+	noH    = gf2d_sprite_load_image("images/UI/0HP.png");
+	
+	weaHolder = gf2d_sprite_load_image("images/UI/circle.png");
+
+	//Draws Health
+	if(entity->health == 3)
+	{
+		gf2d_sprite_draw_image(threeH, vector2d(0, 0));
+	}
+	else if(entity->health == 2)
+	{
+		gf2d_sprite_draw_image(twoH, vector2d(0, 0));
+	}
+	else if(entity->health == 1)
+	{
+		gf2d_sprite_draw_image(oneH, vector2d(0, 0));
+	}
+	else if(entity->health == 0)
+	{
+		gf2d_sprite_draw_image(noH, vector2d(0, 0));
+	}
+
+	//Draw current weapon
+	gf2d_sprite_draw_image(weaHolder, vector2d(0, 560));
+
+	if(entity->sword == true)
+	{
+		weapon = gf2d_sprite_load_image("images/Weapons/sword.png");
+		gf2d_sprite_draw_image(weapon, vector2d(60, 600));
+	}
+	else if(entity->shield == true)
+	{
+		weapon = gf2d_sprite_load_image("images/Weapons/shield.png");
+		gf2d_sprite_draw_image(weapon, vector2d(40, 600));
+	}
+	else if(entity->knife == true)
+	{
+		weapon = gf2d_sprite_load_image("images/Weapons/knife.png");
+		gf2d_sprite_draw(weapon, vector2d(60, 600), &scale, NULL, NULL, NULL, NULL, NULL);
+	}
+}
+
+void sword_Attack(Entity *playerEnt, Entity *weaponEnt)
 {
 	Sprite *weaponS;
 	const Uint8 *keys;
