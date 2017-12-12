@@ -1,6 +1,6 @@
 #include "menus.h"
 
-static Window *pause = window_new();
+//static Window *pause = window_new();
 
 void titleScreen()
 {
@@ -243,7 +243,7 @@ void level_Screen(Level *level)
 	}
 }
 
-void call_pause()
+/*void call_pause()
 {
 	SDL_Event e;
 
@@ -277,4 +277,4 @@ void pause_menu(Window *win)
 	win->main_window.y = win->position.y;
 	win->main_window.w = 200;
 	win->main_window.h = 500;
-}
+}*/

@@ -1,5 +1,5 @@
-﻿Build started 12/11/2017 7:22:15 PM.
-     1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 12/12/2017 5:28:35 PM.
+     1>Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\audio.c src\enemy.c src\entity.c src\game.c src\gf2d_draw.c src\gf2d_graphics.c src\gf2d_sprite.c src\gf2d_vector.c src\level.c src\menus.c src\player.c src\simple_logger.c src\widgets.c src\window.c
          window.c
@@ -36,7 +36,6 @@
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(471): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\player.c(472): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
          menus.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(3): error C2099: initializer is not a constant
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(65): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(66): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(71): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
@@ -46,8 +45,7 @@
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(81): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(82): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(92): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(276): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(277): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\menus.c(46): warning C4101: 'e' : unreferenced local variable
          level.c
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(14): warning C4033: 'level_new' must return a value
          gf2d_vector.c
@@ -258,8 +256,24 @@
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(128): warning C4715: 'sound_new' : not all control paths return a value
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\audio.c(193): warning C4715: 'music_new' : not all control paths return a value
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(20): warning C4715: 'level_new' : not all control paths return a value
-     1>Done Building Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" (Rebuild target(s)) -- FAILED.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib physfs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
+         Debug\enemy.obj
+         Debug\entity.obj
+         Debug\game.obj
+         Debug\gf2d_draw.obj
+         Debug\gf2d_graphics.obj
+         Debug\gf2d_sprite.obj
+         Debug\gf2d_vector.obj
+         Debug\level.obj
+         Debug\menus.obj
+         Debug\player.obj
+         Debug\simple_logger.obj
+         Debug\widgets.obj
+         Debug\window.obj
+         2Dsetup.vcxproj -> C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup.exe
+     1>Done Building Project "C:\Users\Joe\Documents\Visual Studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" (Rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:03.72
+Time Elapsed 00:00:04.71

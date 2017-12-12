@@ -27,7 +27,7 @@ int main(int argc, char * argv[])
 	Level *level;
 	Vector2D scale = vector2d(.1, .1);
 	Vector2D scale2 = vector2d(3, 3);	
-	Vector2D scale3 = vector2d(.1, .1);	
+	Vector2D scale3 = vector2d(.1, .1);
 
 	//Entity Stuff
 	Entity *hPotion, *iPotion, *bombE, *bandit, *knifeE, *shieldEnt;
