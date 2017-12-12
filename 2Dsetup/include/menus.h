@@ -1,3 +1,6 @@
+#ifndef __menus_h__
+#define __menus_h__
+
 #include <SDL.h>
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
@@ -7,7 +10,7 @@
 #include "enemy.h"
 #include "audio.h"
 #include "level.h"
-#include "windows.h"
+#include "window.h"
 #include "widgets.h"
 
 void titleScreen();
@@ -15,3 +18,9 @@ void titleScreen();
 void main_menu();
 
 void level_Screen();
+
+void call_pause();
+
+void pause_menu(Window *win);
+
+#endif

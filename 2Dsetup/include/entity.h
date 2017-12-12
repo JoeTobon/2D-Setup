@@ -174,4 +174,10 @@ void bandit_a();
  */
 void enemy_u(Entity *enemyEnt);
 
+/**
+ * @brief   Searches the entity system to see if all enemies are dead
+ * @return  True if enemies are all dead, false if not
+ */
+Bool enemies_dead();
+
 #endif

@@ -190,6 +190,11 @@ int main(int argc, char * argv[])
 		entity_update_all();
 		entity_collide_all();
 		//bandit_a();
+
+		if(enemies_dead() == true)
+		{
+			slog("win!");
+		}
 		
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame

@@ -1,5 +1,7 @@
 #include "menus.h"
 
+static Window *pause = window_new();
+
 void titleScreen()
 {
 	Sprite *titleScreen;
@@ -239,4 +241,40 @@ void level_Screen(Level *level)
 
 		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
 	}
+}
+
+void call_pause()
+{
+	SDL_Event e;
+
+	while(SDL_PollEvent(&e) != 0)
+	{
+		if(e.cbutton.button == SDL_CONTROLLER_BUTTON_START)
+		{
+			if(e.type == SDL_CONTROLLERBUTTONUP)
+			{
+				pause_menu(pause);
+				window_draw(pause);
+			}
+		}
+		if(e.cbutton.button == SDL_CONTROLLER_BUTTON_B)
+		{
+			if(e.type == SDL_CONTROLLERBUTTONUP)
+			{
+				pause = NULL;
+			}
+		}
+
+	}
+}
+
+void pause_menu(Window *win)
+{
+	win->position.x = 300;
+	win->position.y = 300;
+
+	win->main_window.x = win->position.x;
+	win->main_window.y = win->position.y;
+	win->main_window.w = 200;
+	win->main_window.h = 500;
 }

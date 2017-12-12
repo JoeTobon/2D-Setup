@@ -703,3 +703,23 @@ void enemy_u(Entity *enemyEnt)
 
 	enemy_update(playerEnt, enemyEnt);
 }
+
+Bool enemies_dead()
+{
+	int i;
+
+	for (i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0)
+		{
+			continue;
+		}
+
+		if(entity_manager.entList[i].type == skeleton || entity_manager.entList[i].type == banditE)
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
