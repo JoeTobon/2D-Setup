@@ -17,6 +17,9 @@ void player_update(Entity *entity)
 	//Game Controller 1 handler
 	SDL_GameController *controller;
 
+	//movement with controller
+	controller = SDL_GameControllerOpen(0);
+
 	if(!entity)
 	{
 		return;
@@ -60,9 +63,6 @@ void player_update(Entity *entity)
 	//used to make player move
 	if(entity->type == player && entity->health > 0)
 	{
-		//movement with controller
-		controller = SDL_GameControllerOpen(0);
-
 		if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTX) > DEAD_ZONE && entity->position.x != 1100)
 		{
 
@@ -113,6 +113,12 @@ void player_update(Entity *entity)
 	entity->boundingBox.y = entity->position.y;
 	entity->boundingBox.w = 80;
 	entity->boundingBox.h = 120;
+
+	//Call pause menu
+	if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_START))
+	{
+		pause_menu();
+	}
 }
 
 void player_hud(Entity *entity)

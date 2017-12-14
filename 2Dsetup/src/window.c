@@ -65,7 +65,7 @@ Window *window_new()
 		}
 	}
 	
-	slog("error: out of entity addresses");
+	slog("error: out of window addresses");
 	exit(0);
 	return  NULL;
 }

@@ -1,7 +1,5 @@
 #include "menus.h"
 
-//static Window *pause = window_new();
-
 void titleScreen()
 {
 	Sprite *titleScreen;
@@ -212,8 +210,6 @@ void level_Screen(Level *level)
 		return;
 	}
 
-	
-
 	//title screen
 	while(!levelBool)
 	{
@@ -243,38 +239,111 @@ void level_Screen(Level *level)
 	}
 }
 
-/*void call_pause()
+void pause_menu()
 {
+	Bool draw, stall, clicked;
+	float timer = 0;
 	SDL_Event e;
+	Button *resume, *quit;
+	SDL_GameController *controller;
+	Level *level;
 
-	while(SDL_PollEvent(&e) != 0)
+	//dead zone for controller
+	const int DEAD_ZONE = 8000;
+
+	//Load level
+	level = level_new();
+	controller = SDL_GameControllerOpen(0);
+
+	draw    = true;
+	stall   = false;
+	clicked = false;
+
+	resume = button_new();
+	quit   = button_new();
+
+	resume->position.x = 450;
+	resume->position.y = 150;
+	resume->bounds.x = resume->position.x;
+	resume->bounds.y = resume->position.y + 50;
+	resume->hover = true;
+
+	quit->position.x = 450;
+	quit->position.y = 300;
+	quit->bounds.x = quit->position.x;
+	quit->bounds.y = quit->position.y + 50;
+
+	while(draw)
 	{
-		if(e.cbutton.button == SDL_CONTROLLER_BUTTON_START)
+		SDL_PumpEvents();   // update SDL's internal event structures
+
+		//Delays time between controller input
+		if(stall == true)
 		{
-			if(e.type == SDL_CONTROLLERBUTTONUP)
-			{
-				pause_menu(pause);
-				window_draw(pause);
-			}
+			timer += 0.1;
+			
 		}
-		if(e.cbutton.button == SDL_CONTROLLER_BUTTON_B)
+
+        if(timer >= 2.0) 
 		{
-			if(e.type == SDL_CONTROLLERBUTTONUP)
+			timer = 0;
+			stall = false;
+		}
+
+		button_hover_all();
+
+		gf2d_graphics_clear_screen();// clears drawing buffers
+
+			button_draw_all();
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		//Deals with controller input when left stick is down
+		if(resume->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE) && stall == false)
+		{
+			resume->hover = false;
+			quit->hover = true;
+			stall = true;
+		}
+		if(quit->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) > DEAD_ZONE) && stall == false)
+		{
+			quit->hover = false;
+			resume->hover = true;
+			stall = true;
+		}
+
+		//Deals with controller input when left stick is up
+		if(resume->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE) && stall == false)
+		{
+			resume->hover = false;
+			quit->hover = true;
+			stall = true;
+		}
+		if(quit->hover == true && (SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_LEFTY) < -DEAD_ZONE) && stall == false)
+		{
+			quit->hover = false;
+			resume->hover = true;
+			stall = true;
+		}
+
+		while(SDL_PollEvent(&e) != 0)
+		{
+			if(e.cbutton.button == SDL_CONTROLLER_BUTTON_A)
 			{
-				pause = NULL;
+				if(e.type == SDL_CONTROLLERBUTTONUP)
+				{
+					draw = false;
+				}
 			}
 		}
 
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+
+	window_delete_all();
+	
+	if(quit->hover == true)
+	{
+		main_menu(level);
 	}
 }
-
-void pause_menu(Window *win)
-{
-	win->position.x = 300;
-	win->position.y = 300;
-
-	win->main_window.x = win->position.x;
-	win->main_window.y = win->position.y;
-	win->main_window.w = 200;
-	win->main_window.h = 500;
-}*/

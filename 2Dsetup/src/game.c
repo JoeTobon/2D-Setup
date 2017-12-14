@@ -1,4 +1,5 @@
 #include <SDL.h>
+#include <SDL_ttf.h>
 #include <physfs.h>
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
@@ -70,6 +71,8 @@ int main(int argc, char * argv[])
 
 	//Controller support
 	SDL_Init(SDL_INIT_GAMECONTROLLER);
+
+	//TTF_Init();
 	
 	//Check for joysticks
     if( SDL_NumJoysticks() < 1 )
@@ -160,17 +163,6 @@ int main(int argc, char * argv[])
 	//Shield weapon
 	shieldEnt = entity_new();
 	shieldEnt->type = shield;
-//	shieldEnt->position = vector2d(500, 200);
-	//shieldEnt->sprite = gf2d_sprite_load_image("images/Weapons/shield.png");
-
-	//Window
-	win = window_new();
-	win->position = vector2d(0, 0);
-	win->bgcolor = vector4d(0, 200, 0, 0);
-	win->main_window.x = win->position.x;
-	win->main_window.y = win->position.y;
-	win->main_window.w = 1200;
-	win->main_window.h = 720;
 
 	//play level music
 	music_play(level->levelMusic);
@@ -195,7 +187,7 @@ int main(int argc, char * argv[])
 		{
 			slog("win!");
 		}
-		
+
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
@@ -214,9 +206,9 @@ int main(int argc, char * argv[])
                 &mouseColor,
                 (int)mf);*/
 
-			//window_draw_all();
-
 			entity_draw_all();
+
+			//window_draw(win);
 			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 

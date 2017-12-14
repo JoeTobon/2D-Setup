@@ -19,8 +19,6 @@ void main_menu();
 
 void level_Screen();
 
-void call_pause();
-
-void pause_menu(Window *win);
+void pause_menu();
 
 #endif

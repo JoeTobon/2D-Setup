@@ -56,7 +56,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src";%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src";C:\Users\Joe\git\libs\x86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

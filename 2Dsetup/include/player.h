@@ -4,6 +4,7 @@
 
 #include <SDL.h>
 #include "entity.h"
+#include "menus.h"
 
 /**
  * @brief will update various attributes of the player
