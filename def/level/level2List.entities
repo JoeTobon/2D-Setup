@@ -1,4 +1,3 @@
-def/entity/player1.player
 def/entity/skeleton.enemy
 def/entity/skeleton2.enemy
 def/entity/skeleton3.enemy
@@ -6,4 +5,3 @@ def/entity/skeleton4.enemy
 def/entity/skeleton5.enemy
 def/entity/skeleton6.enemy
 def/entity/skeleton7.enemy
-def/entity/sword.weapon

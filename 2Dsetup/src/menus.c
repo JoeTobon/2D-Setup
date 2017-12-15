@@ -180,16 +180,16 @@ void main_menu(Level *level)
 	}
 	else if(editor->hover == true)
 	{
-		button_delete_all();
+		//button_delete_all();
 
 	}
 	else if(controls->hover == true)
 	{
-		button_delete_all();
+		//button_delete_all();
 	}
 	else if(settings->hover == true)
 	{
-		button_delete_all();
+		//button_delete_all();
 	}
 
 }
@@ -252,7 +252,7 @@ void pause_menu()
 	const int DEAD_ZONE = 8000;
 
 	//Load level
-	level = level_new();
+	level = NULL;
 	controller = SDL_GameControllerOpen(0);
 
 	draw    = true;
@@ -339,11 +339,96 @@ void pause_menu()
 
 		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
 	}
-
-	window_delete_all();
 	
 	if(quit->hover == true)
 	{
+		entity_clear_all();
+		sound_clear_all();
+		music_clear_all();
+		button_delete_all();
+		window_delete_all();
+		level_delete_all();
+
+		level = level_new();
+		main_menu(level);
+	}
+}
+
+void game_over()
+{
+	Bool draw, stall, clicked;
+	float timer = 0;
+	SDL_Event e;
+	Button *quit;
+	SDL_GameController *controller;
+	Level *level;
+
+	//dead zone for controller
+	const int DEAD_ZONE = 8000;
+
+	//Load level
+	level = level_new();
+	controller = SDL_GameControllerOpen(0);
+
+	draw    = true;
+	stall   = false;
+	clicked = false;
+
+	quit   = button_new();
+
+	quit->position.x = 450;
+	quit->position.y = 300;
+	quit->bounds.x = quit->position.x;
+	quit->bounds.y = quit->position.y + 50;
+	quit->hover = true;
+
+	while(draw)
+	{
+		SDL_PumpEvents();   // update SDL's internal event structures
+
+		//Delays time between controller input
+		if(stall == true)
+		{
+			timer += 0.1;
+			
+		}
+
+        if(timer >= 2.0) 
+		{
+			timer = 0;
+			stall = false;
+		}
+
+		button_hover_all();
+
+		gf2d_graphics_clear_screen();// clears drawing buffers
+
+			button_draw_all();
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		while(SDL_PollEvent(&e) != 0)
+		{
+			if(e.cbutton.button == SDL_CONTROLLER_BUTTON_A)
+			{
+				if(e.type == SDL_CONTROLLERBUTTONUP)
+				{
+					draw = false;
+				}
+			}
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+	
+	if(quit->hover == true)
+	{
+		entity_clear_all();
+		sound_clear_all();
+		music_clear_all();
+		button_delete_all();
+		window_delete_all();
+		level_delete_all();
 		main_menu(level);
 	}
 }

@@ -35,10 +35,15 @@ void player_update(Entity *entity)
 
 	if(entity->health <= 0)
 	{
-		//call game over
 		entity->sword = false; 
 		entity->shield = false;
 		entity->knife = false;
+
+		//call game over
+		entity_clear_all();
+		sound_clear_all();
+		music_clear_all();
+		game_over();
 	}
 
 	//Equips sword to start
@@ -170,7 +175,7 @@ void player_hud(Entity *entity)
 	else if(entity->knife == true)
 	{
 		weapon = gf2d_sprite_load_image("images/Weapons/knife.png");
-		gf2d_sprite_draw(weapon, vector2d(60, 600), &scale, NULL, NULL, NULL, NULL, NULL);
+		gf2d_sprite_draw_image(weapon, vector2d(60, 600));
 	}
 }
 

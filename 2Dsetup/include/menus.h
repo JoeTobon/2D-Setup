@@ -21,4 +21,6 @@ void level_Screen();
 
 void pause_menu();
 
+void game_over();
+
 #endif

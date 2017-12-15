@@ -28,7 +28,6 @@ int main(int argc, char * argv[])
 	Level *level;
 	Vector2D scale = vector2d(.1, .1);
 	Vector2D scale2 = vector2d(3, 3);	
-	Vector2D scale3 = vector2d(.1, .1);
 
 	//Entity Stuff
 	Entity *hPotion, *iPotion, *bombE, *bandit, *knifeE, *shieldEnt;
@@ -67,6 +66,9 @@ int main(int argc, char * argv[])
 	//Button system initialized
 	button_system_init(100);
 
+	//Level system intialized
+	level_system_init(10);
+
     SDL_ShowCursor(SDL_DISABLE);
 
 	//Controller support
@@ -104,19 +106,12 @@ int main(int argc, char * argv[])
 	//titleScreen
 	titleScreen();
 
-	//Load level
+	//Load level 1
 	level = level_new();
 
 	//mainMenu
 	main_menu(level);
 
-
-	//Bow Stuff
-	knifeE = entity_new();
-	knifeE->type = knife;
-	knifeE->scale = &scale3;
-	
-	
 	/*Invincibility potion
 	iPotion = entity_new();
 	iPotion->type = ip;
@@ -160,12 +155,8 @@ int main(int argc, char * argv[])
 	//knife->type = banditK;
 	//knife->scale = &scale3;
 
-	//Shield weapon
-	shieldEnt = entity_new();
-	shieldEnt->type = shield;
-
 	//play level music
-	music_play(level->levelMusic);
+	//music_play(level->levelMusic);
 
     /*main game loop*/
     while(!done)
@@ -181,19 +172,17 @@ int main(int argc, char * argv[])
 
 		entity_update_all();
 		entity_collide_all();
+		next_level();
 		//bandit_a();
-
-		if(enemies_dead() == true)
-		{
-			slog("win!");
-		}
 
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
 		    //UI elements last
 
-			gf2d_sprite_draw_image(level->background,vector2d(0,0));
+			//gf2d_sprite_draw_image(level->background,vector2d(0,0));
+
+			level_draw_all();
 
            
             /*gf2d_sprite_draw(
