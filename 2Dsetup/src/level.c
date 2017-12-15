@@ -9,6 +9,7 @@ typedef struct
 } Levelmanager; 
 
 static Levelmanager level_manager = {0};
+static int count = 0;
 
 void level_close()
 {
@@ -187,7 +188,7 @@ void next_level()
 {
 	Level *level = NULL;
 
-	if(enemies_dead() == true)
+	if(enemies_dead() == true && count == 0)
 	{
 		sound_clear_all();
 		music_clear_all();
@@ -198,6 +199,30 @@ void next_level()
 		level = level_new();
 
 		slog("win!");
+		count = 1;
 		level_load(level, "def/level/level2.level");
+	}
+	/*if(enemies_dead() == true && count == 1)
+	{
+		sound_clear_all();
+		music_clear_all();
+		button_delete_all();
+		window_delete_all();
+		level_delete_all();
+
+		level = level_new();
+
+		slog("win!");
+		count = 0;
+		level_load(level, "def/level/level1.level");
+	}*/
+
+}
+
+void level_over(Bool status)
+{
+	if(status == true)
+	{
+		count = 0;
 	}
 }

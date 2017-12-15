@@ -62,5 +62,11 @@ void level_delete_all();
  */
 void next_level();
 
+/**
+ * @brief checks to see if game is over
+ * @param status the boolean status of game over
+ */
+void level_over(Bool status);
+
 
 #endif

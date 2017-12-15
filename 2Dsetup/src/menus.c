@@ -176,7 +176,7 @@ void main_menu(Level *level)
 	if(play->hover == true)
 	{
 		button_delete_all();
-		level_Screen(level);
+		level_load(level, "def/level/level1.level");
 	}
 	else if(editor->hover == true)
 	{
@@ -349,6 +349,7 @@ void pause_menu()
 		window_delete_all();
 		level_delete_all();
 
+		level_over(true);
 		level = level_new();
 		main_menu(level);
 	}
@@ -367,7 +368,7 @@ void game_over()
 	const int DEAD_ZONE = 8000;
 
 	//Load level
-	level = level_new();
+	level = NULL;
 	controller = SDL_GameControllerOpen(0);
 
 	draw    = true;
@@ -429,6 +430,10 @@ void game_over()
 		button_delete_all();
 		window_delete_all();
 		level_delete_all();
+		
+		level_over(true);
+		level = level_new();
+
 		main_menu(level);
 	}
 }
