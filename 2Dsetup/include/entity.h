@@ -32,6 +32,9 @@ typedef enum
 	//BanditID
 	banditId,
 
+	//Hazard 
+	hazard,
+
 	//No type
 	none
 	

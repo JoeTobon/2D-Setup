@@ -139,7 +139,7 @@ int main(int argc, char * argv[])
 
 	//*/
 
-	/*/Bandit Enemy
+	//Bandit Enemy
 	bandit = entity_new();
 	bandit->type = banditE;
 	bandit->sprite = gf2d_sprite_load_all("images/Enemies/StreetThief.png", 32, 32, 10);
@@ -148,12 +148,12 @@ int main(int argc, char * argv[])
 	bandit->boundingBox.x = bandit->position.x;
 	bandit->boundingBox.y = bandit->position.y;
 	bandit->boundingBox.w = 100;
-	bandit->boundingBox.h = 100;*/
+	bandit->boundingBox.h = 100;
+	bandit->update = &enemy_u;
 
 	//Bandit Knife
-	//knife = entity_new();
-	//knife->type = banditK;
-	//knife->scale = &scale3;
+	knifeE = entity_new();
+	knifeE->type = banditK;
 
 	//play level music
 	//music_play(level->levelMusic);

@@ -20,6 +20,11 @@ void enemy_update(Entity *player, Entity *enemy)
 		skeleton_approach(player, enemy);
 	}
 
+	if(enemy->type == banditE)
+	{
+		bandit_a();
+	}
+
 	//Skeleton stunned by shield
 	if(enemy->stunned == true && enemy->type == skeleton)
 	{

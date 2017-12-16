@@ -247,25 +247,48 @@ void entity_collide_all()
 		
 		if(entity_manager.entList[i].type == banditE)
 		{
-			//approach handled here for now
+			//approach handled here
 			bandit_movement(playerEnt, &entity_manager.entList[i]);
-
-			/*if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
-			{
-				if(playerEnt->health == 1)
-				{
-					entity_delete(playerEnt);
-				}
-				else
-				{
-					playerEnt->health--;
-				}
-
-				//Enemy dies on impact for now
-				entity_delete(&entity_manager.entList[i]);
-			}*/
 		}
 	}
+
+	//Checks collision between player and bandit knife
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0 || entity_manager.entList[i].type == player)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == banditK)
+		{
+			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
+			{
+				playerEnt->health--;
+			}
+		}
+	}
+
+	//Checks collision between player and hazard
+	for(i = 0; i < entity_manager.maxEnt; i++)
+	{
+		if(entity_manager.entList[i].inuse == 0 || entity_manager.entList[i].type == player)
+		{
+			continue;
+		}
+		
+		if(entity_manager.entList[i].type == hazard)
+		{
+			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
+			{
+				playerEnt->health--;
+
+				//Hazard dies on impact for now
+				entity_delete(&entity_manager.entList[i]);
+			}
+		}
+	}
+
 
 	//////////Player and Item Collisions//////////
 
@@ -664,7 +687,6 @@ void bandit_a()
 	}
 
 	//find knife
-
 	for(i = 0; i < entity_manager.maxEnt; i++)
 	{
 		if(entity_manager.entList[i].inuse == 0 || entity_manager.entList[i].type == player || entity_manager.entList[i].type == banditE)
