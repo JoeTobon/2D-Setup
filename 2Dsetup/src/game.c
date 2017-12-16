@@ -112,41 +112,6 @@ int main(int argc, char * argv[])
 	//mainMenu
 	main_menu(level);
 
-	/*Invincibility potion
-	iPotion = entity_new();
-	iPotion->type = ip;
-	iPotion->sprite = gf2d_sprite_load_image("images/Items/Invincibility.png");
-	iPotion->position = vector2d(350, 100);
-	iPotion->spawned = 1;
-	iPotion->boundingBox.x = iPotion->position.x;
-	iPotion->boundingBox.y = iPotion->position.y;
-	iPotion->boundingBox.w = 30;
-	iPotion->boundingBox.h = 30;
-	//Set timer now*/
-
-	//Bomb
-	bombE = entity_new();
-	bombE->type = bomb;
-	bombE->sprite = gf2d_sprite_load_image("images/Items/Bomb.png");
-	bombE->position= vector2d(250,500);
-	bombE->boundingBox.x = bombE->position.x;
-	bombE->boundingBox.y = bombE->position.y;
-	bombE->boundingBox.w = 50;
-	bombE->boundingBox.h = 50;
-	bombE->update = &bomb_update;
-
-	//*/
-
-	/*Hazard Testing
-	hazardE = entity_new();
-	hazardE->type = hazard;
-	hazardE->sprite = gf2d_sprite_load_image("images/Enemies/fire.png");
-	hazardE->position = vector2d(100, 300);
-	hazardE->boundingBox.x = hazardE->position.x;
-	hazardE->boundingBox.y = hazardE->position.y;
-	hazardE->boundingBox.w = 230;
-	hazardE->boundingBox.h = 230;*/
-
 	//play level music
 	//music_play(level->levelMusic);
 

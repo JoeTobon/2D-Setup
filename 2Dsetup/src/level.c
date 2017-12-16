@@ -201,7 +201,7 @@ void next_level()
 		count = 1;
 		level_load(level, "def/level/level2.level");
 	}
-	/*if(enemies_dead() == true && count == 1)
+	if(enemies_dead() == true && count == 1)
 	{
 		music_clear_all();
 		button_delete_all();
@@ -211,9 +211,13 @@ void next_level()
 		level = level_new();
 
 		slog("win!");
-		count = 0;
-		level_load(level, "def/level/level1.level");
-	}*/
+		count = 2;
+		level_load(level, "def/level/level3.level");
+	}
+	if(enemies_dead() == true && count == 2)
+	{
+		//Call win screen
+	}
 
 }
 

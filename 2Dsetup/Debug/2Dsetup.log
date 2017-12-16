@@ -1,42 +1,12 @@
-﻿Build started 12/16/2017 3:44:47 PM.
+﻿Build started 12/16/2017 5:29:26 PM.
      1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /IC:\Users\Joe\git\libs\x86 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\entity.c
-         entity.c
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(51): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(80): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(91): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(116): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(149): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(202): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(219): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(241): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(256): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(275): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(298): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(319): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(339): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(355): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(369): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(384): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(398): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(412): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(426): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(441): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(450): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(566): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(567): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(467): warning C4101: 'entSound' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(653): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(654): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(655): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(656): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(658): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(675): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(690): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(704): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(726): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(747): warning C4018: '<' : signed/unsigned mismatch
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /IC:\Users\Joe\git\libs\x86 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\level.c
+         level.c
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(49): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(59): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(166): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(181): warning C4018: '<' : signed/unsigned mismatch
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib physfs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
          Debug\enemy.obj
@@ -57,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.70
+Time Elapsed 00:00:00.88

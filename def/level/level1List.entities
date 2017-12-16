@@ -5,3 +5,4 @@ def/entity/enemies/skeleton3.enemy
 def/entity/weapons/sword.weapon
 def/entity/weapons/shield.weapon
 def/entity/weapons/knife.weapon
+def/entity/items/invince.item

@@ -543,6 +543,14 @@ void entity_load(Entity *ent, char *filename)
 				continue;
 			}
 
+			//assign update for bomb
+			if(strcmp(buffer, "bomb_update") == 0)
+			{
+				ent->update = &bomb_update;
+				slog("Entity update is: %s", buffer);
+				continue;
+			}
+
 			continue;
 		}
 		if(strcmp(buffer, "spawned:") == 0)
@@ -567,6 +575,14 @@ void entity_load(Entity *ent, char *filename)
 				ent->boundingBox.y = ent->position.y;
 				ent->boundingBox.w = 50;
 				ent->boundingBox.h = 50;
+			}
+
+			if(ent->type == hazard)
+			{
+				ent->boundingBox.x = ent->position.x;
+				ent->boundingBox.y = ent->position.y;
+				ent->boundingBox.w = 230;
+				ent->boundingBox.h = 230;
 			}
 
 			continue;
