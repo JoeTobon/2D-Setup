@@ -30,7 +30,7 @@ int main(int argc, char * argv[])
 	Vector2D scale2 = vector2d(3, 3);	
 
 	//Entity Stuff
-	Entity *hPotion, *iPotion, *bombE, *bandit, *knifeE, *shieldEnt;
+	Entity *hPotion, *iPotion, *bombE, *bandit, *knifeE, *shieldEnt, *hazardE;
 
 	//Window
 	Window *win;
@@ -117,7 +117,6 @@ int main(int argc, char * argv[])
 	iPotion->type = ip;
 	iPotion->sprite = gf2d_sprite_load_image("images/Items/Invincibility.png");
 	iPotion->position = vector2d(350, 100);
-	iPotion->scale = &scale;
 	iPotion->spawned = 1;
 	iPotion->boundingBox.x = iPotion->position.x;
 	iPotion->boundingBox.y = iPotion->position.y;
@@ -125,21 +124,30 @@ int main(int argc, char * argv[])
 	iPotion->boundingBox.h = 30;
 	//Set timer now*/
 
-	/*Bomb
+	//Bomb
 	bombE = entity_new();
 	bombE->type = bomb;
 	bombE->sprite = gf2d_sprite_load_image("images/Items/Bomb.png");
 	bombE->position= vector2d(250,500);
-	bombE->scale = &scale;
 	bombE->boundingBox.x = bombE->position.x;
 	bombE->boundingBox.y = bombE->position.y;
-	bombE->boundingBox.w = 100;
-	bombE->boundingBox.h = 100;
+	bombE->boundingBox.w = 50;
+	bombE->boundingBox.h = 50;
 	bombE->update = &bomb_update;
 
 	//*/
 
-	//Bandit Enemy
+	/*Hazard Testing
+	hazardE = entity_new();
+	hazardE->type = hazard;
+	hazardE->sprite = gf2d_sprite_load_image("images/Enemies/fire.png");
+	hazardE->position = vector2d(100, 300);
+	hazardE->boundingBox.x = hazardE->position.x;
+	hazardE->boundingBox.y = hazardE->position.y;
+	hazardE->boundingBox.w = 230;
+	hazardE->boundingBox.h = 230;
+
+	/*Bandit Enemy
 	bandit = entity_new();
 	bandit->type = banditE;
 	bandit->sprite = gf2d_sprite_load_all("images/Enemies/StreetThief.png", 32, 32, 10);
@@ -151,9 +159,12 @@ int main(int argc, char * argv[])
 	bandit->boundingBox.h = 100;
 	bandit->update = &enemy_u;
 
+	
+
+
 	//Bandit Knife
 	knifeE = entity_new();
-	knifeE->type = banditK;
+	knifeE->type = banditK;*/
 
 	//play level music
 	//music_play(level->levelMusic);
@@ -179,8 +190,6 @@ int main(int argc, char * argv[])
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
 		    //UI elements last
-
-			//gf2d_sprite_draw_image(level->background,vector2d(0,0));
 
 			level_draw_all();
 

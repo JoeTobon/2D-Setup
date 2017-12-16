@@ -13,6 +13,7 @@ typedef struct level_S
 	Sprite *background;
 	Music  *levelMusic;
 	Bool inuse;
+	Bool playM;
 }Level;
 
 /**

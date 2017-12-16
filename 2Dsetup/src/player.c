@@ -59,7 +59,7 @@ void player_update(Entity *entity)
 		//entity->colorShift = &invinColor;
 	}
 
-	if(entity->invinceT >= 18)
+	if(entity->invinceT >= 12)
 	{
 		entity->invincible = false;
 		entity->invinceT = 0;

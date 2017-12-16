@@ -139,7 +139,7 @@ void entity_draw(Entity *entity)
 
 	gf2d_sprite_draw(entity->sprite, entity->position, entity->scale, entity->scaleCenter, 
 					    entity->rotation, entity->flip, entity->colorShift, entity->frame);
-	//gf2d_draw_rect(entity->boundingBox, vector4d(100, 200, 300, 100), true);
+	gf2d_draw_rect(entity->boundingBox, vector4d(100, 200, 300, 100), true);
 }
 
 void entity_draw_all()
@@ -265,6 +265,8 @@ void entity_collide_all()
 			if(entity_collsion(playerEnt, &entity_manager.entList[i]) == true && playerEnt->invincible == false)
 			{
 				playerEnt->health--;
+				playerEnt->invincible = true;
+
 			}
 		}
 	}
@@ -555,6 +557,14 @@ void entity_load(Entity *ent, char *filename)
 			slog("Entity position.x: %f", ent->position.x);
 			slog("Entity position.y: %f", ent->position.y);
 
+			if(ent->type == hp || ent->type == ip || ent->type == bomb)
+			{
+				ent->boundingBox.x = ent->position.x;
+				ent->boundingBox.y = ent->position.y;
+				ent->boundingBox.w = 50;
+				ent->boundingBox.h = 50;
+			}
+
 			continue;
 		}
 		if(strcmp(buffer, "sound:") == 0)
@@ -645,7 +655,7 @@ void bomb_update(Entity *bomb)
 	}
 
 	//Delete bomb entity when effect timer wears off
-	if(bomb->spawnTime >= 8)
+	if(bomb->spawnTime >= 2)
 	{
 		entity_delete(bomb);
 	}

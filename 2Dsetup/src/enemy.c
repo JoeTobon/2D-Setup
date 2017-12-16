@@ -25,6 +25,14 @@ void enemy_update(Entity *player, Entity *enemy)
 		bandit_a();
 	}
 
+	if(enemy->type == hazard)
+	{
+		enemy->boundingBox.x = enemy->position.x;
+		enemy->boundingBox.y = enemy->position.y;
+		enemy->boundingBox.w = 230;
+		enemy->boundingBox.h = 230;
+	}
+
 	//Skeleton stunned by shield
 	if(enemy->stunned == true && enemy->type == skeleton)
 	{
@@ -56,7 +64,7 @@ void enemy_drop(Entity *enemy)
 		drop->position.x = enemy->position.x;
 		drop->position.y = enemy->position.y;
 
-		if(drop->type == hp)
+		if(drop->type == hp || drop->type == ip || drop->type == bomb)
 		{
 			drop->boundingBox.x = drop->position.x;
 			drop->boundingBox.y = drop->position.y;
