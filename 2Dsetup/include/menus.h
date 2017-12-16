@@ -23,4 +23,10 @@ void pause_menu();
 
 void game_over();
 
+void editor_screen();
+
+void control_screen();
+
+void settings_screen();
+
 #endif

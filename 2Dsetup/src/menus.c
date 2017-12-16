@@ -180,16 +180,18 @@ void main_menu(Level *level)
 	}
 	else if(editor->hover == true)
 	{
-		//button_delete_all();
-
+		button_delete_all();
+		editor_screen();
 	}
 	else if(controls->hover == true)
 	{
-		//button_delete_all();
+		button_delete_all();
+		control_screen();
 	}
 	else if(settings->hover == true)
 	{
-		//button_delete_all();
+		button_delete_all();
+		settings_screen();
 	}
 
 }
@@ -436,4 +438,100 @@ void game_over()
 
 		main_menu(level);
 	}
+}
+
+void editor_screen()
+{
+	SDL_Event e;
+	Bool editorD = true;
+	Level *level = NULL;
+
+	while(editorD)
+	{
+		gf2d_graphics_clear_screen();// clears drawing buffers
+			
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		while(SDL_PollEvent(&e) != 0)
+		{
+			if(e.cbutton.button == SDL_CONTROLLER_BUTTON_B)
+			{
+				if(e.type == SDL_CONTROLLERBUTTONUP)
+				{
+					editorD = false;
+				}
+			}
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+
+	level_delete_all();
+	level = level_new();
+	main_menu(level);
+}
+
+void control_screen()
+{
+	SDL_Event e;
+	Bool controlD = true;
+	Level *level = NULL;
+
+	while(controlD)
+	{
+		gf2d_graphics_clear_screen();// clears drawing buffers
+			
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		while(SDL_PollEvent(&e) != 0)
+		{
+			if(e.cbutton.button == SDL_CONTROLLER_BUTTON_B)
+			{
+				if(e.type == SDL_CONTROLLERBUTTONUP)
+				{
+					controlD = false;
+				}
+			}
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+
+	level_delete_all();
+	level = level_new();
+	main_menu(level);
+}
+
+void settings_screen()
+{
+	SDL_Event e;
+	Bool screenD = true;
+	Level *level = NULL;
+
+	while(screenD)
+	{
+		gf2d_graphics_clear_screen();// clears drawing buffers
+			
+
+		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
+
+		while(SDL_PollEvent(&e) != 0)
+		{
+			if(e.cbutton.button == SDL_CONTROLLER_BUTTON_B)
+			{
+				if(e.type == SDL_CONTROLLERBUTTONUP)
+				{
+					screenD = false;
+				}
+			}
+		}
+
+		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
+	}
+
+	level_delete_all();
+	level = level_new();
+	main_menu(level);
 }
