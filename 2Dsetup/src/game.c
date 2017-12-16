@@ -26,14 +26,7 @@ int main(int argc, char * argv[])
     float mf = 0;
     Sprite *mouse;
 	Level *level;
-	Vector2D scale = vector2d(.1, .1);
-	Vector2D scale2 = vector2d(3, 3);	
-
-	//Entity Stuff
-	Entity *hPotion, *iPotion, *bombE, *bandit, *knifeE, *shieldEnt, *hazardE;
-
-	//Window
-	Window *win;
+	Music *gameM;
 	
     Vector4D mouseColor = {255,100,255,200};
 
@@ -103,6 +96,10 @@ int main(int argc, char * argv[])
 	//Load all sprites in system
     mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
 
+	//play game music
+	gameM = music_new("audio/prepare_your_swords.mid", 1);
+	music_play(gameM);
+
 	//titleScreen
 	titleScreen();
 
@@ -111,9 +108,6 @@ int main(int argc, char * argv[])
 
 	//mainMenu
 	main_menu(level);
-
-	//play level music
-	//music_play(level->levelMusic);
 
     /*main game loop*/
     while(!done)
@@ -130,7 +124,6 @@ int main(int argc, char * argv[])
 		entity_update_all();
 		entity_collide_all();
 		next_level();
-		//bandit_a();
 
         gf2d_graphics_clear_screen();// clears drawing buffers
         // all drawing should happen betweem clear_screen and next_frame
@@ -139,20 +132,7 @@ int main(int argc, char * argv[])
 
 			level_draw_all();
 
-           
-            /*gf2d_sprite_draw(
-                mouse,
-                vector2d(mx,my),
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                &mouseColor,
-                (int)mf);*/
-
 			entity_draw_all();
-
-			//window_draw(win);
 			
         gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 

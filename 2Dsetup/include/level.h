@@ -7,13 +7,13 @@
 #include "audio.h"
 #include "window.h"
 #include "widgets.h"
+#include "menus.h"
 
 typedef struct level_S
 {
 	Sprite *background;
 	Music  *levelMusic;
 	Bool inuse;
-	Bool playM;
 }Level;
 
 /**

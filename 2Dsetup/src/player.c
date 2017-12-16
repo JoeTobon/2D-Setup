@@ -41,8 +41,6 @@ void player_update(Entity *entity)
 
 		//call game over
 		entity_clear_all();
-		sound_clear_all();
-		music_clear_all();
 		game_over();
 	}
 

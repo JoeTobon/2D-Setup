@@ -192,7 +192,6 @@ void bandit_movement(Entity *player, Entity *bandit)
 
 	if(((bandit->boundingBox.x - 150) + (bandit->boundingBox.w + 300)) < player->boundingBox.x)
 	{
-		slog("not moving");
 		return;
 	}
 	else if((player->boundingBox.x + player->boundingBox.w) < (bandit->boundingBox.x - 150))
@@ -212,7 +211,6 @@ void bandit_movement(Entity *player, Entity *bandit)
 		move: 
 
 		bandit->moveCount++;
-		slog("moving");
 		bandit->position.x -= xMove;
 		bandit->position.y -= yMove;
 

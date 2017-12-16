@@ -1,4 +1,2 @@
 background:	images/bg/forest.png
-levelMusic:	audio/prepare_your_swords.mid
-loop:		1
 entFile:	def/level/level2List.entities

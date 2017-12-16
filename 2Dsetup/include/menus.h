@@ -29,4 +29,6 @@ void control_screen();
 
 void settings_screen();
 
+void win_screen();
+
 #endif

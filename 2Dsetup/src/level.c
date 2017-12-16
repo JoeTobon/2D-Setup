@@ -10,6 +10,7 @@ typedef struct
 
 static Levelmanager level_manager = {0};
 static int count = 0;
+static Bool playM = true;
 
 void level_close()
 {
@@ -111,22 +112,6 @@ void level_load(Level *level, char *filename)
 			slog("Level background: %s", buffer);
 			continue;
 		}
-		if(strcmp(buffer, "levelMusic:") == 0)
-		{
-			fscanf(file, "%s", hold);
-			slog("Level music: %s", hold);
-			continue;
-		}
-		if(strcmp(buffer, "loop:") == 0)
-		{
-			fscanf(file, "%i", &loop);
-			slog("Music loop: %i", loop);
-
-			//initialize music
-			level->levelMusic = music_new(hold, loop);
-
-			continue;
-		}
 		if(strcmp(buffer, "entFile:") == 0)
 		{
 			fscanf(file, "%s", buffer);
@@ -190,7 +175,6 @@ void next_level()
 
 	if(enemies_dead() == true && count == 0)
 	{
-		music_clear_all();
 		button_delete_all();
 		window_delete_all();
 		level_delete_all();
@@ -203,7 +187,6 @@ void next_level()
 	}
 	if(enemies_dead() == true && count == 1)
 	{
-		music_clear_all();
 		button_delete_all();
 		window_delete_all();
 		level_delete_all();
@@ -217,6 +200,7 @@ void next_level()
 	if(enemies_dead() == true && count == 2)
 	{
 		//Call win screen
+		win_screen();
 	}
 
 }
