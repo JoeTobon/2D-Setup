@@ -190,7 +190,6 @@ void next_level()
 
 	if(enemies_dead() == true && count == 0)
 	{
-		sound_clear_all();
 		music_clear_all();
 		button_delete_all();
 		window_delete_all();
@@ -204,7 +203,6 @@ void next_level()
 	}
 	/*if(enemies_dead() == true && count == 1)
 	{
-		sound_clear_all();
 		music_clear_all();
 		button_delete_all();
 		window_delete_all();

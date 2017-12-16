@@ -160,22 +160,22 @@ void player_hud(Entity *entity)
 	}
 
 	//Draw current weapon
-	gf2d_sprite_draw_image(weaHolder, vector2d(0, 560));
+	gf2d_sprite_draw_image(weaHolder, vector2d(10, 600));
 
 	if(entity->sword == true)
 	{
 		weapon = gf2d_sprite_load_image("images/Weapons/sword.png");
-		gf2d_sprite_draw_image(weapon, vector2d(60, 600));
+		gf2d_sprite_draw_image(weapon, vector2d(50, 620));
 	}
 	else if(entity->shield == true)
 	{
 		weapon = gf2d_sprite_load_image("images/Weapons/shield.png");
-		gf2d_sprite_draw_image(weapon, vector2d(40, 600));
+		gf2d_sprite_draw_image(weapon, vector2d(30, 620));
 	}
 	else if(entity->knife == true)
 	{
 		weapon = gf2d_sprite_load_image("images/Weapons/knife.png");
-		gf2d_sprite_draw_image(weapon, vector2d(60, 600));
+		gf2d_sprite_draw_image(weapon, vector2d(50, 620));
 	}
 }
 
@@ -305,7 +305,7 @@ void knife_Attack(Entity * playerEnt, Entity *knife)
 	}
 
 
-	//Spawn arrow in direction of right stick from player position
+	//Spawn knife in direction of right stick from player position
 	if(playerEnt->type == player)
 	{
 		//attacking with controller
@@ -323,6 +323,8 @@ void knife_Attack(Entity * playerEnt, Entity *knife)
 
 			knife->direct = 'l';
 
+			sound_play(knife->entSound);
+
 		}
 		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTX) > DEAD_ZONE && knife->spawned != 1)
 		{
@@ -335,6 +337,8 @@ void knife_Attack(Entity * playerEnt, Entity *knife)
 			knife->spawnTime = 0;
 
 			knife->direct = 'r';
+
+			sound_play(knife->entSound);
 		}
 		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) > DEAD_ZONE && knife->spawned != 1)
 		{
@@ -347,6 +351,8 @@ void knife_Attack(Entity * playerEnt, Entity *knife)
 			knife->spawnTime = 0;
 
 			knife->direct = 'd';
+
+			sound_play(knife->entSound);
 		}
 		else if(SDL_GameControllerGetAxis(controller, SDL_CONTROLLER_AXIS_RIGHTY) < -DEAD_ZONE && knife->spawned != 1)
 		{
@@ -359,6 +365,8 @@ void knife_Attack(Entity * playerEnt, Entity *knife)
 			knife->spawnTime = 0;
 
 			knife->direct = 'u';
+
+			sound_play(knife->entSound);
 		}
 	}
 
@@ -435,7 +443,7 @@ void shield_Attack(Entity *playerEnt, Entity *shieldEnt)
 
 			
 		
-			//sound_play(weaponEnt->entSound);
+			sound_play(shieldEnt->entSound);
 			shieldEnt->spawned = 1;
 			shieldEnt->spawnTime = 0;
 
@@ -447,7 +455,7 @@ void shield_Attack(Entity *playerEnt, Entity *shieldEnt)
 			shieldEnt->position.x = playerEnt->position.x + 80;
 			shieldEnt->position.y = playerEnt->position.y + 30;
 
-			//sound_play(weaponEnt->entSound);
+			sound_play(shieldEnt->entSound);
 			shieldEnt->spawned = 1;
 			shieldEnt->spawnTime = 0;
 		}
@@ -458,7 +466,7 @@ void shield_Attack(Entity *playerEnt, Entity *shieldEnt)
 			shieldEnt->position.x = playerEnt->position.x + 30;
 			shieldEnt->position.y = playerEnt->position.y + 100;
 
-			//sound_play(weaponEnt->entSound);
+			sound_play(shieldEnt->entSound);
 			shieldEnt->spawned = 1;
 			shieldEnt->spawnTime = 0;
 		}
@@ -469,7 +477,7 @@ void shield_Attack(Entity *playerEnt, Entity *shieldEnt)
 			shieldEnt->position.x = playerEnt->position.x + 30;
 			shieldEnt->position.y = playerEnt->position.y - 30;
 
-			//sound_play(weaponEnt->entSound);
+			sound_play(shieldEnt->entSound);
 			shieldEnt->spawned = 1;
 			shieldEnt->spawnTime = 0;
 		}

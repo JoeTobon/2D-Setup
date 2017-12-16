@@ -345,7 +345,6 @@ void pause_menu()
 	if(quit->hover == true)
 	{
 		entity_clear_all();
-		sound_clear_all();
 		music_clear_all();
 		button_delete_all();
 		window_delete_all();
@@ -427,7 +426,6 @@ void game_over()
 	if(quit->hover == true)
 	{
 		entity_clear_all();
-		sound_clear_all();
 		music_clear_all();
 		button_delete_all();
 		window_delete_all();

@@ -22,6 +22,10 @@ void enemy_update(Entity *player, Entity *enemy)
 
 	if(enemy->type == banditE)
 	{
+		enemy->boundingBox.x = enemy->position.x;
+		enemy->boundingBox.y = enemy->position.y;
+		enemy->boundingBox.w = 100;
+		enemy->boundingBox.h = 100;
 		bandit_a();
 	}
 

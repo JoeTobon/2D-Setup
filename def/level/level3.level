@@ -1,0 +1,4 @@
+background:	images/bg/volcano.png
+levelMusic:	audio/prepare_your_swords.mid
+loop:		1
+entFile:	def/level/level3List.entities

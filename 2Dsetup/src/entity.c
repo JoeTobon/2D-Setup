@@ -139,7 +139,7 @@ void entity_draw(Entity *entity)
 
 	gf2d_sprite_draw(entity->sprite, entity->position, entity->scale, entity->scaleCenter, 
 					    entity->rotation, entity->flip, entity->colorShift, entity->frame);
-	gf2d_draw_rect(entity->boundingBox, vector4d(100, 200, 300, 100), true);
+	//gf2d_draw_rect(entity->boundingBox, vector4d(100, 200, 300, 100), true);
 }
 
 void entity_draw_all()
@@ -449,7 +449,7 @@ void entity_collide_all()
 		{
 			for(j = 0; j < entity_manager.maxEnt; j++)
 			{
-				if(entity_manager.entList[j].type == skeleton && entity_manager.entList[i].spawned == 1)
+				if((entity_manager.entList[j].type == skeleton || entity_manager.entList[j].type == banditE)&& entity_manager.entList[i].spawned == 1)
 				{
 					if(entity_collsion(&entity_manager.entList[i], &entity_manager.entList[j]) == true)
 					{
@@ -510,6 +510,10 @@ void entity_load(Entity *ent, char *filename)
 			if(ent->type == 0)
 			{
 				ent->sprite = gf2d_sprite_load_all(buffer, 128, 128, 16);
+			}
+			else if(ent->type == 8)
+			{
+				ent->sprite = gf2d_sprite_load_all(buffer, 100, 100, 10);
 			}
 			else
 			{

@@ -145,26 +145,7 @@ int main(int argc, char * argv[])
 	hazardE->boundingBox.x = hazardE->position.x;
 	hazardE->boundingBox.y = hazardE->position.y;
 	hazardE->boundingBox.w = 230;
-	hazardE->boundingBox.h = 230;
-
-	/*Bandit Enemy
-	bandit = entity_new();
-	bandit->type = banditE;
-	bandit->sprite = gf2d_sprite_load_all("images/Enemies/StreetThief.png", 32, 32, 10);
-	bandit->position = vector2d(200, 400);
-	bandit->scale = &scale2;
-	bandit->boundingBox.x = bandit->position.x;
-	bandit->boundingBox.y = bandit->position.y;
-	bandit->boundingBox.w = 100;
-	bandit->boundingBox.h = 100;
-	bandit->update = &enemy_u;
-
-	
-
-
-	//Bandit Knife
-	knifeE = entity_new();
-	knifeE->type = banditK;*/
+	hazardE->boundingBox.h = 230;*/
 
 	//play level music
 	//music_play(level->levelMusic);

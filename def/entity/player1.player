@@ -1,6 +1,0 @@
-type:		0
-sprite:		images/Soldier/player.png
-update:		player_update
-position:	600 350 
-frame:		0
-health:		3

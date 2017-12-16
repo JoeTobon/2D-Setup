@@ -1,0 +1,8 @@
+type:		7
+sprite:		images/Enemies/skeleton.png
+update:		enemy_u
+spawned:	1
+position:	0 0
+frame:		0
+drop:		1
+dropFile: 	def/entity/drops/healthDrop.drop
