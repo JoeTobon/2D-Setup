@@ -1,0 +1,6 @@
+type:		8
+banditID:	1
+sprite:		assets/images/Enemies/StreetThief.png
+update:		enemy_u
+position:	200 400
+frame:		0

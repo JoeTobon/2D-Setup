@@ -7,7 +7,7 @@ void titleScreen()
 	SDL_GameController *controller;
 	SDL_Event e;
 
-	titleScreen = gf2d_sprite_load_image("images/UI/titleMenu.png");
+	titleScreen = gf2d_sprite_load_image("assets/images/UI/titleMenu.png");
 	controller = SDL_GameControllerOpen(0);
 
 	//title screen
@@ -42,9 +42,9 @@ void main_menu(Level *level)
 	SDL_GameController *controller;
 	Button *play, *editor, *controls, *settings;
 	SDL_Event e;
-	Sprite *mainM = gf2d_sprite_load_image("images/UI/MainMenu.png");
-	Sprite *playText = gf2d_sprite_load_image("images/UI/play.png");
-	Sprite *controlText = gf2d_sprite_load_image("images/UI/controlText.png");
+	Sprite *mainM = gf2d_sprite_load_image("assets/images/UI/MainMenu.png");
+	Sprite *playText = gf2d_sprite_load_image("assets/images/UI/play.png");
+	Sprite *controlText = gf2d_sprite_load_image("assets/images/UI/controlText.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -185,7 +185,7 @@ void main_menu(Level *level)
 	if(play->hover == true)
 	{
 		button_delete_all();
-		level_load(level, "def/level/level1.level");
+		level_load(level, "assets/def/level/level1.level");
 	}
 	else if(editor->hover == true)
 	{
@@ -212,9 +212,9 @@ void pause_menu()
 	Button *resume, *quit;
 	SDL_GameController *controller;
 	Level *level;
-	Sprite *pauseM = gf2d_sprite_load_image("images/UI/Pause.png");
-	Sprite *playText = gf2d_sprite_load_image("images/UI/play.png");
-	Sprite *mainText = gf2d_sprite_load_image("images/UI/mm.png");
+	Sprite *pauseM = gf2d_sprite_load_image("assets/images/UI/Pause.png");
+	Sprite *playText = gf2d_sprite_load_image("assets/images/UI/play.png");
+	Sprite *mainText = gf2d_sprite_load_image("assets/images/UI/mm.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -332,8 +332,8 @@ void game_over()
 	Button *quit;
 	SDL_GameController *controller;
 	Level *level;
-	Sprite *gameO = gf2d_sprite_load_image("images/UI/GameOver.png");
-	Sprite *mainText = gf2d_sprite_load_image("images/UI/mm.png");
+	Sprite *gameO = gf2d_sprite_load_image("assets/images/UI/GameOver.png");
+	Sprite *mainText = gf2d_sprite_load_image("assets/images/UI/mm.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -446,7 +446,7 @@ void control_screen()
 	SDL_Event e;
 	Bool controlD = true;
 	Level *level = NULL;
-	Sprite *controls = gf2d_sprite_load_image("images/UI/controller.png");
+	Sprite *controls = gf2d_sprite_load_image("assets/images/UI/controller.png");
 
 	while(controlD)
 	{
@@ -515,8 +515,8 @@ void win_screen()
 	Button *quit;
 	SDL_GameController *controller;
 	Level *level;
-	Sprite *win = gf2d_sprite_load_image("images/UI/winScreen.png");
-	Sprite *mainText = gf2d_sprite_load_image("images/UI/mm.png");
+	Sprite *win = gf2d_sprite_load_image("assets/images/UI/winScreen.png");
+	Sprite *mainText = gf2d_sprite_load_image("assets/images/UI/mm.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;

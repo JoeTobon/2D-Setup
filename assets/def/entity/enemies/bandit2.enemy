@@ -1,0 +1,8 @@
+type:		8
+banditID:	1
+sprite:		assets/images/Enemies/StreetThief.png
+update:		enemy_u
+position:	200 100
+frame:		0
+drop:		1
+dropFile: 	assets/def/entity/drops/inDrop.drop

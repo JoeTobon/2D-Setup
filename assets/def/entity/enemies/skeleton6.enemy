@@ -1,0 +1,6 @@
+type:		7
+sprite:		assets/images/Enemies/skeleton.png
+update:		enemy_u
+spawned:	1
+position:	0 800
+frame:		0

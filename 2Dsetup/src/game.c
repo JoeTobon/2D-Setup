@@ -94,10 +94,10 @@ int main(int argc, char * argv[])
 	
 
 	//Load all sprites in system
-    mouse = gf2d_sprite_load_all("images/pointer.png",32,32,16);
+    mouse = gf2d_sprite_load_all("assets/images/pointer.png",32,32,16);
 
 	//play game music
-	gameM = music_new("audio/prepare_your_swords.mid", -1);
+	gameM = music_new("assets/audio/prepare_your_swords.mid", -1);
 	music_play(gameM);
 
 	//titleScreen

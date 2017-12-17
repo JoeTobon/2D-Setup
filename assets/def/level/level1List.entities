@@ -1,0 +1,8 @@
+assets/def/entity/player/player1.player
+assets/def/entity/enemies/skeleton.enemy
+assets/def/entity/enemies/skeleton2.enemy
+assets/def/entity/enemies/skeleton3.enemy
+assets/def/entity/weapons/sword.weapon
+assets/def/entity/weapons/shield.weapon
+assets/def/entity/weapons/knife.weapon
+assets/def/entity/items/invince.item

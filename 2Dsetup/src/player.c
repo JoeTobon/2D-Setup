@@ -132,12 +132,12 @@ void player_hud(Entity *entity)
 
 	Vector2D scale = vector2d(.1, .1);
 
-	threeH = gf2d_sprite_load_image("images/UI/3HP.png");
-	twoH   = gf2d_sprite_load_image("images/UI/2HP.png");
-	oneH   = gf2d_sprite_load_image("images/UI/1HP.png");
-	noH    = gf2d_sprite_load_image("images/UI/0HP.png");
+	threeH = gf2d_sprite_load_image("assets/images/UI/3HP.png");
+	twoH   = gf2d_sprite_load_image("assets/images/UI/2HP.png");
+	oneH   = gf2d_sprite_load_image("assets/images/UI/1HP.png");
+	noH    = gf2d_sprite_load_image("assets/images/UI/0HP.png");
 	
-	weaHolder = gf2d_sprite_load_image("images/UI/circle.png");
+	weaHolder = gf2d_sprite_load_image("assets/images/UI/circle.png");
 
 	//Draws Health
 	if(entity->health == 3)
@@ -162,17 +162,17 @@ void player_hud(Entity *entity)
 
 	if(entity->sword == true)
 	{
-		weapon = gf2d_sprite_load_image("images/Weapons/sword.png");
+		weapon = gf2d_sprite_load_image("assets/images/Weapons/sword.png");
 		gf2d_sprite_draw_image(weapon, vector2d(50, 620));
 	}
 	else if(entity->shield == true)
 	{
-		weapon = gf2d_sprite_load_image("images/Weapons/shield.png");
+		weapon = gf2d_sprite_load_image("assets/images/Weapons/shield.png");
 		gf2d_sprite_draw_image(weapon, vector2d(30, 620));
 	}
 	else if(entity->knife == true)
 	{
-		weapon = gf2d_sprite_load_image("images/Weapons/knife.png");
+		weapon = gf2d_sprite_load_image("assets/images/Weapons/knife.png");
 		gf2d_sprite_draw_image(weapon, vector2d(50, 620));
 	}
 }
@@ -187,7 +187,7 @@ void sword_Attack(Entity *playerEnt, Entity *weaponEnt)
 
 	//Game Controller 1 handler
 	SDL_GameController *controller;
-	weaponS = gf2d_sprite_load_image("images/Weapons/sword2.png");
+	weaponS = gf2d_sprite_load_image("assets/images/Weapons/sword2.png");
 
 	if(!playerEnt || !weaponEnt)
 	{
@@ -281,7 +281,7 @@ void knife_Attack(Entity * playerEnt, Entity *knife)
 	//Game Controller 1 handler
 	SDL_GameController *controller;
 
-	knifeS = gf2d_sprite_load_image("images/Weapons/knife.png");
+	knifeS = gf2d_sprite_load_image("assets/images/Weapons/knife.png");
 
 	if(!knife)
 	{
@@ -406,7 +406,7 @@ void shield_Attack(Entity *playerEnt, Entity *shieldEnt)
 
 	//Game Controller 1 handler
 	SDL_GameController *controller;
-	shieldS = gf2d_sprite_load_image("images/Weapons/shield.png");
+	shieldS = gf2d_sprite_load_image("assets/images/Weapons/shield.png");
 
 	if(!playerEnt || !shieldEnt)
 	{

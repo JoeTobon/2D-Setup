@@ -183,7 +183,7 @@ void next_level()
 
 		slog("win!");
 		count = 1;
-		level_load(level, "def/level/level2.level");
+		level_load(level, "assets/def/level/level2.level");
 	}
 	if(enemies_dead() == true && count == 1)
 	{
@@ -195,7 +195,7 @@ void next_level()
 
 		slog("win!");
 		count = 2;
-		level_load(level, "def/level/level3.level");
+		level_load(level, "assets/def/level/level3.level");
 	}
 	if(enemies_dead() == true && count == 2)
 	{

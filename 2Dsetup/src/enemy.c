@@ -277,7 +277,7 @@ void bandit_attack(Entity *bandit, Entity *knife, Entity *player)
 		knife->spawnTime += .1;
 
 		knife->spawned = true;
-		knife->sprite = gf2d_sprite_load_image("images/Weapons/knife.png");
+		knife->sprite = gf2d_sprite_load_image("assets/images/Weapons/knife.png");
 
 		//Throw knife towards player
 		knife->position.x += bandit->movex;

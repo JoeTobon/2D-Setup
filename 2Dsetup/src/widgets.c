@@ -145,11 +145,11 @@ void button_hover(Button *button)
 {
 	if(button->hover == true)
 	{
-		button->image = gf2d_sprite_load_image("images/UI/buttonHov.png");
+		button->image = gf2d_sprite_load_image("assets/images/UI/buttonHov.png");
 	}
 	else if(button->hover == false )//&& button->clicked == false)
 	{
-		button->image = gf2d_sprite_load_image("images/UI/button.png");
+		button->image = gf2d_sprite_load_image("assets/images/UI/button.png");
 	}
 }
 
@@ -157,11 +157,11 @@ void button_clicked(Button *button)
 {
 	if(button->clicked == true)
 	{
-		button->image = gf2d_sprite_load_image("images/UI/buttonClicked.png");
+		button->image = gf2d_sprite_load_image("assets/images/UI/buttonClicked.png");
 	}
 	else if(button->hover == false && button->clicked == false)
 	{
-		button->image = gf2d_sprite_load_image("images/UI/button.png");
+		button->image = gf2d_sprite_load_image("assets/images/UI/button.png");
 	}
 }
 

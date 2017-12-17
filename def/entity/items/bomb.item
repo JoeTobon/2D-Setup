@@ -1,4 +1,0 @@
-type:		6
-sprite:		images/items/Bomb.png
-update:		bomb_update
-position:	250 500

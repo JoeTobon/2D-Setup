@@ -1,7 +1,0 @@
-type:		8
-banditID:	1
-sprite:		images/Enemies/StreetThief.png
-update:		enemy_u
-position:	200 100
-frame:		0
-dropFile: 	def/entity/drops/bombDrop.drop
