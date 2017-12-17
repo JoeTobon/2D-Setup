@@ -78,12 +78,15 @@ void button_delete_all();
 void button_hover(Button *button);
 
 /**
+ * @brief   Will cycle through all buttons in the system to see which ones are hovered over
+ */
+void button_hover_all();
+
+/**
  * @brief   Checks to see if a button is clicked
  * @param   button the button that is checked to see if clicked
  * @return  True if button is clicked false if it is not
  */
 void button_clicked(Button *button);
-
-void button_hover_all();
 
 #endif
