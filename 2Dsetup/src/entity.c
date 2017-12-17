@@ -466,7 +466,6 @@ void entity_load(Entity *ent, char *filename)
 {
 	PHYSFS_File *file;
 	char *pBuf = "";
-	//FILE *file;
 	Sound *entSound;
 	char buffer[512];
 	int tempx, tempy;
@@ -502,18 +501,6 @@ void entity_load(Entity *ent, char *filename)
 	PHYSFS_close(file);
 
 	//slog("File contains: %s", pBuf);
-
-
-	/*
-	file = fopen(filename, "r");
-
-	if (!file)
-	{
-		slog("Failed to open file (%s) for reading", filename);
-		return;
-	}
-
-	rewind(file);*/
 
 	//scan 
 	while(sscanf(pBuf, " %s\n%n", buffer, &incr) == 1)
@@ -663,142 +650,10 @@ void entity_load(Entity *ent, char *filename)
 			continue;
 		}
 	}
-
-	/*scan 
-	while(fscanf(file, "%s", buffer) != EOF)
-	{
-		if(strcmp(buffer, "type:") == 0)
-		{
-			fscanf(file, "%i", &ent->type);
-			slog("Entity type: %i", ent->type);
-
-			continue;
-		}
-		if(strcmp(buffer, "sprite:") == 0)
-		{
-			fscanf(file, "%s", buffer);
-
-			if(ent->type == 0)
-			{
-				ent->sprite = gf2d_sprite_load_all(buffer, 128, 128, 16);
-			}
-			else if(ent->type == 8)
-			{
-				ent->sprite = gf2d_sprite_load_all(buffer, 100, 100, 10);
-			}
-			else
-			{
-				ent->sprite = gf2d_sprite_load_image(buffer);
-			}
-			
-			slog("Entity sprite: %s", buffer);
-			continue;
-		}
-		if(strcmp(buffer, "update:") == 0)
-		{
-			fscanf(file, "%s", buffer);
-
-			//assign update for player
-			if(strcmp(buffer, "player_update") == 0)
-			{
-				ent->update = &player_update;
-				slog("Entity update is: %s", buffer);
-				continue;
-			}
-
-			//assign update for enemy
-			if(strcmp(buffer, "enemy_u") == 0)
-			{
-				ent->update = &enemy_u;
-				slog("Entity update is: %s", buffer);
-				continue;
-			}
-
-			//assign update for bomb
-			if(strcmp(buffer, "bomb_update") == 0)
-			{
-				ent->update = &bomb_update;
-				slog("Entity update is: %s", buffer);
-				continue;
-			}
-
-			continue;
-		}
-		if(strcmp(buffer, "spawned:") == 0)
-		{
-			fscanf(file, "%i", &ent->spawned);
-			slog("Entity spawned: %i", ent->spawned);
-			continue;
-		}
-		if(strcmp(buffer, "position:") == 0)
-		{
-			fscanf(file, "%i", &tempx);
-			fscanf(file, "%i", &tempy);
-
-			ent->position = vector2d(tempx, tempy);
-
-			slog("Entity position.x: %f", ent->position.x);
-			slog("Entity position.y: %f", ent->position.y);
-
-			if(ent->type == hp || ent->type == ip || ent->type == bomb)
-			{
-				ent->boundingBox.x = ent->position.x;
-				ent->boundingBox.y = ent->position.y;
-				ent->boundingBox.w = 50;
-				ent->boundingBox.h = 50;
-			}
-
-			if(ent->type == hazard)
-			{
-				ent->boundingBox.x = ent->position.x;
-				ent->boundingBox.y = ent->position.y;
-				ent->boundingBox.w = 230;
-				ent->boundingBox.h = 230;
-			}
-
-			continue;
-		}
-		if(strcmp(buffer, "sound:") == 0)
-		{
-			fscanf(file, "%s", buffer);
-			ent->entSound = sound_new(buffer, 1, 1);
-			slog("Sound:", buffer);
-
-			continue;
-		}
-		if(strcmp(buffer, "frame:") == 0)
-		{
-			fscanf(file, "%i", &ent->frame);
-			slog("Entity frame: %i", ent->frame);
-			continue;
-		}
-		if(strcmp(buffer, "health:") == 0)
-		{
-			fscanf(file, "%i", &ent->health);
-			slog("Entity health: %i", ent->health);
-			continue;
-		}
-		if(strcmp(buffer, "drop:") == 0)
-		{
-			fscanf(file, "%i", &ent->drop);
-			slog("Entity drop: %i", ent->drop);
-			continue;
-		}
-		if(strcmp(buffer, "dropFile:") == 0)
-		{
-			fscanf(file, "%s", buffer);
-			strncpy(ent->dropFile, buffer, 40);
-			slog("Drop file: %s", buffer);
-			continue;
-		}
-	}
-
-	fclose(file);*/
 }
 
 void entity_load_all(char *filename)
 {
-	//FILE *file;
 	PHYSFS_File *file;
 	char *pBuf; 
 	char buffer[512];
@@ -840,28 +695,6 @@ void entity_load_all(char *filename)
 
 		entity_load(temp, entFile);
 	}
-
-
-	/*file = fopen(filename, "r");
-	
-	if (!file)
-	{
-		slog("Failed to open file (%s) for reading", filename);
-		return;
-	}
-
-	rewind(file);
-	*/
-	//Call file that has list of all entities
-	/*while(fscanf(file, "%s", buffer) != EOF)
-	{
-		entFile = buffer;
-		temp = entity_new();
-
-		entity_load(temp, entFile);
-	}
-
-	fclose(file);*/
 }
 
 void bomb_update(Entity *bomb)

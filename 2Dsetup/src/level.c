@@ -76,8 +76,6 @@ Level *level_new()
 
 void level_load(Level *level, char *filename)
 {
-	//FILE *file;
-
 	PHYSFS_File *file;
 	char *pBuf;
 	char buffer[512];
@@ -147,38 +145,6 @@ void level_load(Level *level, char *filename)
 			//continue;
 		}
 	}
-
-
-	//file = fopen(filename, "r");
-
-	/*if(!file)
-	{
-		slog("Failed to load file: %s", filename);
-		return;
-	}
-
-	rewind(file);*/
-
-	/*while(fscanf(file,"%s", buffer) != EOF)
-	{
-		if(strcmp(buffer, "background:") == 0)
-		{
-			fscanf(file, "%s", buffer);
-			level->background = gf2d_sprite_load_image(buffer);
-
-			slog("Level background: %s", buffer);
-			continue;
-		}
-		if(strcmp(buffer, "entFile:") == 0)
-		{
-			fscanf(file, "%s", buffer);
-			entity_load_all(buffer);
-			slog("Entity File: %s", buffer);
-			continue;
-		}
-	}
-
-	fclose(file);*/
 }
 
 void level_draw(Level *level)

@@ -1,15 +1,57 @@
-﻿Build started 12/17/2017 6:13:06 PM.
+﻿Build started 12/17/2017 6:17:33 PM.
      1>Project "C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup\2Dsetup.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /IC:\Users\Joe\git\libs\x86 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\level.c
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"C:\Users\Joe\Downloads\physfs-3.0.1.tar\physfs-3.0.1\physfs-3.0.1\src\"" /IC:\Users\Joe\git\libs\x86 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt src\entity.c src\level.c
          level.c
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(51): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
      1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(61): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(108): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(116): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(84): warning C4101: 'hold' : unreferenced local variable
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(208): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(223): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(106): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(114): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(82): warning C4101: 'hold' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(174): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\level.c(189): warning C4018: '<' : signed/unsigned mismatch
+         entity.c
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(52): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(81): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(92): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(117): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(150): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(203): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(220): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(242): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(257): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(276): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(299): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(320): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(340): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(356): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(370): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(385): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(399): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(413): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(427): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(442): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(451): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(497): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(498): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(598): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(599): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(606): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(607): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(469): warning C4101: 'entSound' : unreferenced local variable
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(678): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(679): warning C4244: 'function' : conversion from 'PHYSFS_sint64' to 'size_t', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(706): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(707): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(708): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(709): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(711): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(728): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(743): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(757): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(779): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\joe\documents\visual studio 2012\projects\2dsetup\2dsetup\src\entity.c(800): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Joe\git\libs\x86 SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib physfs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\documents\visual studio 2012\Projects\2Dsetup\2Dsetup.lib" /MACHINE:X86 Debug\audio.obj
          Debug\enemy.obj
@@ -30,4 +72,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.54
+Time Elapsed 00:00:00.71
