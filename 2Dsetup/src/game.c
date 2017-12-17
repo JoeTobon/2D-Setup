@@ -62,12 +62,14 @@ int main(int argc, char * argv[])
 	//Level system intialized
 	level_system_init(10);
 
+	//initialize physfs
+	PHYSFS_init(NULL);
+	PHYSFS_mount("assets.zip", "", 1);
+
     SDL_ShowCursor(SDL_DISABLE);
 
 	//Controller support
 	SDL_Init(SDL_INIT_GAMECONTROLLER);
-
-	//TTF_Init();
 	
 	//Check for joysticks
     if( SDL_NumJoysticks() < 1 )
@@ -144,6 +146,7 @@ int main(int argc, char * argv[])
 	SDL_GameControllerClose(controller);
     controller = NULL;
 
+	PHYSFS_deinit();
 
     slog("---==== END ====---");
     return 0;

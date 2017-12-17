@@ -4,3 +4,4 @@ sprite:		assets/images/Enemies/StreetThief.png
 update:		enemy_u
 position:	200 400
 frame:		0
+~

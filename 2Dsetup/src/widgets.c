@@ -60,7 +60,7 @@ Button *button_new()
 			button_manager.buttonList[i].inuse = 1; //Set ref count to 1. Address is now in use
 
 			//Initialize various default attributes of entity here
-			button_manager.buttonList[i].image = gf2d_sprite_load_image("images/UI/button.png");
+			button_manager.buttonList[i].image = gf2d_sprite_load_image("assets/images/UI/button.png");
 			
 			button_manager.buttonList[i].bounds.w = 300;
 			button_manager.buttonList[i].bounds.h = 100;

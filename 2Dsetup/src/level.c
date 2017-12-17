@@ -1,6 +1,7 @@
 #include "level.h"
 #include "simple_logger.h"
 #include "entity.h"
+#include <physfs.h>
 
 typedef struct
 {
@@ -75,10 +76,14 @@ Level *level_new()
 
 void level_load(Level *level, char *filename)
 {
-	FILE *file;
+	//FILE *file;
+
+	PHYSFS_File *file;
+	char *pBuf;
 	char buffer[512];
 	char hold[512];
 	int loop = 0;
+	int incr = 0;
 
 	if(!level)
 	{
@@ -92,17 +97,69 @@ void level_load(Level *level, char *filename)
 		return;
 	}
 
-	file = fopen(filename, "r");
-
-	if(!file)
+	if(!PHYSFS_exists(filename))
 	{
 		slog("Failed to load file: %s", filename);
 		return;
 	}
 
-	rewind(file);
+	file = PHYSFS_openRead(filename);
 
-	while(fscanf(file,"%s", buffer) != EOF)
+	pBuf = (char *)malloc(PHYSFS_fileLength(file));
+
+	if(!pBuf)
+	{
+		slog("Failed to allocate pBuf");
+		return;
+	}
+
+	memset(pBuf, 0, PHYSFS_fileLength(file));
+
+	PHYSFS_readBytes(file, pBuf, PHYSFS_fileLength(file));
+	PHYSFS_close(file);
+
+	//slog("pBUF: %s", pBuf);
+
+	while(sscanf(pBuf, " %s\n%n", buffer, &incr) == 1)
+	{
+	    if(pBuf[0] == '~')
+		{
+			return;
+		}
+
+		pBuf += incr;
+
+		if(strcmp(buffer, "background:") == 0)
+		{
+			sscanf(pBuf, " %s\n%n", buffer, &incr);
+			pBuf += incr;
+			level->background = gf2d_sprite_load_image(buffer);
+
+			slog("Level background: %s", buffer);
+			//continue;
+		}
+		if(strcmp(buffer, "entFile:") == 0)
+		{
+			sscanf(pBuf, " %s\n%n", buffer, &incr);
+			pBuf += incr;
+			entity_load_all(buffer);
+			slog("Entity File: %s", buffer);
+			//continue;
+		}
+	}
+
+
+	//file = fopen(filename, "r");
+
+	/*if(!file)
+	{
+		slog("Failed to load file: %s", filename);
+		return;
+	}
+
+	rewind(file);*/
+
+	/*while(fscanf(file,"%s", buffer) != EOF)
 	{
 		if(strcmp(buffer, "background:") == 0)
 		{
@@ -121,7 +178,7 @@ void level_load(Level *level, char *filename)
 		}
 	}
 
-	fclose(file);
+	fclose(file);*/
 }
 
 void level_draw(Level *level)

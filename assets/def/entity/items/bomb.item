@@ -2,3 +2,4 @@ type:		6
 sprite:		assets/images/items/Bomb.png
 update:		bomb_update
 position:	450 100
+~
