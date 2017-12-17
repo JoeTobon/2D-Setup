@@ -42,6 +42,9 @@ void main_menu(Level *level)
 	SDL_GameController *controller;
 	Button *play, *editor, *controls, *settings;
 	SDL_Event e;
+	Sprite *mainM = gf2d_sprite_load_image("images/UI/MainMenu.png");
+	Sprite *playText = gf2d_sprite_load_image("images/UI/play.png");
+	Sprite *controlText = gf2d_sprite_load_image("images/UI/controlText.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -101,7 +104,13 @@ void main_menu(Level *level)
 
 		gf2d_graphics_clear_screen();// clears drawing buffers
 
+			gf2d_sprite_draw_image(mainM, vector2d(-700,-500));
+			
 			button_draw_all();
+
+			gf2d_sprite_draw_image(playText, vector2d(450, 0));
+
+			gf2d_sprite_draw_image(controlText, vector2d(450, 300));
 
 		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 
@@ -193,52 +202,6 @@ void main_menu(Level *level)
 		button_delete_all();
 		settings_screen();
 	}
-
-}
-
-void level_Screen(Level *level)
-{
-	Sprite *screen;
-	int levelBool = 0;
-	SDL_GameController *controller;
-	const Uint8 * keys;
-
-	screen = gf2d_sprite_load_image("images/UI/levelSelect.png");
-	controller = SDL_GameControllerOpen(0);
-
-	if(!level)
-	{
-		slog("level is null");
-		return;
-	}
-
-	//title screen
-	while(!levelBool)
-	{
-		SDL_PumpEvents();   // update SDL's internal event structures
-		keys = SDL_GetKeyboardState(NULL); // get the keyboard state for this frame
-
-		gf2d_graphics_clear_screen();// clears drawing buffers
-
-			gf2d_sprite_draw_image(screen,vector2d(0, 0));
-
-		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
-
-		if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_X) || keys[SDL_SCANCODE_SPACE])
-		{
-			level_load(level, "def/level/level1.level");
-			slog("level 1 loaded");
-			levelBool = 1;
-		}
-		else if(SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_B))
-		{
-			level_load(level, "def/level/level2.level");
-			slog("level 1 loaded");
-			levelBool = 1;
-		}
-
-		slog("Rendering at %f FPS",gf2d_graphics_get_frames_per_second());
-	}
 }
 
 void pause_menu()
@@ -249,6 +212,9 @@ void pause_menu()
 	Button *resume, *quit;
 	SDL_GameController *controller;
 	Level *level;
+	Sprite *pauseM = gf2d_sprite_load_image("images/UI/Pause.png");
+	Sprite *playText = gf2d_sprite_load_image("images/UI/play.png");
+	Sprite *mainText = gf2d_sprite_load_image("images/UI/mm.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -296,7 +262,10 @@ void pause_menu()
 
 		gf2d_graphics_clear_screen();// clears drawing buffers
 
+			gf2d_sprite_draw_image(pauseM, vector2d(0,0));
 			button_draw_all();
+			gf2d_sprite_draw_image(playText, vector2d(450,150));
+			gf2d_sprite_draw_image(mainText, vector2d(450,300));
 
 		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 
@@ -363,6 +332,8 @@ void game_over()
 	Button *quit;
 	SDL_GameController *controller;
 	Level *level;
+	Sprite *gameO = gf2d_sprite_load_image("images/UI/GameOver.png");
+	Sprite *mainText = gf2d_sprite_load_image("images/UI/mm.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -404,7 +375,9 @@ void game_over()
 
 		gf2d_graphics_clear_screen();// clears drawing buffers
 
+			gf2d_sprite_draw_image(gameO, vector2d(0, 0));
 			button_draw_all();
+			gf2d_sprite_draw_image(mainText, vector2d(450,300));
 
 		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 
@@ -543,6 +516,7 @@ void win_screen()
 	SDL_GameController *controller;
 	Level *level;
 	Sprite *win = gf2d_sprite_load_image("images/UI/winScreen.png");
+	Sprite *mainText = gf2d_sprite_load_image("images/UI/mm.png");
 
 	//dead zone for controller
 	const int DEAD_ZONE = 8000;
@@ -586,6 +560,7 @@ void win_screen()
 
 			gf2d_sprite_draw_image(win, vector2d(0, 0));
 			button_draw_all();
+			gf2d_sprite_draw_image(mainText, vector2d(450,300));
 
 		gf2d_grahics_next_frame();// render current draw frame and skip to the next frame
 
