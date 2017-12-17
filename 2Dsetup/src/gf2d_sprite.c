@@ -198,12 +198,6 @@ Sprite *gf2d_sprite_rwopsload_all(
     Sprite *sprite = NULL;
 	int i;
     
-	//Check file name
-    for()
-	{
-
-	}
-
     if (sprite != NULL)
     {
         // found a copy already in memory
