@@ -1,5 +1,15 @@
-# Libraries
+#Linker Output
+*.ilk 
+
+#Libraries
 *.lib
 
-# Shared Objects
+#Shared Objects
 *.dll
+
+#Debug Files
+*.pdb
+
+*.sdf
+
+2Dsetup.v11.suo
